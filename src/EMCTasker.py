@@ -157,7 +157,7 @@ class EMCExecutioner:
 			emcDebugOut("[emcTasker] runFinished exception:\n" + str(e))
 
 	def dataAvail(self, string):
-		self.returnData += "\n" + "\n".replace("")
+		self.returnData += "\n" + string.replace("\n", "")
 
 
 class EMCTasker:
