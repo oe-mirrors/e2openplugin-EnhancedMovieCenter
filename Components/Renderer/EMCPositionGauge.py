@@ -1,4 +1,4 @@
-﻿from Components.Renderer.PositionGauge import PositionGauge
+from Components.Renderer.PositionGauge import PositionGauge
 
 
 class EMCPositionGauge(PositionGauge):
