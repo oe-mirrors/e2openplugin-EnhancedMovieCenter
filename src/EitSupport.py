@@ -387,13 +387,13 @@ class EitList():
 
 							### section name
 							(offset, name_event_description) = readEventData(data, idx, "name_event")
-							if offset > 0:
+							if offset > 1:
 								addDescriptionToList(name_event_description, name_event_descriptors, lang, ISO_639_language_code, prev1_ISO_639_language_code, False)
 							idx += offset
 							
 							### section description
 							(offset, short_event_description) = readEventData(data, idx, "short_event")
-							if offset > 0:
+							if offset > 1:
 								addDescriptionToList(short_event_description, short_event_descriptors, lang, ISO_639_language_code, prev1_ISO_639_language_code)
 
 							prev1_ISO_639_language_code = ISO_639_language_code							
@@ -423,7 +423,7 @@ class EitList():
 
 							### section event text
 							(offset, extended_event_description) = readEventData(data, idx, "extended_event")							
-							if len(extended_event_description) > 0:
+							if offset > 1:
 								addDescriptionToList(extended_event_description, extended_event_descriptors, lang, ISO_639_language_code, prev2_ISO_639_language_code)
 
 							prev2_ISO_639_language_code = ISO_639_language_code
