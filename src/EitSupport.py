@@ -144,7 +144,7 @@ def getEventEncoding(data):
 						encoding = 'iso-8859-15'			
 			elif byte1 >= 0x20 and byte1 <= 0xFF:
 				encoding = 'iso6937'
-			#elif byte1 >= 0x11 and byte <= 0x14:	### not supported now
+			#elif byte1 >= 0x11 and byte <= 0x14 or byte1 == 0x1F:	### not supported now
 			#	encoding = None
 	except:
 		encoding = None
@@ -180,7 +180,7 @@ def readEventData(data, index, name):
 					elif not six.PY3:
 						description = description.decode('cp1252').encode("utf-8")
 				else:
-					description = encode_binary(description)
+					description = six.ensure_binary(description)
 					encdata = chardet.detect(description)
 					enc = encdata['encoding'].lower()
 					confidence = str(encdata['confidence'])
