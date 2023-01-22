@@ -32,7 +32,6 @@ from .EMCFileCache import movieFileCache
 
 from .CutListSupport import CutList
 from .MetaSupport import MetaList, getInfoFile
-from .EitSupport import EitList
 from .RecordingsControl import getRecording
 instance = None
 
@@ -110,7 +109,6 @@ class Info:
 		ext = path and os.path.splitext(path)[1].lower()
 
 		meta = path and MetaList(path)
-		eit = path and EitList(path)
 
 		# Information which we need later
 		self.__cutlist = path and CutList(path) or []
@@ -122,13 +120,18 @@ class Info:
 		self.__reference = service or ""
 		self.__rec_ref_str = meta and meta.getMetaServiceReference() or ""
 
-		self.__shortdescription = meta and meta.getMetaDescription() or eit and eit.getEitShortDescription() or ""
+		self.__serviceHandler = eServiceCenter.getInstance()
+		info = self.__serviceHandler.info(self.__reference)
+		event = info and info.getEvent(self.__reference)
+
+		self.__shortdescription = meta and meta.getMetaDescription() or event and event.getShortDescription() or ""
 
 		self.__tags = meta and meta.getMetaTags() or ""
 
-		self.__eventname = meta and meta.getMetaName() or eit and eit.getEitName() or self.__name
+		self.__eventname = meta and meta.getMetaName() or event and event.getEventName() or self.__name
 
-		self.__extendeddescription = eit and eit.getEitDescription() or ""
+		#self.__extendeddescription = event and (event.getExtendedDescription() or event.getShortDescription()) or ""
+		self.__extendeddescription = event and (event.getExtendedDescription() or self.__shortdescription) or ""
 
 		#No Description in *.eit file or no *.eit file exists
 		#Try reading description from *.txt file
@@ -242,8 +245,7 @@ class Info:
 				return length
 		service = service or self.__reference
 		if self.isfile:
-			esc = eServiceCenter.getInstance()
-			info = esc and esc.info(service)
+			info = self.__serviceHandler and self.__serviceHandler.info(service)
 			length = info and info.getLength(service) or 0
 		if length <= 0:
 			length = self.__cutlist and self.__cutlist.getCutListLength()

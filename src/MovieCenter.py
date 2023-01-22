@@ -50,7 +50,6 @@ from .VlcPluginInterface import DEFAULT_VIDEO_PID, DEFAULT_AUDIO_PID, ENIGMA_SER
 from operator import itemgetter
 from .CutListSupport import CutList
 from .MetaSupport import MetaList
-from .EitSupport import EitList
 from .PermanentSort import PermanentSort
 from .E2Bookmarks import E2Bookmarks
 from .EMCBookmarks import EMCBookmarks
@@ -315,6 +314,11 @@ def getPlayerService(path, name="", ext=None):
 	if name:
 		service.setName(name)
 	return service
+
+
+def updatePlayerService(service, name):
+	if service and service.type != sidDVD and name:
+		service.setName(name)
 
 
 def getMovieNameWithoutExt(moviename=""):
@@ -681,6 +685,7 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 		self.hideitemlist = readBasicCfgFile("/etc/enigma2/emc-hide.cfg") or []
 		self.nostructscan = readBasicCfgFile("/etc/enigma2/emc-noscan.cfg") or []
 		self.topdirlist = readBasicCfgFile("/etc/enigma2/emc-topdir.cfg") or []
+		self.serviceHandler = eServiceCenter.getInstance()
 
 		config.EMC.cfghide_enable.addNotifier(self.changedCfgHideEnable, initial_call=False, immediate_feedback=True)
 
@@ -1387,14 +1392,18 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 						length = meta.getMetaLength()
 
 				if not metastring and movie_eitload and not isExtHDDSleeping:
-						# read title from EIT
-						eit = EitList(path)
-						if eit:
-							eitstring = eit.getEitName()
+					service = getPlayerService(path, "", ext)
+					if service:
+						info = self.serviceHandler.info(service)
+						event = info and info.getEvent(service)
+						if event:							
+							eitstring = event.getEventName()
 							if not date:
-								date = eit.getEitDate()
+								starttimestamp = event.getBeginTime()
+								if starttimestamp:
+									date = datetime.fromtimestamp(starttimestamp)
 							if not length:
-								length = eit.getEitLengthInSeconds()
+								length = event.getDuration()
 				# get piconpath
 				if config.EMC.movie_picons.value and not isExtHDDSleeping:
 					meta = MetaList(path)
@@ -1459,8 +1468,12 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 				if movie_show_format:
 					title += " [" + ext[1:] + "]"
 
-				# Get player service and set formatted title
-				service = getPlayerService(path, title, ext)
+				if not service:
+					# Get player service and set formatted title
+					service = getPlayerService(path, title, ext)
+				elif title:
+					# set formatted title only
+					updatePlayerService(service, title)
 
 				# Bad workaround to get all information into our Service Source
 				service.date = date
