@@ -22,12 +22,64 @@
 from __future__ import absolute_import
 import os
 import re
+from enigma import eServiceReference
+from .VlcPluginInterface import vlcFil
 from .EMCTasker import emcDebugOut
+
+global extAudio, extDvd, extVideo, extPlaylist, extList, extMedia, extBlu
+global plyDVB, plyM2TS, plyDVD, plyMP3, plyVLC, plyAll
+global sidDVB, sidDVD, sidMP3
+
+# Set definitions
+
+# Media types
+extAudio = frozenset([".ac3", ".dts", ".flac", ".m4a", ".mp2", ".mp3", ".ogg", ".wav", ".wma", ".aac"])
+extVideo = frozenset([".ts", ".trp", ".avi", ".divx", ".f4v", ".flv", ".img", ".ifo", ".iso", ".m2ts", ".m4v", ".mkv", ".mov", ".mp4", ".mpeg", ".mpg", ".mts", ".vob", ".wmv", ".bdmv", ".asf", ".stream", ".webm"])
+extPlaylist = frozenset([".m3u", ".e2pls"])#, ".pls"])
+extMedia = extAudio | extVideo | extPlaylist
+extDir = frozenset([""])
+extList = extMedia | extDir
+
+# Additional file types
+extTS = frozenset([".ts", ".trp"])
+extM2ts = frozenset([".m2ts"])
+#extDvd      = frozenset([".iso", ".img", ".ifo"])
+extIfo = frozenset([".ifo"])
+extIso = frozenset([".iso", ".img"])
+extDvd = extIfo | extIso
+extVLC = frozenset([vlcFil])
+extBlu = frozenset([".bdmv"])
+# blue disk movie
+# mimetype("video/x-bluray") ext (".bdmv")
+
+# Player types
+plyDVB = extTS											# ServiceDVB
+plyM2TS = extM2ts											# ServiceM2TS
+plyDVD = extDvd											# ServiceDVD
+plyMP3 = extMedia - plyDVB - plyM2TS - plyDVD - extBlu						# ServiceMP3 GStreamer
+plyVideo = extMedia - extAudio
+plyVLC = extVLC											# VLC Plugin
+#plyBLU      = extBlu | extIso										# BludiscPlayer Plugin
+plyAll = plyDVB | plyM2TS | plyDVD | plyMP3 | plyVLC | extBlu
+
+
+# Type definitions
+
+# Service ID types for E2 service identification
+sidDVB = eServiceReference.idDVB									# eServiceFactoryDVB::id   enum { id = 0x1 };
+sidDVD = 4369 											# eServiceFactoryDVD::id   enum { id = 0x1111 };
+sidMP3 = 4097											# eServiceFactoryMP3::id   enum { id = 0x1001 };
+# For later purpose
+sidM2TS = 3 											# eServiceFactoryM2TS::id  enum { id = 0x3 };
+#TODO
+#sidXINE = 4112												# eServiceFactoryXine::id  enum { id = 0x1010 };
+
+# Grouped service ids
+sidsCuts = frozenset([sidDVB, sidDVD])
 
 
 ## Import from MetaSupport.py (temporary)
 def getInfoFile(path, exts=""):
-	from .MovieCenter import extMedia
 	fpath = p1 = p2 = p3 = ""
 	name, ext = os.path.splitext(path)
 	ext = ext.lower()

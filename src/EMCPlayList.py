@@ -4,7 +4,7 @@ from __future__ import print_function, absolute_import
 import os
 
 from . import _
-from enigma import eListboxPythonMultiContent, RT_VALIGN_CENTER, RT_HALIGN_RIGHT, gFont, eListbox, getDesktop, eServiceCenter
+from enigma import eListboxPythonMultiContent, RT_VALIGN_CENTER, RT_HALIGN_RIGHT, gFont, eListbox, getDesktop, eServiceCenter, iServiceInformation
 
 from Screens.Screen import Screen
 from Screens.ChoiceBox import ChoiceBox
@@ -23,8 +23,7 @@ from Tools.Directories import fileExists
 
 from skin import parseColor, parseFont
 
-from .CommonSupport import getMetaTitleFromDescription
-from .MovieCenter import plyDVB
+from .CommonSupport import getMetaTitleFromDescription, plyDVB
 
 sz_w = getDesktop(0).size().width()
 

@@ -51,7 +51,7 @@ class RogueFileCheck:
 		return strg
 
 	def checkPath(self, path, avoid=""):
-		from .MovieCenter import extMedia
+		from .CommonSupport import extMedia
 		#TODO check performance
 		if not os.path.exists(path) or path is avoid:
 			return

@@ -40,7 +40,7 @@ from enigma import eListboxPythonMultiContent, eListbox, gFont, RT_HALIGN_LEFT, 
 from timer import TimerEntry
 
 from . import _, PY3
-from .CommonSupport import getMetaTitleFromDescription
+from .CommonSupport import *
 from .EMCFileCache import movieFileCache
 from .EMCMountPoints import mountPoints
 from .RecordingsControl import RecordingsControl, getRecording
@@ -99,54 +99,6 @@ global cmtDir, cmtUp, cmtTrash, cmtLRec, cmtVLC, cmtBME2, cmtBMEMC, virVLC, virA
 global vlcSrv, vlcDir, vlcFil
 global plyDVB, plyM2TS, plyDVD, plyMP3, plyVLC, plyAll
 global sidDVB, sidDVD, sidMP3
-
-# Set definitions
-
-# Media types
-extAudio = frozenset([".ac3", ".dts", ".flac", ".m4a", ".mp2", ".mp3", ".ogg", ".wav", ".wma", ".aac"])
-extVideo = frozenset([".ts", ".trp", ".avi", ".divx", ".f4v", ".flv", ".img", ".ifo", ".iso", ".m2ts", ".m4v", ".mkv", ".mov", ".mp4", ".mpeg", ".mpg", ".mts", ".vob", ".wmv", ".bdmv", ".asf", ".stream", ".webm"])
-extPlaylist = frozenset([".m3u", ".e2pls"])#, ".pls"])
-extMedia = extAudio | extVideo | extPlaylist
-extDir = frozenset([""])
-extList = extMedia | extDir
-
-# Additional file types
-extTS = frozenset([".ts", ".trp"])
-extM2ts = frozenset([".m2ts"])
-#extDvd      = frozenset([".iso", ".img", ".ifo"])
-extIfo = frozenset([".ifo"])
-extIso = frozenset([".iso", ".img"])
-extDvd = extIfo | extIso
-extVLC = frozenset([vlcFil])
-extBlu = frozenset([".bdmv"])
-# blue disk movie
-# mimetype("video/x-bluray") ext (".bdmv")
-
-# Player types
-plyDVB = extTS											# ServiceDVB
-plyM2TS = extM2ts											# ServiceM2TS
-plyDVD = extDvd											# ServiceDVD
-plyMP3 = extMedia - plyDVB - plyM2TS - plyDVD - extBlu						# ServiceMP3 GStreamer
-plyVideo = extMedia - extAudio
-plyVLC = extVLC											# VLC Plugin
-#plyBLU      = extBlu | extIso										# BludiscPlayer Plugin
-plyAll = plyDVB | plyM2TS | plyDVD | plyMP3 | plyVLC | extBlu
-
-
-# Type definitions
-
-# Service ID types for E2 service identification
-sidDVB = eServiceReference.idDVB									# eServiceFactoryDVB::id   enum { id = 0x1 };
-sidDVD = 4369 											# eServiceFactoryDVD::id   enum { id = 0x1111 };
-sidMP3 = 4097											# eServiceFactoryMP3::id   enum { id = 0x1001 };
-# For later purpose
-sidM2TS = 3 											# eServiceFactoryM2TS::id  enum { id = 0x3 };
-#TODO
-#sidXINE = 4112												# eServiceFactoryXine::id  enum { id = 0x1010 };
-#additionalExtensions = "4098:m3u 4098:e2pls 4098:pls"
-
-# Grouped service ids
-sidsCuts = frozenset([sidDVB, sidDVD])
 
 # Custom types: Used by EMC internally for sorting and type identification
 
@@ -1394,7 +1346,7 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 						if not date:
 							dt = serviceInfo.getInfo(service, iServiceInformation.sTimeCreate)
 							if dt > 0:
-								date = datetime.fromtimestamp(dt) # localtime(dt) PJSHARP
+								date = datetime.fromtimestamp(dt)
 						length = serviceInfo.getLength(service)
 				if not metastring and movie_eitload and not isExtHDDSleeping:
 					if serviceInfo:
