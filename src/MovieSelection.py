@@ -73,9 +73,7 @@ from .MovieRetitle import MovieRetitle
 from Components.Sources.EMCServiceEvent import EMCServiceEvent
 from .MovieInfo import MovieInfoTMDb
 from .EMCPlayList import emcplaylist, EMCPlaylistScreen, EMCPlaylistSetup
-
-#from MetaSupport import MetaList
-from .MetaSupport import getInfoFile
+from .CommonSupport import getInfoFile
 
 from .MovieCenter import extList, extVideo, extMedia, extDir, plyAll, plyDVD, plyVideo, cmtBME2, cmtBMEMC, cmtDir, plyDVB, extPlaylist, extAudio
 from .MovieCenter import getMovieNameWithoutExt, getMovieNameWithoutPhrases, getNoPosterPath, getPosterPath

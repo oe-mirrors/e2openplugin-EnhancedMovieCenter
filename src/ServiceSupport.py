@@ -29,9 +29,8 @@ from Components.Element import cached
 from enigma import eServiceCenter, iServiceInformation, eServiceReference
 from ServiceReference import ServiceReference
 from .EMCFileCache import movieFileCache
-
 from .CutListSupport import CutList
-from .MetaSupport import MetaList, getInfoFile
+from .CommonSupport import getInfoFile
 from .RecordingsControl import getRecording
 instance = None
 
@@ -108,8 +107,6 @@ class Info:
 		self.isdir = os.path.isdir(path)
 		ext = path and os.path.splitext(path)[1].lower()
 
-		meta = path and MetaList(path)
-
 		# Information which we need later
 		self.__cutlist = path and CutList(path) or []
 
@@ -118,17 +115,18 @@ class Info:
 		self.__mtime = self.isfile and hasattr(service, "date") and mktime(service.date.timetuple()) or None
 
 		self.__reference = service or ""
-		self.__rec_ref_str = meta and meta.getMetaServiceReference() or ""
 
 		self.__serviceHandler = eServiceCenter.getInstance()
 		info = self.__serviceHandler.info(self.__reference)
 		event = info and info.getEvent(self.__reference)
 
-		self.__shortdescription = meta and meta.getMetaDescription() or event and event.getShortDescription() or ""
+		self.__rec_ref_str = info and info.getInfoString(self.__reference, iServiceInformation.sServiceref) or ""
 
-		self.__tags = meta and meta.getMetaTags() or ""
+		self.__shortdescription = event and event.getShortDescription() or info and info.getInfoString(self.__reference, iServiceInformation.sDescription) or ""
 
-		self.__eventname = meta and meta.getMetaName() or event and event.getEventName() or self.__name
+		self.__tags = info and info.getInfoString(self.__reference, iServiceInformation.sTags) or ""
+
+		self.__eventname = event and event.getEventName() or info and info.getName(self.__reference) or self.__name
 
 		#self.__extendeddescription = event and (event.getExtendedDescription() or event.getShortDescription()) or ""
 		self.__extendeddescription = event and (event.getExtendedDescription() or self.__shortdescription) or ""
@@ -200,8 +198,8 @@ class Info:
 		return self.__eventname
 
 	def getShortDescription(self):
-		#MovieInfo MOVIE_META_DESCRIPTION
 		#MovieInfo SHORT_DESCRIPTION
+		#MovieInfo MOVIE_META_DESCRIPTION
 		#EventName SHORT_DESCRIPTION
 		return self.__shortdescription
 

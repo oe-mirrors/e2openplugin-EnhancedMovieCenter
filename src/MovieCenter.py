@@ -36,10 +36,11 @@ from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixm
 from Tools.LoadPixmap import LoadPixmap
 from Tools.Directories import fileExists, resolveFilename, SCOPE_CURRENT_SKIN
 from skin import parseColor, parseFont, parseSize
-from enigma import eListboxPythonMultiContent, eListbox, gFont, RT_HALIGN_LEFT, RT_HALIGN_RIGHT, RT_HALIGN_CENTER, eServiceReference, eServiceCenter, ePythonMessagePump, loadPNG, getDesktop
+from enigma import eListboxPythonMultiContent, eListbox, gFont, RT_HALIGN_LEFT, RT_HALIGN_RIGHT, RT_HALIGN_CENTER, eServiceReference, eServiceCenter, ePythonMessagePump, loadPNG, getDesktop, iServiceInformation
 from timer import TimerEntry
 
 from . import _, PY3
+from .CommonSupport import getMetaTitleFromDescription
 from .EMCFileCache import movieFileCache
 from .EMCMountPoints import mountPoints
 from .RecordingsControl import RecordingsControl, getRecording
@@ -49,7 +50,6 @@ from .VlcPluginInterface import VlcPluginInterfaceList, vlcSrv, vlcDir, vlcFil
 from .VlcPluginInterface import DEFAULT_VIDEO_PID, DEFAULT_AUDIO_PID, ENIGMA_SERVICE_ID
 from operator import itemgetter
 from .CutListSupport import CutList
-from .MetaSupport import MetaList
 from .PermanentSort import PermanentSort
 from .E2Bookmarks import E2Bookmarks
 from .EMCBookmarks import EMCBookmarks
@@ -1311,6 +1311,7 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 				# Filename, Title, Date, Sortingkeys handling
 				# First we extract as much as possible informations from the filename
 				service = None
+				serviceInfo = None
 				title, date, cutnr = "", "", ""
 				length = 0
 				#TODO metalength, eitlength and priority handling
@@ -1377,25 +1378,27 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 				# If the user wants it, extract information from the meta and eit files
 				# But it is very slow
 
+				service = getPlayerService(path, "", ext)
+				
+				if service:
+					serviceInfo = self.serviceHandler.info(service)
+					
 				if movie_metaload and not isExtHDDSleeping:
-					# read title from META
-					meta = MetaList(path)
-					if meta:
-						metastring = meta.getMetaName()
+					if serviceInfo:
+						metastring = serviceInfo.getName(service)
 						if config.EMC.movie_metaload_all.value == "title":
-							eventtitle = meta.getMetaTitle()
+							desc = serviceInfo.getInfoString(service, iServiceInformation.sDescription) or ""
+							eventtitle = getMetaTitleFromDescription(desc)
 						if not eventtitle and config.EMC.movie_metaload_all.value == "everything":
-							eventtitle = meta.getMetaDescription()
+							eventtitle = serviceInfo.getInfoString(service, iServiceInformation.sDescription)
 						if not date:
-							date = meta.getMetaDate()
-						# Improve performance and avoid calculation of movie length
-						length = meta.getMetaLength()
-
+							dt = serviceInfo.getInfo(service, iServiceInformation.sTimeCreate)
+							if dt > 0:
+								date = datetime.fromtimestamp(dt) # localtime(dt) PJSHARP
+						length = serviceInfo.getLength(service)
 				if not metastring and movie_eitload and not isExtHDDSleeping:
-					service = getPlayerService(path, "", ext)
-					if service:
-						info = self.serviceHandler.info(service)
-						event = info and info.getEvent(service)
+					if serviceInfo:
+						event = serviceInfo and serviceInfo.getEvent(service)
 						if event:							
 							eitstring = event.getEventName()
 							if not date:
@@ -1406,22 +1409,22 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 								length = event.getDuration()
 				# get piconpath
 				if config.EMC.movie_picons.value and not isExtHDDSleeping:
-					meta = MetaList(path)
-					metaref = meta.getMetaServiceReference()
-					if config.EMC.movie_picons_path_own.value:
-						pos = metaref.rfind(':')
-						if pos != -1:
-							metaref = metaref[:pos].rstrip(':').replace(':', '_')
-					# now we need to check if picon-file exists
-					if newPiconRenderer:
+					if serviceInfo:
+						metaref = serviceInfo.getInfoString(service, iServiceInformation.sServiceref) or ""
 						if config.EMC.movie_picons_path_own.value:
-							picon = config.EMC.movie_picons_path.value + "/" + metaref + '.png'
+							pos = metaref.rfind(':')
+							if pos != -1:
+								metaref = metaref[:pos].rstrip(':').replace(':', '_')
+						# now we need to check if picon-file exists
+						if newPiconRenderer:
+							if config.EMC.movie_picons_path_own.value:
+								picon = config.EMC.movie_picons_path.value + "/" + metaref + '.png'
+							else:
+								picon = getPiconName(metaref)
 						else:
-							picon = getPiconName(metaref)
-					else:
-						picon = config.EMC.movie_picons_path.value + "/" + metaref + '.png'
-					if fileExists(picon):
-						piconpath = picon
+							picon = config.EMC.movie_picons_path.value + "/" + metaref + '.png'
+						if fileExists(picon):
+							piconpath = picon
 
 				# Priority and fallback handling
 
