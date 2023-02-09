@@ -1,9 +1,9 @@
 ﻿#!/usr/bin/python
 # encoding: utf-8
 #
-# Copyright (C) 2023 pjsharp
+#   Copyright (C) 2011-2023
 #
-# In case of reuse of this source code please do not remove this copyright.
+#   In case of reuse of this source code please do not remove this copyright.
 #
 #	This program is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -26,11 +26,18 @@ from enigma import eServiceReference
 from .VlcPluginInterface import vlcFil
 from .EMCTasker import emcDebugOut
 
+
+#------------------------------------------------------------------------------------
+# Common variables and methods imported/moved from different scripts in this projects
+# to avoid cross referencing
+#------------------------------------------------------------------------------------
+
+
 global extAudio, extDvd, extVideo, extPlaylist, extList, extMedia, extBlu
 global plyDVB, plyM2TS, plyDVD, plyMP3, plyVLC, plyAll
 global sidDVB, sidDVD, sidMP3
 
-# Set definitions
+# Set definitions (imported from MovieCenter.py)
 
 # Media types
 extAudio = frozenset([".ac3", ".dts", ".flac", ".m4a", ".mp2", ".mp3", ".ogg", ".wav", ".wma", ".aac"])
@@ -54,31 +61,31 @@ extBlu = frozenset([".bdmv"])
 
 # Player types
 plyDVB = extTS											# ServiceDVB
-plyM2TS = extM2ts											# ServiceM2TS
+plyM2TS = extM2ts										# ServiceM2TS
 plyDVD = extDvd											# ServiceDVD
-plyMP3 = extMedia - plyDVB - plyM2TS - plyDVD - extBlu						# ServiceMP3 GStreamer
+plyMP3 = extMedia - plyDVB - plyM2TS - plyDVD - extBlu	# ServiceMP3 GStreamer
 plyVideo = extMedia - extAudio
 plyVLC = extVLC											# VLC Plugin
-#plyBLU      = extBlu | extIso										# BludiscPlayer Plugin
+#plyBLU      = extBlu | extIso							# BludiscPlayer Plugin
 plyAll = plyDVB | plyM2TS | plyDVD | plyMP3 | plyVLC | extBlu
 
 
 # Type definitions
 
 # Service ID types for E2 service identification
-sidDVB = eServiceReference.idDVB									# eServiceFactoryDVB::id   enum { id = 0x1 };
+sidDVB = eServiceReference.idDVB						# eServiceFactoryDVB::id   enum { id = 0x1 };
 sidDVD = 4369 											# eServiceFactoryDVD::id   enum { id = 0x1111 };
 sidMP3 = 4097											# eServiceFactoryMP3::id   enum { id = 0x1001 };
 # For later purpose
 sidM2TS = 3 											# eServiceFactoryM2TS::id  enum { id = 0x3 };
 #TODO
-#sidXINE = 4112												# eServiceFactoryXine::id  enum { id = 0x1010 };
+#sidXINE = 4112											# eServiceFactoryXine::id  enum { id = 0x1010 };
 
 # Grouped service ids
 sidsCuts = frozenset([sidDVB, sidDVD])
 
 
-## Import from MetaSupport.py (temporary)
+## getInfoFile (imported from MetaSupport.py)
 def getInfoFile(path, exts=""):
 	fpath = p1 = p2 = p3 = ""
 	name, ext = os.path.splitext(path)
@@ -116,8 +123,9 @@ def getInfoFile(path, exts=""):
 			break
 	return (p1, fpath)
 
-	
-def getMetaTitleFromDescription(desc): # taken over from MetaSupport.py, necessary ??
+
+## getMetaTitleFromDescription (imported from MetaSupport.py)
+def getMetaTitleFromDescription(desc):
 	#TODO make it better and --> for example get the right title from other meta like "title only"
 	title = ""
 	try:
@@ -140,3 +148,23 @@ def getMetaTitleFromDescription(desc): # taken over from MetaSupport.py, necessa
 	except Exception as e:
 		emcDebugOut("[EMC] getMetaTitle failed !!!\n" + str(e))
 	return title					
+
+
+## readPlaylist (imported from EMCPlayList.py)
+def readPlaylist(path):
+	if path:
+		overview = []
+		plist = open(path, "r")
+		if os.path.splitext(path)[1] == ".e2pls":
+			while True:
+				service = plist.readline()
+				if service == "":
+					break
+				service = service.replace('\n', '')
+				spos = service.find('/')
+				servicepath = service[spos:]
+				service = servicepath.split('/')[-1]
+				name = service + "\n"
+				overview.append(name)
+		return overview
+	

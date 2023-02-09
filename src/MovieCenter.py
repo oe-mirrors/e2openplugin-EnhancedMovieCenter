@@ -1216,19 +1216,6 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 					title = title.replace("_", " ")
 					title = title.replace(".", " ")
 
-				# Very bad but there can be both encodings
-				# E2 recordings are always in utf8
-				# User files can be in cp1252
-				#TODO Is there no other way?
-				if not PY3: # FIXME
-					try:
-						title.decode('utf-8')
-					except UnicodeDecodeError:
-						try:
-							title = title.decode("cp1252").encode("utf-8")
-						except UnicodeDecodeError:
-							title = title.decode("iso-8859-1").encode("utf-8")
-
 				service = getPlayerService(path, title)
 
 				sorttitle = title.lower()
@@ -1382,20 +1369,11 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 
 				# Set title priority here
 				# Fallback is the filename
-				title = metastring or eitstring or title or filename
-
-				# Very bad but there can be both encodings
-				# E2 recordings are always in utf8
-				# User files can be in cp1252
-				#TODO Is there no other way?
-				if not PY3: # FIXME
-					try:
-						title.decode('utf-8')
-					except UnicodeDecodeError:
-						try:
-							title = title.decode("cp1252").encode("utf-8")
-						except UnicodeDecodeError:
-							title = title.decode("iso-8859-1").encode("utf-8")
+				# (metastring first only if not equal to filename)
+				if metastring and metastring != filename:
+					title = metastring
+				else:
+					title = eitstring or title or filename
 
 				# Set date priority here
 				# Fallback get date from filesystem, but it is very slow
