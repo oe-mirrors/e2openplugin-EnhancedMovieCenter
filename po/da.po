@@ -2,42 +2,33 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMC\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-02 21:09+0200\n"
+"POT-Creation-Date: 2023-02-12 22:31+0100\n"
 "PO-Revision-Date: 2020-06-07 16:07+0200\n"
-"Last-Translator: JC 2020 <dk-translation@protonmail.com>\n"
+"Last-Translator: \n"
 "Language-Team: Danskholdet <dk-translation@pm.me>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-KeywordsList: -;gettext;gettext_noop;_\n"
 "X-Poedit-Basepath: ../src\n"
-"Last-Translator: \n"
-"Language: da\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #, fuzzy
 msgid " (without counting cover range)"
 msgstr " (uden at medregne dækningsområde)"
 
-msgid ""
-" Deleting remotely recorded and it will display an rec-error dialog on the "
-"other DB."
-msgstr ""
-" Sletning af perifer optagelse vil presenter et optagelses-fejlvindue på den "
-"anden Dreambox."
+msgid " Deleting remotely recorded and it will display an rec-error dialog on the other DB."
+msgstr " Sletning af perifer optagelse vil presenter et optagelses-fejlvindue på den anden Dreambox."
 
 msgid " all selected video files?"
 msgstr " alle valgte videofiler?"
 
-msgid ""
-" all selected video files? The currently playing movie is also one of the "
-"selections and its playback will be stopped."
-msgstr ""
-" alle valgte videofiler? Filmen der før øjeblikket vises er også en af de "
-"valgte og afspilning af den vil blive stoppet."
+msgid " all selected video files? The currently playing movie is also one of the selections and its playback will be stopped."
+msgstr " alle valgte videofiler? Filmen der før øjeblikket vises er også en af de valgte og afspilning af den vil blive stoppet."
 
 msgid " currently played?"
 msgstr " for øjeblikket viste?"
@@ -48,14 +39,17 @@ msgstr " filer\n"
 msgid " permanently"
 msgstr " permanent"
 
+#, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d sekund"
 msgstr[1] "%d sekunder"
 
+#, python-format
 msgid "%s not removed. Write protect?"
 msgstr "%s ikke fjernet. Skrivebeskyt?"
 
+#, python-format
 msgid "%s removed."
 msgstr "%s fjernet."
 
@@ -89,16 +83,14 @@ msgstr ".../foldername/foldername.jpg"
 msgid ""
 "ATTENTION\n"
 "\n"
-"This option will move all finished movies in Movie Home automatically to Your "
-"trashcan at the given time.\n"
+"This option will move all finished movies in Movie Home automatically to Your trashcan at the given time.\n"
 "At next trashcan cleanup all movies will be deleted.\n"
 "\n"
 "Confirm this with the blue key followed by the green key."
 msgstr ""
 "BEMÆRK\n"
 "\n"
-"Denne mulighed vil automatisk flytte afsluttede film i Filmhjem til din "
-"skraldespand på et angivet tidspunkt.\n"
+"Denne mulighed vil automatisk flytte afsluttede film i Filmhjem til din skraldespand på et angivet tidspunkt.\n"
 "Alle film vil blive slettet ved næste oprydning.\n"
 "\n"
 "bekræft dette med end blå taste efterfulgt af den grønne taste."
@@ -218,6 +210,7 @@ msgstr "Kan ikke gemme omslag i "
 msgid "Can not save current Playlist!"
 msgstr "Kan ikke gemme aktuel afspilningsliste!"
 
+#, python-format
 msgid ""
 "Can not write Movie Information File\n"
 "\n"
@@ -227,6 +220,7 @@ msgstr ""
 "\n"
 "%s"
 
+#, python-format
 msgid ""
 "Can not write Movie Information and Cover File\n"
 "\n"
@@ -286,6 +280,9 @@ msgstr "Vælg skript"
 msgid "Close EMC"
 msgstr "Luk EMC"
 
+msgid "Close EMC and do power button action"
+msgstr ""
+
 msgid "Collection"
 msgstr "Samling"
 
@@ -304,6 +301,7 @@ msgstr "Kopier filer"
 msgid "Copy file(s):"
 msgstr "Kopier fil(er)"
 
+#, python-format
 msgid ""
 "Cover %s exists!\n"
 "\n"
@@ -475,12 +473,8 @@ msgstr "Slet klippet fil(er)"
 msgid "Delete error:\n"
 msgstr "Slet fejl:\n"
 
-msgid ""
-"Delete failed because the trashcan directory does not exist. Attempt to create "
-"it now?"
-msgstr ""
-"Sletning mislykkedes fordi skraldespandsmappe ikke findes. Forsøg at oprette "
-"den nu?"
+msgid "Delete failed because the trashcan directory does not exist. Attempt to create it now?"
+msgstr "Sletning mislykkedes fordi skraldespandsmappe ikke findes. Forsøg at oprette den nu?"
 
 msgid "Delete failed!"
 msgstr "Slet mislykkedes!"
@@ -503,6 +497,7 @@ msgstr "Beskrivelse:"
 msgid "Directory"
 msgstr "Mappe"
 
+#, python-format
 msgid "Directory %s already exists!"
 msgstr "Mappe %s findes allerede!"
 
@@ -530,16 +525,16 @@ msgstr "Presenter mappe visningstekst"
 
 msgid ""
 "Do you really want to delete the cut file?\n"
-"If you have selected a directory, all cut files within the folder and its "
-"subfolders will be deleted!"
+"If you have selected a directory, all cut files within the folder and its subfolders will be deleted!"
 msgstr ""
 "Vil du virkelig slette dit klip-filen?\n"
-"Hvis du har valgt en mappe, vil alle klip-filer i denne og dens undermapper "
-"blive slettet!"
+"Hvis du har valgt en mappe, vil alle klip-filer i denne og dens undermapper blive slettet!"
 
+#, python-format
 msgid "Do you really want to lock the directory %s and all its subfolders?"
 msgstr "Vil du virkelig låse mappen %s og alle dens undermapper?"
 
+#, python-format
 msgid ""
 "Do you really want to remove your bookmark\n"
 "%s?"
@@ -547,6 +542,7 @@ msgstr ""
 "Vil du virkelig slette dit bogmærke\n"
 "%s?"
 
+#, python-format
 msgid ""
 "Do you really want to remove your directory\n"
 "%s?"
@@ -554,6 +550,7 @@ msgstr ""
 "Vil du virkelig slette din mappe\n"
 "%s?"
 
+#, python-format
 msgid ""
 "Do you really want to remove your link\n"
 "%s?"
@@ -579,6 +576,7 @@ msgstr "Download filminformation"
 msgid "Download cutlist from Cutlist.at"
 msgstr "Download klipliste fra cutlist.at"
 
+#, python-format
 msgid "Download: %s"
 msgstr "Download: %s"
 
@@ -612,6 +610,10 @@ msgstr "EMC Oplagssøgning opsætning"
 
 msgid "EMC Filebrowser"
 msgstr "EMC Filbrowser"
+
+#, fuzzy
+msgid "EMC Help"
+msgstr "EMC Opsætning"
 
 msgid "EMC Playlist - current playlist"
 msgstr "EMC Afspilningsliste - aktuel afspinlingsliste"
@@ -653,6 +655,9 @@ msgstr ""
 "EMC: Hop oprydning i skraldespand over\n"
 "Filmhjem sti er den samme som eller en undermappe til skraldespanden"
 
+msgid "Edit Tags"
+msgstr ""
+
 msgid "Empty trashcan"
 msgstr "Tøm skraldespand"
 
@@ -686,8 +691,13 @@ msgstr "Indtast navn på ny mappe:"
 msgid "Exist"
 msgstr "Findes"
 
+#, python-format
 msgid "Exist: %s"
 msgstr "Findes: %s"
+
+#, fuzzy
+msgid "F1-button"
+msgstr "TV-kanp"
 
 msgid "File added to current Playlist."
 msgstr "Fil tilføjet til nuværende Afspilningsliste."
@@ -704,6 +714,7 @@ msgstr "Filnavn:"
 msgid "Files added to current Playlist."
 msgstr "Fil tilføjet til nuværende Afspilningsliste."
 
+#, fuzzy, python-format
 msgid ""
 "Files added to current Playlist:\n"
 "%(add)s\n"
@@ -717,6 +728,7 @@ msgstr ""
 "Fil eksistere i nuværende Afspilningsliste:\n"
 "%(exit)s"
 
+#, python-format
 msgid ""
 "Files exists in current Playlist:\n"
 "%s"
@@ -759,6 +771,7 @@ msgstr "Genre:"
 msgid "German"
 msgstr "Tysk"
 
+#, python-format
 msgid "Given path %s does not exist. Please change."
 msgstr "Oplyste sti %s finde ikke. Ændre venligst."
 
@@ -917,9 +930,6 @@ msgstr "Hvor mange dage kan filer forblive i skraldespand"
 msgid "HELP_Icon shown for initially unknown count / size"
 msgstr "Ikon vist for indledende ukendt ukendt antal / størrelse"
 
-msgid "HELP_Install Mutagen-package for audio metadata"
-msgstr "Installer Mutagen-pakke for lyd metadata"
-
 msgid "HELP_Jump to first mark when playing movie"
 msgstr "Spring til første mærke ved afspinling af film"
 
@@ -961,6 +971,10 @@ msgstr "Lang Info knap"
 
 msgid "HELP_Mark new recordings with a star"
 msgstr "Marker nye optagelser med stjerne"
+
+#, fuzzy
+msgid "HELP_Minimum file cache limit"
+msgstr "Minimum filmellemlager grænse (0=lager alt)"
 
 msgid "HELP_Move finished movies in trashcan"
 msgstr "Flyt afsluttede film til skrældespand"
@@ -1217,21 +1231,17 @@ msgstr "Hvor mange dage kan filer forblive i skraldespand"
 
 msgid ""
 "How to copy files:\n"
-"Select some movies with the VIDEO-button, move the cursor on top of the "
-"destination directory and press yellow long."
+"Select some movies with the VIDEO-button, move the cursor on top of the destination directory and press yellow long."
 msgstr ""
 "Hvordan kopieres filer:\n"
-"Vælg nogle film med VIDEO-knappen, flyt markøren til toppen af "
-"destinationsmappen og tryk længe på den gul knap."
+"Vælg nogle film med VIDEO-knappen, flyt markøren til toppen af destinationsmappen og tryk længe på den gul knap."
 
 msgid ""
 "How to move files:\n"
-"Select some movies with the VIDEO-button, move the cursor on top of the "
-"destination directory and press yellow."
+"Select some movies with the VIDEO-button, move the cursor on top of the destination directory and press yellow."
 msgstr ""
 "Hvordan kopieres filer:\n"
-"Vælg nogle film med VIDEO-knappen, flyt markøren til toppen af "
-"destinationsmappen og tryk på den gul knap."
+"Vælg nogle film med VIDEO-knappen, flyt markøren til toppen af destinationsmappen og tryk på den gul knap."
 
 msgid "IMDBSearch / EMC-TMDBInfo / TMDBInfo / TMBDInfo / CSFDInfo"
 msgstr "IMDBSearch / EMC-TMDBInfo / TMDBInfo / TMBDInfo / CSFDInfo"
@@ -1247,12 +1257,6 @@ msgstr "Ikon vist for indledende ukendt antal / størrelse"
 
 msgid "Information"
 msgstr "Information"
-
-msgid "Install Mutagen-package for audio metadata"
-msgstr "Installer Mutagen-pakke for lyd metadata"
-
-msgid "Installing Mutagen-package"
-msgstr "Installere Mutagen-pakke"
 
 msgid "Italian"
 msgstr "Italiensk"
@@ -1333,16 +1337,10 @@ msgid "Load Vote:"
 msgstr "Hent stemmer:"
 
 msgid "Load default settings will overwrite all settings, really load them?"
-msgstr ""
-"Hentes standardindstillinger vil alle indstillinger blive overskrevet, skal de "
-"virkelig hentes ?"
+msgstr "Hentes standardindstillinger vil alle indstillinger blive overskrevet, skal de virkelig hentes ?"
 
-msgid ""
-"Locate rogue files and remove them? (permanently if no trashcan available, may "
-"take a minute or so)"
-msgstr ""
-"Find slyngelfiler og fjern dem? (permanent hvis skraldespand ikke tilgængelig, "
-"kan tage et minut eller to)"
+msgid "Locate rogue files and remove them? (permanently if no trashcan available, may take a minute or so)"
+msgstr "Find slyngelfiler og fjern dem? (permanent hvis skraldespand ikke tilgængelig, kan tage et minut eller to)"
 
 msgid "Location:"
 msgstr "Placering:"
@@ -1407,19 +1405,11 @@ msgstr "Flyt markør en side ned"
 msgid "Move cursor page up"
 msgstr "Flyt markør en side op"
 
-msgid ""
-"Move cursor to the end / Move cursor x entries down / Switch Folders in Movie "
-"Home (down)"
-msgstr ""
-"Flyt markør til slutningen / Flyt markør X elementer ned / Skift mappe i "
-"Filmhjem (nedad)"
+msgid "Move cursor to the end / Move cursor x entries down / Switch Folders in Movie Home (down)"
+msgstr "Flyt markør til slutningen / Flyt markør X elementer ned / Skift mappe i Filmhjem (nedad)"
 
-msgid ""
-"Move cursor to the top / Move cursor x entries up / Switch Folders in Movie "
-"Home (up)"
-msgstr ""
-"Flyt markør til starten / Flyt markør X elementer op / Skift mappe i Filmhjem "
-"(opad)"
+msgid "Move cursor to the top / Move cursor x entries up / Switch Folders in Movie Home (up)"
+msgstr "Flyt markør til starten / Flyt markør X elementer op / Skift mappe i Filmhjem (opad)"
 
 msgid "Move cursor up"
 msgstr "Flyt markør op"
@@ -1433,6 +1423,7 @@ msgstr "Flyt afsluttede film til skrældespand"
 msgid "Movie Color"
 msgstr "Filmfarve"
 
+#, python-format
 msgid ""
 "Movie Cover downloaded successfully!\n"
 "\n"
@@ -1460,6 +1451,7 @@ msgstr "Filminformation og omslag hentet med held!"
 msgid "Movie Information downloaded successfully!"
 msgstr "Filminformation hentet med held!"
 
+#, python-format
 msgid ""
 "Movie Information downloaded successfully!\n"
 "\n"
@@ -1506,6 +1498,7 @@ msgstr "Næste auto-start om "
 msgid "No"
 msgstr "Nej"
 
+#, python-format
 msgid "No Cover: %s"
 msgstr "Ingen omslag: %s"
 
@@ -1529,6 +1522,9 @@ msgstr "Genoptag ikke under 10 sekunder"
 
 msgid "No rogue files found."
 msgstr "Ingen slyngelfiler fundet."
+
+msgid "No script operation for VLC streams."
+msgstr ""
 
 msgid "Not all timers have been stopped. Modify them with the timer editor."
 msgstr "Ikke alle Timers er blevet stoppet. Ændre dem med Timerredigering."
@@ -1659,8 +1655,8 @@ msgstr "Fremgangssortering faldende (P-)"
 msgid "ProgressBar"
 msgstr "Fremgangsbjælke"
 
-msgid "Quick-button"
-msgstr "Kvik-knap"
+msgid "REC"
+msgstr ""
 
 msgid "Radio-button"
 msgstr "Radio-knap"
@@ -1734,6 +1730,7 @@ msgstr "Nulstil markering på valgte film"
 msgid "Resolve links and show real path"
 msgstr "Opløs lænker og vis virkelig sti"
 
+#, python-format
 msgid "Resume position at %s"
 msgstr "Genoptag fra sidste position ved %s"
 
@@ -1779,12 +1776,9 @@ msgstr "Gennemsøg lænkede mapper"
 msgid "Search"
 msgstr "Søg"
 
+#, python-format
 msgid "Search Results per Search Site%s:"
 msgstr "Søgeresultater pr. søgeside %s:"
-
-#, fuzzy
-msgid "Search Site:"
-msgstr "Søg side:"
 
 msgid "Search filter for matching existing terms in the title:"
 msgstr "Søgefilter til sammenligning af eksisterende udtryk i titlen:"
@@ -1792,6 +1786,7 @@ msgstr "Søgefilter til sammenligning af eksisterende udtryk i titlen:"
 msgid "Search results for:"
 msgstr "Søgeresultater for:"
 
+#, python-format
 msgid "Searching for %s"
 msgstr "Søger efter %s"
 
@@ -2024,12 +2019,11 @@ msgstr "Tekst vist for indledende ukendt mappestørrelse"
 msgid "Text shown for initially unknown file count"
 msgstr "Tekst vist for indledende ukendt filantal"
 
-msgid ""
-"The directory %s is already locked. Do you want to unlock it and all its "
-"subfolders?"
-msgstr ""
-"Mappen er %s er allerede låst. Vil du låse den og alle dens undermapper op?"
+#, python-format
+msgid "The directory %s is already locked. Do you want to unlock it and all its subfolders?"
+msgstr "Mappen er %s er allerede låst. Vil du låse den og alle dens undermapper op?"
 
+#, python-format
 msgid ""
 "The following files are used for other entrys in List !\n"
 "\n"
@@ -2043,17 +2037,11 @@ msgstr ""
 "\n"
 "%s"
 
-msgid "The python-mutagen package is not available on the feed."
-msgstr "Python-mutagen pakken er ikke tilgængelig på Feedet."
-
 msgid "This element belongs to a locked folder and cannot be deleted!"
 msgstr "Dette element tilhøre en låst mappe og kan ikke slettes!"
 
 msgid "This folder is locked or contains a locked subfolder, unlock it first!"
 msgstr "Denne mappe er låst elle indeholder låste undermapper, lås først op!"
-
-msgid "Timeshift-button"
-msgstr "Timeshift-knap"
 
 msgid "Title"
 msgstr "Titel"
@@ -2239,9 +2227,6 @@ msgstr "konfiguration"
 msgid "covers in"
 msgstr "omslag i"
 
-msgid "csfd.cz"
-msgstr "csfd.cz"
-
 msgid "daily auto-start"
 msgstr "Daglig auto-start"
 
@@ -2298,9 +2283,6 @@ msgstr "Film i"
 
 msgid "never hide"
 msgstr "Skjul aldrig"
-
-msgid "no"
-msgstr "Nej"
 
 msgid "no limit"
 msgstr "Ingen grænse"
@@ -2359,14 +2341,6 @@ msgstr "themoviedb.org"
 msgid "themoviedb.org + thetvdb.com"
 msgstr "themoviedb.org + thetvdb.com"
 
-msgid "themoviedb.org + thetvdb.com + imdb.com"
-msgstr "themoviedb.org + thetvdb.com + imdb.com"
-
-msgid ""
-"themoviedb.org for movies + thetvdb.com for series (e.g. 'S01E01' in title)"
-msgstr ""
-"themoviedb.org til film + thetvdb.com til serier (f.eks. 'S01E01' i titel)"
-
 msgid "thetvdb cover number (standard cover):"
 msgstr "thetvdb omslagsnummer (standard omslag):"
 
@@ -2409,5 +2383,5 @@ msgstr "Op/Ned"
 msgid "view extensions..."
 msgstr "Se udvidelser..."
 
-msgid "yes"
-msgstr "Ja"
+msgid "x"
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-02 19:47+0100\n"
+"POT-Creation-Date: 2023-02-12 22:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -618,6 +618,9 @@ msgid ""
 "Movie Home Path is equal to or a subfolder of the Trashcan"
 msgstr ""
 
+msgid "Edit Tags"
+msgstr ""
+
 msgid "Empty trashcan"
 msgstr ""
 
@@ -875,9 +878,6 @@ msgid "HELP_How many days files may remain in trashcan"
 msgstr ""
 
 msgid "HELP_Icon shown for initially unknown count / size"
-msgstr ""
-
-msgid "HELP_Install Mutagen-package for audio metadata"
 msgstr ""
 
 msgid "HELP_Jump to first mark when playing movie"
@@ -1200,12 +1200,6 @@ msgid "Icon shown for initially unknown count / size"
 msgstr ""
 
 msgid "Information"
-msgstr ""
-
-msgid "Install Mutagen-package for audio metadata"
-msgstr ""
-
-msgid "Installing Mutagen-package"
 msgstr ""
 
 msgid "Italian"
@@ -1968,9 +1962,6 @@ msgid ""
 "%s"
 msgstr ""
 
-msgid "The python-mutagen package is not available on the feed."
-msgstr ""
-
 msgid "This element belongs to a locked folder and cannot be deleted!"
 msgstr ""
 
@@ -2210,9 +2201,6 @@ msgstr ""
 msgid "never hide"
 msgstr ""
 
-msgid "no"
-msgstr ""
-
 msgid "no limit"
 msgstr ""
 
@@ -2313,7 +2301,4 @@ msgid "view extensions..."
 msgstr ""
 
 msgid "x"
-msgstr ""
-
-msgid "yes"
 msgstr ""

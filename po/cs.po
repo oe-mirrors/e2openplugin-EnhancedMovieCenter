@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMC V.4.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-08 15:09+0200\n"
+"POT-Creation-Date: 2023-02-12 22:31+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: Swiss-MAD\n"
@@ -16,1790 +16,283 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-SearchPath-0: src\n"
 
-#: EMCCoverSearch.py:47 EMCCoverSearch.py:48
-msgid "imdb.de"
-msgstr "imdb.de"
-
-#: EMCCoverSearch.py:47
-msgid "themoviedb.org"
-msgstr "themoviedb.org"
-
-#: EMCCoverSearch.py:47 EMCCoverSearch.py:48
-msgid "csfd.cz"
-msgstr "csfd.cz"
-
-#: EMCCoverSearch.py:47 EMCCoverSearch.py:48
-msgid "all"
-msgstr "vše"
-
-#: EMCCoverSearch.py:48
-msgid "thetvdb.com"
-msgstr "thetvdb.com"
-
-#: EMCCoverSearch.py:97 EMCCoverSearch.py:238 EMCCoverSearch.py:248
-#: EMCCoverSearch.py:361
-msgid "Exist"
-msgstr "Existuje"
-
-#: EMCCoverSearch.py:97 EMCCoverSearch.py:241 EMCCoverSearch.py:248
-#: EMCCoverSearch.py:412 EMCCoverSearch.py:442
-msgid "N/A"
-msgstr "N/A"
-
-#: EMCCoverSearch.py:193
-msgid "Search"
-msgstr "Hledat"
-
-#: EMCCoverSearch.py:195 MovieSelection.py:2198 MovieSelectionMenu.py:107
-#: MovieSelectionMenu.py:109 plugin.py:170 plugin.py:191
-msgid "Delete"
-msgstr "Odstranit"
-
-#: EMCCoverSearch.py:205
-msgid "Press green button to start search"
-msgstr "Hledat přes zelené tlačítko"
-
-#: EMCCoverSearch.py:207
-msgid "Manage Cover"
-msgstr "Správa potisku"
-
-#: EMCCoverSearch.py:208 MovieInfo.py:270 MovieInfo.py:439
-msgid "Setup"
-msgstr "Nastavení"
-
-#: EMCCoverSearch.py:209
-msgid "Single search"
-msgstr "Samostatné vyhledání"
-
-#: EMCCoverSearch.py:223
-msgid "EMC Cover search"
-msgstr "EMC - vyhledávání potisků"
-
-#: EMCCoverSearch.py:248
-msgid "Total"
-msgstr "Celkem"
-
-#: EMCCoverSearch.py:340 EMCCoverSearch.py:364 EMCCoverSearch.py:447
-#, python-format
-msgid "Exist: %s"
-msgstr "Existuje: %s"
-
-#: EMCCoverSearch.py:341 EMCCoverSearch.py:363 EMCCoverSearch.py:446
-#, python-format
-msgid "No Cover: %s"
-msgstr "Žádný obal : %s"
-
-#: EMCCoverSearch.py:342 EMCCoverSearch.py:365 EMCCoverSearch.py:448
-#, python-format
-msgid "Download: %s"
-msgstr "Stáhnout:  %s"
-
-#: EMCCoverSearch.py:343
-msgid "Searching..."
-msgstr "Vyhledávám..."
-
-#: EMCCoverSearch.py:351
-msgid "Creating Search List.."
-msgstr "Vytvářím vyhledávaný seznam..."
-
-#: EMCCoverSearch.py:391
-msgid "No Movies found!"
+msgid " (without counting cover range)"
 msgstr ""
 
-#: EMCCoverSearch.py:444
-msgid "from"
-msgstr "z"
+msgid " Deleting remotely recorded and it will display an rec-error dialog on the other DB."
+msgstr "Odebrání vzdálených nahrávek a zobrazení dialogu chyb nahrávání na druhém přístroji."
 
-#: EMCCoverSearch.py:457
-msgid "movies in"
-msgstr "filmů za"
+msgid " all selected video files?"
+msgstr "všechny vybrané filmy?"
 
-#: EMCCoverSearch.py:457
-msgid "sec found. Avg. Speed:"
-msgstr "sek vyhledáno. Prům.rychlost:"
+msgid " all selected video files? The currently playing movie is also one of the selections and its playback will be stopped."
+msgstr " všechny vybrané filmy? Momentálně přehrávaný film je jedním z vybraných - jeho přehrávání bude zastaveno!"
 
-#: EMCCoverSearch.py:457
-msgid "sec."
-msgstr "sek."
+msgid " currently played?"
+msgstr "momentálně přehrávané?"
 
-#: EMCCoverSearch.py:508
+msgid " files\n"
+msgstr " souborů\n"
+
+msgid " permanently"
+msgstr " trvale"
+
+#, python-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#, python-format
+msgid "%s not removed. Write protect?"
+msgstr ""
+
 #, python-format
 msgid "%s removed."
 msgstr "%s odstraněno."
 
-#: EMCCoverSearch.py:560
-#, python-format
-msgid "Search site set to: %s"
-msgstr "Vyhledávání nastaveno na: %s"
+msgid "( # )"
+msgstr "( # )"
 
-#: EMCCoverSearch.py:569
-msgid "Cover is Saved."
-msgstr "\"Potisk\" byl uložený"
+msgid "( # / GB )"
+msgstr "( # / GB )"
 
-#: EMCCoverSearch.py:698
-msgid "EMC Cover search setup"
-msgstr "EMC - nastavení vyhledávání potisků"
+msgid "( GB )"
+msgstr "( GB )"
 
-#: EMCCoverSearch.py:700 EMCPlayList.py:132 EMCPlayList.py:472
-#: EMCPlayList.py:545 EnhancedMovieCenter.py:257 MovieInfo.py:736
-#: MovieRetitle.py:32
-msgid "Cancel"
-msgstr "Zrušit"
+msgid "(Un-)Lock Directory"
+msgstr "Zamknout/Odemknout složku"
 
-#: EMCCoverSearch.py:701 MovieInfo.py:737
-msgid "OK"
-msgstr "OK"
-
-#: EMCCoverSearch.py:704
-msgid "Search Site:"
-msgstr "Vyhledávat přes :"
-
-#: EMCCoverSearch.py:705
-msgid "themoviedb cover resolution:"
-msgstr ""
-
-#: EMCCoverSearch.py:706
-msgid "Save description to movie.txt file:"
-msgstr ""
-
-#: EMCCoverSearch.py:707
-msgid "Single Search:"
-msgstr "Jednoltivé vyhledávání:"
-
-#: EMCCoverSearch.py:749
-msgid "EMC Cover Selecter"
-msgstr ""
-
-#: EMCCoverSearch.py:766
-#, python-format
-msgid "Searching for %s"
-msgstr "Vyhledávám %s"
-
-#: EMCCoverSearch.py:778 EMCCoverSearch.py:816 EMCCoverSearch.py:826
-#: EMCCoverSearch.py:851 EMCCoverSearch.py:854 EMCCoverSearch.py:872
-#: EMCCoverSearch.py:895 EMCCoverSearch.py:911
-msgid "found"
-msgstr "nalezeno"
-
-#: EMCCoverSearch.py:778 EMCCoverSearch.py:816 EMCCoverSearch.py:826
-#: EMCCoverSearch.py:851 EMCCoverSearch.py:854 EMCCoverSearch.py:872
-#: EMCCoverSearch.py:895
-msgid "covers"
-msgstr ""
-
-#: EMCCoverSearch.py:911
-msgid "covers in"
-msgstr "obalů za"
-
-#: EMCCoverSearch.py:911
-msgid "sec"
-msgstr "sek"
-
-#: EMCCoverSearch.py:981
-msgid "Can not save "
-msgstr ""
-
-#: EMCCoverSearch.py:995
-msgid "Can not save Cover in "
-msgstr ""
-
-#: EMCCoverSearch.py:1015
-msgid "Move Cover to:"
-msgstr ""
-
-#: EMCCoverSearch.py:1016 EMCPlayList.py:485 EnhancedMovieCenter.py:739
-#: MovieSelection.py:2740 MovieSelection.py:2780 MovieSelection.py:2812
-#: MovieSelection.py:2852 MovieSelection.py:2877 MovieSelectionMenu.py:294
-msgid "Choose directory"
-msgstr "Vybrat složku"
-
-#: EMCMediaCenter.py:151 EMCMediaCenter.py:156
-msgid "Stop playback"
-msgstr "Zastavit přehrávání"
-
-#: EMCMediaCenter.py:161
-msgid "show DVD main menu"
-msgstr "otevřít hlavní menu DVD"
-
-#: EMCMediaCenter.py:163
-msgid "forward to the next chapter"
-msgstr "přejít na další kapitolu"
-
-#: EMCMediaCenter.py:164
-msgid "rewind to the previous chapter"
-msgstr "přejít na předchozí kapitolu"
-
-#: EMCMediaCenter.py:165 EMCMediaCenter.py:193
-msgid "jump forward to the next title"
-msgstr "přejít na následující titul"
-
-#: EMCMediaCenter.py:166 EMCMediaCenter.py:194
-msgid "jump back to the previous title"
-msgstr "přejít na předchozí titul"
-
-#: EMCMediaCenter.py:167
 msgid "(show optional DVD audio menu)"
 msgstr "(zobrazit volitelné audio menu DVD)"
 
-#: EMCMediaCenter.py:168
-msgid "switch to the next audio track"
-msgstr "přepnout na další audio stopu"
+msgid "*** Multiselection active ***"
+msgstr "*** Aktivní vícenásobný výběr ***"
 
-#: EMCMediaCenter.py:169
-msgid "switch to the next subtitle language"
-msgstr "přepnout na další jazyk titulků"
+#, fuzzy
+msgid ".../foldername.jpg"
+msgstr "Složka:"
 
-#: EMCMediaCenter.py:170
-msgid "switch to the next angle"
-msgstr "přepnout na další úhel pohledu"
+msgid ".../foldername/folder.jpg"
+msgstr ""
 
-#: EMCMediaCenter.py:189
-msgid "view extensions..."
-msgstr "otevřít rozšířené menu..."
+msgid ".../foldername/foldername.jpg"
+msgstr ""
 
-#: EMCMediaCenter.py:190
-msgid "Format AVSwitch"
-msgstr "Přepnout formát filmu"
-
-#: EMCMediaCenter.py:191
-msgid "Seek forward"
-msgstr "Rychle dopředu"
-
-#: EMCMediaCenter.py:192
-msgid "Seek backward"
-msgstr "Rychle zpět"
-
-#: EMCMediaCenter.py:195
-msgid "Movie information"
-msgstr "Informace o filmu"
-
-#: EMCMediaCenter.py:382
-msgid "No DVD-Player found!"
-msgstr "DVD přehrávač není dostupný !"
-
-#: EMCMediaCenter.py:433
 msgid ""
-"Skipping movie, the file does not exist.\n"
+"ATTENTION\n"
 "\n"
-msgstr ""
-"Přeskočit neexistující filmy.\n"
+"This option will move all finished movies in Movie Home automatically to Your trashcan at the given time.\n"
+"At next trashcan cleanup all movies will be deleted.\n"
 "\n"
-
-#: EMCMediaCenter.py:473
-msgid ""
-"EMC\n"
-"Zap to Live TV of record"
+"Confirm this with the blue key followed by the green key."
 msgstr ""
-"EMC centrum ...\n"
-"Zapnout záznam Live TV "
-
-#: EMCMediaCenter.py:914
-msgid "Chap."
-msgstr "Kap."
-
-#: EMCMediaCenter.py:915
-msgid "Chapter"
-msgstr "Kapitola"
-
-#: EMCMediaCenter.py:916
-msgid "Title"
-msgstr "Název"
-
-#: EMCPlayList.py:131 EMCPlayList.py:473 EnhancedMovieCenter.py:258
-#: MovieInfo.py:271 MovieInfo.py:441 MovieRetitle.py:31
-msgid "Save"
-msgstr "Uložit"
-
-#: EMCPlayList.py:133
-msgid "Delete Entry"
-msgstr ""
-
-#: EMCPlayList.py:134
-msgid "Delete All"
-msgstr ""
-
-#: EMCPlayList.py:154
-msgid "EMC Playlist"
-msgstr ""
-
-#: EMCPlayList.py:161
-msgid "EMC Playlist Menu"
-msgstr ""
-
-#: EMCPlayList.py:162
-msgid "Playlist open"
-msgstr ""
-
-#: EMCPlayList.py:163
-msgid "Setup open"
-msgstr ""
-
-#: EMCPlayList.py:171
-msgid ""
-"Default Playlist is not empty!\n"
+"Upozornění :\n"
 "\n"
-"Save default Playlist?"
-msgstr ""
-
-#: EMCPlayList.py:233
-msgid ""
-"Playlist with same name exists!\n"
+"Tato volba přesune automaticky všechny ukončené filmy ze základní složky do koše v nastavené době.\n"
+"Později (podle nastavení) budou všechny filmy odstraněny i z koše.\n"
 "\n"
-"Try to save the Playlist with another name?"
+"Toto potvrďte modrým tlačítkem a následně tlačítkem zeleným."
+
+msgid "AUDIO METADATA"
 msgstr ""
 
-#: EMCPlayList.py:237
-msgid "Change the filename to save current Playlist:"
+msgid "AUTOSTART"
 msgstr ""
 
-#: EMCPlayList.py:237
-msgid "Save current Playlist"
-msgstr ""
-
-#: EMCPlayList.py:255
-msgid "Current Playlist saved successfully!"
-msgstr ""
-
-#: EMCPlayList.py:258
-msgid "Can not save current Playlist!"
-msgstr ""
-
-#: EMCPlayList.py:461
-msgid "Default Playlist path"
-msgstr ""
-
-#: EMCPlayList.py:462
-msgid "Default Playlist name"
-msgstr ""
-
-#: EMCPlayList.py:463
-msgid "Always save current Playlist"
-msgstr ""
-
-#: EMCPlayList.py:477
-msgid "EMC Playlist Setup"
-msgstr ""
-
-#: EMCPlayList.py:484
-msgid "Choose Directory:"
-msgstr ""
-
-#: EMCPlayList.py:501
-msgid "Enter Name for Playlist"
-msgstr ""
-
-#: EMCPlayList.py:546
-msgid "Open"
-msgstr ""
-
-#: EMCPlayList.py:560
-msgid "EMC Filebrowser"
-msgstr ""
-
-#: EMCTasker.py:201
-msgid "Next auto-start in "
-msgstr "Další automatický start v"
-
-#: EMCTasker.py:203
-msgid "auto-start is currently not active."
-msgstr "aut. start není momentálně aktivní."
-
-#: EMCTasker.py:215
-msgid ""
-"Your Box is about to go into Standby, continue?\n"
-" Select no to delay one hour"
-msgstr ""
-"Přijímač má přejít do pohotovostního režimu, pokračovat?\n"
-" Volba Ne odloží přechod o hodinu"
-
-#: EMCTasker.py:217
-msgid ""
-"Your Box is about to go into DeepStandby, continue?\n"
-" Select no to delay one hour"
-msgstr ""
-"Přijímač se má vypnout, pokračovat?\n"
-" Volba Ne odloží vypnutí o jednu hodinu."
-
-#: EMCTasker.py:219
-msgid ""
-"Your Box is about to go into Reboot, continue?\n"
-" Select no to delay one hour"
-msgstr ""
-"Přijímač se má restartovat, pokračovat?\n"
-" Volba Ne odloží restart o jednu hodinu."
-
-#: EMCTasker.py:221
-msgid ""
-"Your Box is about to go into E2 Restart, continue?\n"
-" Select no to delay one hour"
-msgstr ""
-"Přijímač má restartovat GUI, pokračovat?\n"
-" Volba Ne odloží restart GUI o jednu hodinu."
-
-#: EnhancedMovieCenter.py:195 EnhancedMovieCenter.py:216
-msgid "Custom"
-msgstr "Uživatelský"
-
-#: EnhancedMovieCenter.py:196
-msgid "Default"
-msgstr "Přednastavené"
-
-#: EnhancedMovieCenter.py:197
-msgid "Performance"
-msgstr "Výkon"
-
-#: EnhancedMovieCenter.py:198
-msgid "Information"
-msgstr "Informace"
-
-#: EnhancedMovieCenter.py:318
 msgid "About"
 msgstr "Info o pluginu"
 
-#: EnhancedMovieCenter.py:318
-msgid "HELP_About"
-msgstr "Nápověda - informace o pluginu"
+msgid "Add directory to E2 Bookmarks"
+msgstr "Přidat složku do E2 záložek"
 
-#: EnhancedMovieCenter.py:320
-msgid "Disable EMC"
-msgstr "Deaktivovat plugin EMC"
+msgid "Add directory to EMC Bookmarks"
+msgstr "Přidat složku do EMC záložek"
 
-#: EnhancedMovieCenter.py:320
-msgid "HELP_Disable EMC"
-msgstr ""
-"Nápověda - deaktivace EMC jako celku. Speciální funkce, jako vyprázdnění "
-"časovače, koše nebo automatický restart Enigmy na pozadí bude stále funkční."
-
-#: EnhancedMovieCenter.py:322
-msgid "Start EMC with"
-msgstr "Nastavit spouštěcí klávesu pro EMC centrum"
-
-#: EnhancedMovieCenter.py:322
-msgid "HELP_Start EMC with"
-msgstr "Nápověda - nastavení spouštěcí klávesy pro start EMC..."
-
-#: EnhancedMovieCenter.py:323
-msgid "Show plugin config in extensions menu"
-msgstr "Zobrazit konfiguraci EMC v rozšířeném menu"
-
-#: EnhancedMovieCenter.py:323
-msgid "HELP_Show plugin config in extensions menu"
-msgstr ""
-"Nápověda - zobrazit konfiguraci modulu v rozšířeném menu. (Normálně je pod "
-"modrým tlačítkem.)"
-
-#: EnhancedMovieCenter.py:324
-msgid "Show EMC in extensions menu"
-msgstr "Zobrazit EMC modul v rozšířeném menu"
-
-#: EnhancedMovieCenter.py:324
-msgid "HELP_Show EMC in extensions menu"
-msgstr ""
-"Nápověda - zobrazit EMC modul v rozšířeném menu. (Normálně je rozšířené menu "
-"pod modrým tlačítkem)"
-
-#: EnhancedMovieCenter.py:326
-msgid "HELP_Key assignment Separator"
-msgstr "Nápověda - přiřazení oddělovače"
-
-#: EnhancedMovieCenter.py:327
-msgid "Bouquet buttons behaviour"
-msgstr "Chování tlačítka Bouquet"
-
-#: EnhancedMovieCenter.py:327
-msgid "HELP_Bouquet buttons behaviour"
-msgstr ""
-"Nápověda - chování tlačítka Bouquet - skok na začátek/konec seznamu nebo "
-"vynechat jen několik položek"
-
-#: EnhancedMovieCenter.py:328
-msgid "List entries to skip"
-msgstr "Přeskočit v seznamu x řádků"
-
-#: EnhancedMovieCenter.py:328
-msgid "HELP_List entries to skip"
-msgstr "Nápověda - přeskočit více zadání v seznamu"
-
-#: EnhancedMovieCenter.py:329
-msgid "Red button function"
-msgstr "Funkce červeného tlačítka"
-
-#: EnhancedMovieCenter.py:329
-msgid "HELP_Red button function"
-msgstr ""
-"Nápověda - k vybrané položce může být přiřazena funkce červeného tlačítka  "
-
-#: EnhancedMovieCenter.py:330
-msgid "Long Red button function"
-msgstr "Funkce pro dlouhý stisk červeného tlačítka"
-
-#: EnhancedMovieCenter.py:330
-msgid "HELP_Long Red button function"
-msgstr ""
-"Nápověda - k vybrané položce může být přiřazena funkce pro dlouhý stisk "
-"červeného tlačítka"
-
-#: EnhancedMovieCenter.py:333
-msgid "Yellow button function"
-msgstr "Funkce žlutého tlačítka"
-
-#: EnhancedMovieCenter.py:333
-msgid "HELP_Yellow button function"
-msgstr ""
-"Nápověda - k vybrané položce může být přiřazena funkce žlutého tlačítka"
-
-#: EnhancedMovieCenter.py:334
-msgid "Long Yellow button function"
-msgstr "Funkce pro dlouhý stisk žlutého tlačítka"
-
-#: EnhancedMovieCenter.py:334
-msgid "HELP_Long Yellow button function"
-msgstr ""
-"Nápověda - k vybrané položce může být přiřazena funkce pro dlouhý stisk "
-"žlutého tlačítka"
-
-#: EnhancedMovieCenter.py:335
-msgid "Blue button function"
-msgstr "Funkce modrého tlačítka"
-
-#: EnhancedMovieCenter.py:335
-msgid "HELP_Blue button function"
-msgstr ""
-"Nápověda - k vybrané položce může být přiřazena funkce modrého tlačítka  "
-
-#: EnhancedMovieCenter.py:336
-msgid "Long Blue button function"
-msgstr "Funkce pro dlouhý stisk modrého tlačítka"
-
-#: EnhancedMovieCenter.py:336
-msgid "HELP_Long Blue button function"
-msgstr ""
-"Nápověda - k vybrané položce může být přiřazena funkce pro dlouhý stisk "
-"modrého tlačítka"
-
-#: EnhancedMovieCenter.py:338 EnhancedMovieCenter.py:345
-#: EnhancedMovieCenter.py:354 EnhancedMovieCenter.py:389
-#: EnhancedMovieCenter.py:399 EnhancedMovieCenter.py:426
-#: EnhancedMovieCenter.py:453
-msgid " "
-msgstr " "
-
-#: EnhancedMovieCenter.py:339
-msgid "daily auto-start"
-msgstr "Startovat denně automaticky přes..."
-
-#: EnhancedMovieCenter.py:339
-msgid "HELP_Daily auto-start"
-msgstr "Nápověda - denní automatický start"
-
-#: EnhancedMovieCenter.py:340
-msgid "auto-start window begin"
-msgstr "Okno - aut. start v..."
-
-#: EnhancedMovieCenter.py:340
-msgid "HELP_auto-start window begin"
-msgstr "Nápověda - automatický start úvodního okna"
-
-#: EnhancedMovieCenter.py:341
-msgid "auto-start window end"
-msgstr "Okno - aut. konec v..."
-
-#: EnhancedMovieCenter.py:341
-msgid "HELP_auto-start window end"
-msgstr "Nápověda - automatický start okna ukončení"
-
-#: EnhancedMovieCenter.py:342
-msgid "Force standby after auto-restart"
-msgstr "Po aut.restartu nastavit pohotovostní režim"
-
-#: EnhancedMovieCenter.py:342
-msgid "HELP_Force standby after auto-start"
-msgstr "Nápověda - vynucený pohotovostního režim po automatickém spuštění"
-
-#: EnhancedMovieCenter.py:343
-msgid "LongInfo Button"
-msgstr "Dlouhý stisk tlačítka \"Info\""
-
-#: EnhancedMovieCenter.py:343
-msgid "HELP_LongInfo Button"
-msgstr "Nápověda - volba pro dlouhý stisk tlačítka Info"
-
-#: EnhancedMovieCenter.py:346
-msgid "Movie home at start"
-msgstr "Začít na základní složce filmů"
-
-#: EnhancedMovieCenter.py:346
-msgid "HELP_Movie home at start"
-msgstr ""
-"Nápověda - EMC startuje vždy na složce \"Movie\". (Jinak se otevírá na "
-"posledním použité složce.)"
-
-#: EnhancedMovieCenter.py:347
-msgid "Default sort mode"
-msgstr "Předvolené seřazení"
-
-#: EnhancedMovieCenter.py:347
-msgid "HELP_Sort mode at startup"
-msgstr "Nápověda - seznam filmů se při otevření vždy seřadí podle abecedy."
-
-#: EnhancedMovieCenter.py:349
-msgid "Movie home home path"
-msgstr "Cesta k základní složka filmů"
-
-#: EnhancedMovieCenter.py:349
-msgid "HELP_Movie home home path"
-msgstr "Nápověda - umístění složky \"Movie\"."
-
-#: EnhancedMovieCenter.py:350
-msgid "EMC path access limit"
-msgstr "EMC přístupový limit ke struktuře složek"
-
-#: EnhancedMovieCenter.py:350
-msgid "HELP_EMC path access limit"
-msgstr ""
-"Nápověda - Můžete zadat, jak dalece se dostanete zpět ve struktuře složek. V "
-"\"Menu\" ale máte možnost jít i nad toto omezení o složku výše."
-
-#: EnhancedMovieCenter.py:352
-msgid "Cursor predictive move after selection"
-msgstr "Předvolený posun kurzoru po výběru"
-
-#: EnhancedMovieCenter.py:352
-msgid "HELP_Cursor predictive move after selection"
-msgstr ""
-"Nápověda - předvolený posun kurzoru z [VIDEO/PVR] pro posun tlačítkem při "
-"\"odskoku\" v daném směru."
-
-#: EnhancedMovieCenter.py:355
-msgid "Show symlinks"
-msgstr "Zobrazovat odkazy"
-
-#: EnhancedMovieCenter.py:355
-msgid "HELP_Show symlinks"
-msgstr "Nápověda - zobrazení odkazů v seznamu filmů"
-
-#: EnhancedMovieCenter.py:357
-msgid "Show directories"
-msgstr "Zobrazit složky"
-
-#: EnhancedMovieCenter.py:357
-msgid "HELP_Show directories"
-msgstr "Nápověda - zobrazí složky filmů"
-
-#: EnhancedMovieCenter.py:358
-msgid "Show directories within movielist"
-msgstr "Zobrazit složky uvnitř seznamů filmů"
-
-#: EnhancedMovieCenter.py:358
-msgid "HELP_Show directories within movielist"
-msgstr "Nápověda - zobrazí složky uvnitř seznamů filmů"
-
-#: EnhancedMovieCenter.py:359
-msgid "Configured directories at the top of movielist"
-msgstr "Konfigurace složek nahoře v seznamu filmů"
-
-#: EnhancedMovieCenter.py:359
-msgid "HELP_Configure in etc\\enigma2\\emc-topdir.cfg"
-msgstr "Nápověda - konfigurace v etc\\enigma2\\emc-topdir.cfg"
-
-#: EnhancedMovieCenter.py:360
-msgid "Show directories information"
-msgstr "Zobrazit informace o složkách"
-
-#: EnhancedMovieCenter.py:360
-msgid "HELP_Show directories information"
-msgstr "Nápověda - zobrazení informací ze složek"
-
-#: EnhancedMovieCenter.py:361
-msgid "Text shown for initially unknown file count"
+msgid "Add to Playlist"
 msgstr ""
 
-#: EnhancedMovieCenter.py:361
-msgid "HELP_Text shown for initially unknown file count"
+msgid "Add to current Playlist"
 msgstr ""
 
-#: EnhancedMovieCenter.py:362
-msgid "Text shown for initially unknown count and size"
-msgstr ""
-
-#: EnhancedMovieCenter.py:362
-msgid "HELP_Text shown for initially unknown count and size"
-msgstr ""
-
-#: EnhancedMovieCenter.py:363
-msgid "Text shown for initially unknown directory size"
-msgstr ""
-
-#: EnhancedMovieCenter.py:363
-msgid "HELP_Text shown for initially unknown directory size"
-msgstr ""
-
-#: EnhancedMovieCenter.py:364
-msgid "Icon shown for initially unknown count / size"
-msgstr ""
-
-#: EnhancedMovieCenter.py:364
-msgid "HELP_Icon shown for initially unknown count / size"
-msgstr ""
-
-#: EnhancedMovieCenter.py:365
-msgid "Horizontal alignment for count / size"
-msgstr ""
-
-#: EnhancedMovieCenter.py:365
-msgid "HELP_Horizontal alignment for count / size"
-msgstr ""
-
-#: EnhancedMovieCenter.py:366
-msgid "Show directory size in skin"
-msgstr ""
-
-#: EnhancedMovieCenter.py:366
-msgid "HELP_Show directory size in skin"
-msgstr ""
-
-#: EnhancedMovieCenter.py:368
-msgid "Show Latest Recordings directory"
-msgstr "Zobrazit složku s posledním záznamem"
-
-#: EnhancedMovieCenter.py:368
-msgid "HELP_Show Latest Recordings directory"
-msgstr ""
-"Nápověda - zobrazení složky s posledními záznamy \"Movie\"\n"
-"a zde vnořených podsložek."
-
-#: EnhancedMovieCenter.py:369
-msgid "Latest Recordings directory limit"
-msgstr ""
-
-#: EnhancedMovieCenter.py:369
-msgid "HELP_Latest Recordings directory limit"
-msgstr ""
-
-#: EnhancedMovieCenter.py:370
-msgid "Latest Recordings directory use emc-noscan.cfg"
-msgstr ""
-
-#: EnhancedMovieCenter.py:370
-msgid "HELP_Latest Recordings directory use emc-noscan.cfg"
-msgstr ""
-
-#: EnhancedMovieCenter.py:371
-msgid "Show VLC directory"
-msgstr "Zobrazit VLC složku"
-
-#: EnhancedMovieCenter.py:371
-msgid "HELP_Show VLC directory"
-msgstr ""
-"Nápověda - zobrazení složky pro VlcPlayerExtended modulu, pokud je "
-"nainstalovaný."
-
-#: EnhancedMovieCenter.py:372
-msgid "Show Bookmarks in movielist"
-msgstr "Zobrazit záložky v seznamu filmů"
-
-#: EnhancedMovieCenter.py:372
-msgid "HELP_Show Bookmarks in movielist"
-msgstr "Nápověda - zobrazení záložek v seznamu filmů"
-
-#: EnhancedMovieCenter.py:373
-msgid "Use cache for files and directories"
-msgstr "Použít cache pro soubory a složky"
-
-#: EnhancedMovieCenter.py:373
-msgid "HELP_Use cache for files and directories"
-msgstr "Nápověda - využívat přednačtení souborů a složek."
-
-#: EnhancedMovieCenter.py:374
-msgid "Minimum file cache limit (0=cache everything)"
-msgstr ""
-
-#: EnhancedMovieCenter.py:374
-msgid "HELP_Minimum file cache limit"
-msgstr ""
-
-#: EnhancedMovieCenter.py:375
-msgid "Show experimental options"
-msgstr ""
-
-#: EnhancedMovieCenter.py:375
-msgid "HELP_Show experimental options"
-msgstr ""
-
-#: EnhancedMovieCenter.py:376
-msgid "Don't auto scan size of dirs from emc-noscan.cfg"
-msgstr ""
-
-#: EnhancedMovieCenter.py:376
-msgid "HELP_Don't auto scan size of dirs from emc-noscan.cfg"
-msgstr ""
-
-#: EnhancedMovieCenter.py:377
 msgid "After file OPs only re-scan affected dirs"
 msgstr ""
 
-#: EnhancedMovieCenter.py:377
-msgid "HELP_After file OPs only re-scan affected dirs"
-msgstr ""
-
-#: EnhancedMovieCenter.py:378
-msgid "Wake device when entering dir from emc-noscan.cfg"
-msgstr ""
-
-#: EnhancedMovieCenter.py:378
-msgid "HELP_Wake device when entering dir from emc-noscan.cfg"
-msgstr ""
-
-#: EnhancedMovieCenter.py:380
-msgid "HELP_separator_hide&performance"
-msgstr "Nápověda - nastavení pro skrývání souborů a složek "
-
-#: EnhancedMovieCenter.py:381
-msgid "Hide configured entries"
-msgstr "Skrýt konfiguraci položek"
-
-#: EnhancedMovieCenter.py:381
-msgid "HELP_cfghide_enable"
-msgstr ""
-"Nápověda - soubory a složky, které chcete skrýt, zapisujte do '/etc/enigma2/"
-"emc-hide.cfg' Při změně nastavení je nutný restart Enigmy2."
-
-#: EnhancedMovieCenter.py:382
-msgid "Scan for DVD structures"
-msgstr "DVD struktura jako celek"
-
-#: EnhancedMovieCenter.py:382
-msgid "HELP_Scan for DVD structures"
-msgstr ""
-"Nápověda - prohledat strukturu DVD nebo ji spustit ji jako celek. Lze tak "
-"zamezit zbytečnému prohledávání dat a startu disků."
-
-#: EnhancedMovieCenter.py:383
-msgid "Scan for movie structures"
-msgstr "Vyhledávat filmové struktury"
-
-#: EnhancedMovieCenter.py:383
-msgid "HELP_Scan for movie structures"
-msgstr ""
-"Nápověda - vyhledávání filmových struktur. Prochází složky a zjišťuje, zda "
-"se v nich nachází filmy podle koncovky např. avi."
-
-#: EnhancedMovieCenter.py:384
-msgid "Scan for bluray structures"
-msgstr "Vyhledávat bluray struktury"
-
-#: EnhancedMovieCenter.py:384
-msgid "HELP_Scan for bluray structures"
-msgstr ""
-"Nápověda - vyhledávání bluray struktur. Prochází složky a zjišťuje, zda se v "
-"nich nachází bluray disky/struktury. Lze tak zamezit zbytečnému prohledávání "
-"dat a startu disků."
-
-#: EnhancedMovieCenter.py:385
-msgid "Scan for bluray structures in .iso"
-msgstr ""
-
-#: EnhancedMovieCenter.py:385
-msgid "HELP_Scan for bluray structures in .iso"
-msgstr ""
-
-#: EnhancedMovieCenter.py:386
-msgid "Suppress scan in selected folders"
-msgstr "Potlačit prohledávání ve vybraných složkách"
-
-#: EnhancedMovieCenter.py:386
-msgid "HELP_cfgscan_suppress"
-msgstr ""
-"Nápověda - zápis seznamu cest ke složkám (umístění) do souboru '/etc/enigma2/"
-"emc-noscan.cfg'  (např. DVD). Lze tady zamezit probuzení harddisku nebo "
-"jednotek v síti."
-
-#: EnhancedMovieCenter.py:387
-msgid "Scan linked folders"
-msgstr "Prohledat odkazy (linky) na složky"
-
-#: EnhancedMovieCenter.py:387
-msgid "HELP_scan_linked"
-msgstr ""
-"Nápověda - kontrola struktur odkazů (linky), např. DVD. Lze tady zamezit "
-"probuzení harddisku nebo jednotek v síti."
-
-#: EnhancedMovieCenter.py:390
-msgid "Try to load titles from .meta files"
-msgstr "Načíst názvy ze souborů \".meta\" "
-
-#: EnhancedMovieCenter.py:390
-msgid "HELP_Try to load titles from .meta files"
-msgstr ""
-"Nápověda - načítat titulky z \".meta\" souborů, pokud existují. Jinak bude "
-"titul sestavený ze názvu souboru. Je-li aktivovaný \".meta\" i \".eit\", "
-"bude nejprve číst \".meta\"."
-
-#: EnhancedMovieCenter.py:391
-msgid "Load all for non showing titles from .meta files"
-msgstr ""
-
-#: EnhancedMovieCenter.py:391
-msgid "HELP_Load all for non showing titles from .meta files"
-msgstr ""
-
-#: EnhancedMovieCenter.py:392
-msgid "Try to load titles from .eit files"
-msgstr "Načíst titulky ze souboru \".eit\""
-
-#: EnhancedMovieCenter.py:392
-msgid "HELP_Try to load titles from .eit files"
-msgstr ""
-"Nápověda - načítat titulky z \".eit\" souborů, pokud existuje. Jinak bude "
-"titul sestavený ze názvu souboru. Je-li aktivovaný \".meta\" i \".eit\", "
-"bude nejprve číst \".meta\"."
-
-#: EnhancedMovieCenter.py:393
-msgid "Replace special chars in title"
-msgstr "Nahradit spec.znaky v titulku"
-
-#: EnhancedMovieCenter.py:393
-msgid "HELP_Replace special chars in title"
-msgstr "Nápověda - nahrazení speciálních znaků a teček v názvech mezerami"
-
-#: EnhancedMovieCenter.py:394
-msgid "Show Movie Format"
-msgstr "Zobrazit formát filmu"
-
-#: EnhancedMovieCenter.py:394
-msgid "HELP_Show Movie Format"
-msgstr "Nápověda - zobrazení formátu filmu"
-
-#: EnhancedMovieCenter.py:395
-msgid "Show Cut-Nr if exist"
-msgstr "Zobrazit značky střihu, pokud existují"
-
-#: EnhancedMovieCenter.py:395
-msgid "HELP_Show Cut-Nr if exist"
-msgstr ""
-"Nápověda - zobrazit střihové značky. Pokud během záznamu Enigma2 restartuje, "
-"bude tato nahrávka znovu aut.pokračovat od poslední značky. "
-
-#: EnhancedMovieCenter.py:396
-msgid "Resolve links and show real path"
-msgstr "Vyhledat linky a vybrat reálnou cestu"
-
-#: EnhancedMovieCenter.py:396
-msgid "HELP_Resolve links and show real path"
-msgstr ""
-"Nápověda - vyhodnocení odkazu (linku) a zobrazení reálné cesty. Při problému "
-"s probuzením NASu tuto volba zrušte. Cesta bude zobrazena v rozšířeném "
-"popisu."
-
-#: EnhancedMovieCenter.py:397
-msgid "Show Path if no extended description available"
-msgstr ""
-
-#: EnhancedMovieCenter.py:397
-msgid "HELP_Show Path if no extended description available"
-msgstr ""
-
-#: EnhancedMovieCenter.py:400
-msgid "Listbox is skin able"
-msgstr "Povolit změnu vzhledu boxu"
-
-#: EnhancedMovieCenter.py:400
-msgid "HELP_Listbox is skin able"
-msgstr ""
-"Nápověda - změna vzhledu boxu podle skinu (pouze <widget name=\"list\"). "
-"Jinak je vzhled nastavený v EMC."
-
-#: EnhancedMovieCenter.py:402
-msgid "Date format"
-msgstr "Formát datumu"
-
-#: EnhancedMovieCenter.py:402
-msgid "HELP_Date format"
-msgstr "Nápověda - formát data"
-
-#: EnhancedMovieCenter.py:404
-msgid "Show movie icons"
-msgstr "Zobrazit ikony k filmu"
-
-#: EnhancedMovieCenter.py:404
-msgid "HELP_Show movie icons"
-msgstr "Nápověda - zobrazení ikon v seznamu podle stavu filmu"
-
-#: EnhancedMovieCenter.py:405
-msgid "Show link arrow"
-msgstr "Ukázat odkaz šipkou"
-
-#: EnhancedMovieCenter.py:405
-msgid "HELP_Show link arrow"
-msgstr "Nápověda - zobrazení náhledu filmu."
-
-#: EnhancedMovieCenter.py:407
-msgid "Show movie picons"
-msgstr ""
-
-#: EnhancedMovieCenter.py:407
-msgid "HELP_Show movie picons"
-msgstr ""
-
-#: EnhancedMovieCenter.py:409
-msgid "Position movie picons"
-msgstr ""
-
-#: EnhancedMovieCenter.py:409
-msgid "HELP_Position movie picons"
-msgstr ""
-
-#: EnhancedMovieCenter.py:410
-msgid "Own Path to movie picons"
-msgstr ""
-
-#: EnhancedMovieCenter.py:410
-msgid "HELP_Own Path to movie picons"
-msgstr ""
-
-#: EnhancedMovieCenter.py:411
-msgid "Path to movie picons"
-msgstr ""
-
-#: EnhancedMovieCenter.py:411
-msgid "HELP_Path to movie picons"
-msgstr ""
-
-#: EnhancedMovieCenter.py:413
-msgid "Show movie progress"
-msgstr "Zobrazit průběh filmu"
-
-#: EnhancedMovieCenter.py:413
-msgid "HELP_Show movie progress"
-msgstr ""
-"Nápověda - zobrazení průběhu přehrávání filmu (pásek, procenta).  Při volbě "
-"\"Barvy filmu\" mohou být ikony a písmo barevně rozlišeny. Barvu písma může "
-"některý skin deaktivovat."
-
-#: EnhancedMovieCenter.py:414
-msgid "Short watching percent"
-msgstr "Zkrácení - od kolika % začít přehrávat"
-
-#: EnhancedMovieCenter.py:414
-msgid "HELP_Short watching percent"
-msgstr ""
-"Nápověda - od kolika procent začít přehrávat. Část časové osy pak bude "
-"označena modrou barvou."
-
-#: EnhancedMovieCenter.py:415
-msgid "Finished watching percent"
-msgstr "Označit po x % jako shlédnuté"
-
-#: EnhancedMovieCenter.py:415
-msgid "HELP_Finished watching percent"
-msgstr ""
-"Nápověda - stav při přehrávání filmu v procentech. Označení se pak změní na "
-"zelené."
-
-#: EnhancedMovieCenter.py:416
-msgid "Mark new recordings with a star"
-msgstr "Označit nově nahrané filmy hvězdičkou"
-
-#: EnhancedMovieCenter.py:416
-msgid "HELP_Mark new recordings with a star"
-msgstr "Nápověda - označení nového záznamu hvězdičkou"
-
-#: EnhancedMovieCenter.py:417 MovieSelection.py:1696 MovieSelection.py:1712
-#: MovieSelection.py:1728
-msgid "Show Cover"
-msgstr "Zobrazit obal"
-
-#: EnhancedMovieCenter.py:417
-msgid "HELP_Show Cover"
-msgstr "Nápověda - zobrazení obalu"
-
-#: EnhancedMovieCenter.py:418 MovieInfo.py:724
-msgid "Cover delay in ms"
-msgstr "Zpoždění zobrazení \"obalu\" v ms"
-
-#: EnhancedMovieCenter.py:418
-msgid "HELP_Cover delay in ms"
-msgstr "Nápověda - zpoždění zobrazení \"obalu\" v ms"
-
-#: EnhancedMovieCenter.py:419
-msgid "Cover background"
-msgstr "Pozadí obalů"
-
-#: EnhancedMovieCenter.py:419
-msgid "HELP_Cover background"
-msgstr "Nápověda - změna pozadí, které je pod obaly"
-
-#: EnhancedMovieCenter.py:420
-msgid "Show fallback cover"
-msgstr ""
-
-#: EnhancedMovieCenter.py:420
-msgid "HELP_Fallback Cover"
-msgstr ""
-
-#: EnhancedMovieCenter.py:422
-msgid "Show movie preview"
-msgstr "Zobrazit náhled filmu"
-
-#: EnhancedMovieCenter.py:422
-msgid "HELP_Show movie preview"
-msgstr "Nápověda - zobrazení náhledu filmu"
-
-#: EnhancedMovieCenter.py:423
-msgid "Movie preview delay in ms"
-msgstr "Zpoždění \"náhledu\" filmu v ms"
-
-#: EnhancedMovieCenter.py:423
-msgid "HELP_Movie preview delay in ms"
-msgstr "Nápověda - náhled filmu se spožděním v ms"
-
-#: EnhancedMovieCenter.py:424
-msgid "Start movie preview before last position"
-msgstr "Start \"náhledu\" filmu před poslední pozicí"
-
-#: EnhancedMovieCenter.py:424
-msgid "HELP_Movie preview offset in seconds"
-msgstr "Nápověda -náhled filmu po posunu v sek."
-
-#: EnhancedMovieCenter.py:427
-msgid "No resume below 10 seconds"
-msgstr "Ignorovat obnovení pod rozsah 10 sek."
-
-#: EnhancedMovieCenter.py:427
-msgid "HELP_No resume below 10 seconds"
-msgstr ""
-"Nápověda - ignorovat obnovení pokud je přehráno méně než 10 sek. Při "
-"zastavení uvnitř 10 sek. se nebude nabízet možnost obnovení přehrávání od "
-"poslední pozice."
-
-#: EnhancedMovieCenter.py:428
-msgid "Jump to first mark when playing movie"
-msgstr "Odskok na první značku při spuštění přehrávání filmu"
-
-#: EnhancedMovieCenter.py:428
-msgid "HELP_Jump to first mark when playing movie"
-msgstr ""
-"Nápověda - přeskok na první (střihovou) značku při spuštění přehrávání. "
-"Umožní spuštění přehrávání bez úvodní (reklamní) pasáže."
-
-#: EnhancedMovieCenter.py:429
-msgid "Rewind finished movies before playing"
-msgstr "Po přehrátí filmu se vrátit na začátek"
-
-#: EnhancedMovieCenter.py:429
-msgid "HELP_Rewind finished movies before playing"
-msgstr ""
-"Nápověda - po přehrátí filmu, stav \"shlédnuto\"se vrátí na začátek. Změní "
-"se barevné označení."
-
-#: EnhancedMovieCenter.py:430
-msgid "Always save last played progress as marker"
-msgstr "Vždy uložit poslední pozici jako značku"
-
-#: EnhancedMovieCenter.py:430
-msgid "HELP_Always save last played progress as marker"
-msgstr ""
-"Nápověda - vždy uložit pozici po zastavení přehrávání jako značku. Lze pak "
-"přeskakovat pomocí kláves < >."
-
-#: EnhancedMovieCenter.py:431
-msgid "Zap to channel after record EOF"
-msgstr "Přehrávat záznam po zastavení (konec rychlení, skok) "
-
-#: EnhancedMovieCenter.py:431
-msgid "HELP_Zap to channel after record EOF"
-msgstr ""
-"Nápověda - při nahrávání a dosažení konce - např. zrychlení nebo přeskoku "
-"vpřed se bude dále nahrávat a zobrazovat v reálu."
-
-#: EnhancedMovieCenter.py:432
-msgid "Show real length of running records"
-msgstr "Zobrazit reálnou délku spuštěného záznamu"
-
-#: EnhancedMovieCenter.py:432
-msgid "HELP_Show real length of running records"
-msgstr "Nápověda - zobrazení reálné délky spuštěného záznamu."
-
-#: EnhancedMovieCenter.py:436
-msgid "Download cutlist from Cutlist.at"
-msgstr "Stáhnout ořezové značky z Cutlist.at"
-
-#: EnhancedMovieCenter.py:436
-msgid "HELP_Download cutlist from Cutlist.at"
-msgstr "Nápověda - Stažení střihových značek seznamu z Cutlist.at"
-
-#: EnhancedMovieCenter.py:440
-msgid "HELP_separator_Trashcan settings"
-msgstr "Nápověda - nastavení pro automatické vyprázdňování koše"
-
-#: EnhancedMovieCenter.py:441
-msgid "Trashcan enable"
-msgstr "Aktivovat koš"
-
-#: EnhancedMovieCenter.py:441
-msgid "HELP_Trashcan enable"
-msgstr ""
-"Nápověda - aktivovace nebo deaktivace koše. Je-li koš vypnutý, odstraní se "
-"po bezpečnostním dotazu všechno."
-
-#: EnhancedMovieCenter.py:442
-msgid "Trashcan path"
-msgstr "Umístění koše"
-
-#: EnhancedMovieCenter.py:442
-msgid "HELP_Trashcan path"
-msgstr ""
-"Nápověda - cesta k umístění koše. Je-li koš aktivivaný, budou odstraněny "
-"všechny soubory zde uložené."
-
-#: EnhancedMovieCenter.py:443
-msgid "Show trashcan directory"
-msgstr "Zobrazit složku koše"
-
-#: EnhancedMovieCenter.py:443
-msgid "HELP_Show trashcan directory"
-msgstr ""
-"Nápověda - zobrazení složky koše v seznamu filmů. Koš lze vyvolat z menu."
-
-#: EnhancedMovieCenter.py:444
-msgid "Show trashcan information"
-msgstr "Zobrazit info o koši"
-
-#: EnhancedMovieCenter.py:444
-msgid "HELP_Dynamic trashcan"
-msgstr ""
-"Nápověda - dynamické vyprázdnění koše podle jeho naplnění, data, nebo "
-"obojího."
-
-#: EnhancedMovieCenter.py:445
-msgid "Delete validation"
-msgstr "Potvrzovat vyprázdnění koše"
-
-#: EnhancedMovieCenter.py:445
-msgid "HELP_Delete validation"
-msgstr "Nápověda - bezpečnostní potvrzení pro vyprázdnění koše"
-
-#: EnhancedMovieCenter.py:447
-msgid "Enable daily trashcan cleanup"
-msgstr "Povolit každodenní vyprázdnění koše"
-
-#: EnhancedMovieCenter.py:447
-msgid "HELP_Enable daily trashcan cleanup"
-msgstr ""
-"Nápověda - EMC nastaví dobu ponechání souborů v koši, než budou odstraněny."
-
-#: EnhancedMovieCenter.py:448
-msgid "Daily cleanup time"
-msgstr "Vyprázdnit koš každý den v ..."
-
-#: EnhancedMovieCenter.py:448
-msgid "HELP_Daily cleanup time"
-msgstr "Nápověda - vyprázdnění koše podle zadané doby."
-
-#: EnhancedMovieCenter.py:449
-msgid "How many days files may remain in trashcan"
-msgstr "Kolik dnů ponechat data v koši ?"
-
-#: EnhancedMovieCenter.py:449
-msgid "HELP_How many days files may remain in trashcan"
-msgstr "Nápověda - počet dnů před automatickým smazáním souborů z koše."
-
-#: EnhancedMovieCenter.py:450
-msgid "Move finished movies in trashcan"
-msgstr "Přesunout shlédnuté soubory do koše"
-
-#: EnhancedMovieCenter.py:450
-msgid "HELP_Move finished movies in trashcan"
-msgstr ""
-"Nápověda - Přesunout všechny \"shlédnuté\" soubory z \"Movie\" a podsložek "
-"do koše. Tam mohou zůstat po nastavenou dobu."
-
-#: EnhancedMovieCenter.py:451
 msgid "Age of finished movies in movie folder (days)"
 msgstr "Počet dnů od shlédnutí filmu - ve složce \"Movie\""
 
-#: EnhancedMovieCenter.py:451
-msgid "HELP_Age of finished movies in movie folder (days)"
+msgid "Album:"
 msgstr ""
-"Nápověda - setrvání dnů od  \"shlédnutí \" filmu ve složce  \"Movie \" do "
-"přesunutí do koše."
 
-#: EnhancedMovieCenter.py:454
-msgid "Display directory reading text"
-msgstr "Zvýraznit složku <vybraného seznamu...> "
+msgid "Alpha sort"
+msgstr "Seřadit podle abecedy"
 
-#: EnhancedMovieCenter.py:454
-msgid "HELP_Display directory reading text"
-msgstr "Nápověda - zvýraznění textu \"čtené\" složky "
+msgid "Alpha sort ascending (AZ)"
+msgstr "Seřadit vzestupně podle abecedy (AZ)"
 
-#: EnhancedMovieCenter.py:455
-msgid "EMC always reload after open"
-msgstr "EMC vždy načte seznam filmů po otevření"
-
-#: EnhancedMovieCenter.py:455
-msgid "HELP_EMC always reload after open"
+msgid "Alpha sort ascending with meta (AZM)"
 msgstr ""
-"Nápověda - při prvním otevření EMC bude vždy načtený seznam filmů. Pak "
-"zůstává v paměti pro další otevření EMC."
 
-#: EnhancedMovieCenter.py:456
-msgid "EMC re-open list after STOP-press"
-msgstr "Přejít po \"Stop\" ve filmu zpět do výchozí složky, ne=do TV"
-
-#: EnhancedMovieCenter.py:456
-msgid "HELP_EMC re-open list after STOP-press"
+msgid "Alpha sort ascending with meta, Date descending (AZMD-)"
 msgstr ""
-"Nápověda - přejít po \"Stop\" ve filmu zpět do výchozí složky EMC. Jinak se "
-"vrátí do TV módu."
 
-#: EnhancedMovieCenter.py:457
-msgid "EMC re-open list after Movie end"
-msgstr "Přejít po \"Exit\" ve filmu zpět do výchozí složky, ne=do TV"
-
-#: EnhancedMovieCenter.py:457
-msgid "HELP_EMC re-open list after Movie end"
+msgid "Alpha sort ascending, Date descending (AZD-)"
 msgstr ""
-"Nápověda - přejít po \"Exit\" ve filmu zpět do výchozí složky EMC. Jinak se "
-"vrátí do TV módu."
 
-#: EnhancedMovieCenter.py:459
-msgid "Leave Movie with Exit"
-msgstr "Přerušit přehrávání tlačítkem Exit"
-
-#: EnhancedMovieCenter.py:459
-msgid "HELP_Leave Movie with Exit"
-msgstr "Nápověda - přerušení přehrávání také tlačítkem Exit"
-
-#: EnhancedMovieCenter.py:461
-msgid "Hide movies being moved"
-msgstr "Skrýt vybraný soubor při přesunu"
-
-#: EnhancedMovieCenter.py:461
-msgid "HELP_Hide movies being moved"
+msgid "Alpha sort date newest"
 msgstr ""
-"Nápověda - nahrávka je normálně při přesunu v seznamu zvýrazněna. Na pozadí "
-"ovšem k přesunu dojde."
 
-#: EnhancedMovieCenter.py:462
-msgid "Hide movies being deleted"
-msgstr "Skrýt vybraný soubor při mazání"
+msgid "Alpha sort descending (ZA)"
+msgstr "Seřadit sestupně podle abecedy (ZA)"
 
-#: EnhancedMovieCenter.py:462
-msgid "HELP_Hide movies being deleted"
+msgid "Alpha sort descending with meta (ZAM)"
 msgstr ""
-"Nápověda - nahrávka je normálně při odstraňování zvýrazněna. Na pozadí ovšem "
-"odstraněna bude."
 
-#: EnhancedMovieCenter.py:464
-msgid "Enable remote recordings"
-msgstr "Povolit vzdálené nahrávání"
-
-#: EnhancedMovieCenter.py:464
-msgid "HELP_Enable remote recordings"
+msgid "Alpha sort descending with meta, Date ascending (ZAMD+)"
 msgstr ""
-"Nápověda - povolení vzdáleného úložiště nahrávek společně s jiným sat."
-"přijímačem. Nahrávka má vlastní ikonu."
 
-#: EnhancedMovieCenter.py:465
+msgid "Alpha sort descending, Date ascending (ZAD+)"
+msgstr ""
+
+msgid "Alpha sort meta"
+msgstr ""
+
+msgid "Alpha sort meta date newest"
+msgstr ""
+
+msgid "Always save current Playlist"
+msgstr ""
+
+msgid "Always save last played progress as marker"
+msgstr "Vždy uložit poslední pozici jako značku"
+
+msgid "Artist:"
+msgstr ""
+
 msgid "Automatic timers list cleaning"
 msgstr "Vyprázdnit seznam aut.časovačů"
 
-#: EnhancedMovieCenter.py:465
-msgid "HELP_Automatic timers list cleaning"
-msgstr "Nápověda - vyprázdnění seznamu automatického časovače "
+msgid "Available plugins menu"
+msgstr "Menu dostupných pluginů"
 
-#: EnhancedMovieCenter.py:467
-msgid "HELP_Language Separator"
-msgstr "Nápověda - výběr oddělovače"
-
-#: EnhancedMovieCenter.py:468
-msgid "Preferred EPG language"
-msgstr "Preferovaný jazyk EPG"
-
-#: EnhancedMovieCenter.py:468
-msgid "HELP_Preferred EPG language"
-msgstr "Nápověda - předvolba jazyka pro EPG"
-
-#: EnhancedMovieCenter.py:469
-msgid "Extra support for language"
-msgstr "Extra podpora pro jazyk"
-
-#: EnhancedMovieCenter.py:469
-msgid "HELP_Extra support for selected language"
-msgstr "Extra podpora pro vybraný jazyk"
-
-#: EnhancedMovieCenter.py:470
-msgid "Enable playback auto-subtitling"
-msgstr "Povolit aut.titulky při přehrávání"
-
-#: EnhancedMovieCenter.py:470
-msgid "HELP_Enable playback auto-subtitling"
-msgstr "Nápověda - aktivace přehrávání s automatickým výběrem jazyka titulků"
-
-#: EnhancedMovieCenter.py:471
-msgid "Primary playback subtitle language"
-msgstr "První jazyk titulků při přehrávání"
-
-#: EnhancedMovieCenter.py:471
-msgid "HELP_Primary playback subtitle language"
-msgstr "Nápověda - volba prvního jazyka titulků při přehrávání"
-
-#: EnhancedMovieCenter.py:472
-msgid "Secondary playback subtitle language"
-msgstr "Druhý jazyk titulků"
-
-#: EnhancedMovieCenter.py:472
-msgid "HELP_Secondary playback subtitle language"
-msgstr "Nápověda - druhý jazyk titulků, pokud existuje"
-
-#: EnhancedMovieCenter.py:473
-msgid "Tertiary playback subtitle language"
-msgstr "Třetí jazyk titulků"
-
-#: EnhancedMovieCenter.py:473
-msgid "HELP_Tertiary playback subtitle language"
-msgstr "Nápověda - volba třetího jazyka titulků, pokud existuje"
-
-#: EnhancedMovieCenter.py:474
-msgid "Enable playback auto-language selection"
-msgstr "Povolit aut.výběr jazyka při přehrávání"
-
-#: EnhancedMovieCenter.py:474
-msgid "HELP_Enable playback auto-language selection"
-msgstr "Nápověda - aktivace přehrávání s automatickým výběrem jazyka"
-
-#: EnhancedMovieCenter.py:475
-msgid "Enable playback AC3-track first"
+msgid "Black"
 msgstr ""
 
-#: EnhancedMovieCenter.py:475
-msgid "HELP_Enable playback AC3-track first"
-msgstr ""
+msgid "Blue button function"
+msgstr "Funkce modrého tlačítka"
 
-#: EnhancedMovieCenter.py:476
-msgid "Primary playback audio language"
-msgstr "První audio stopa při přehrávání"
-
-#: EnhancedMovieCenter.py:476
-msgid "HELP_Primary playback audio language"
-msgstr "Nápověda - volba první audio stopy při přehrávání"
-
-#: EnhancedMovieCenter.py:477
-msgid "Secondary playback audio language"
-msgstr "Druhá audio stopa"
-
-#: EnhancedMovieCenter.py:477
-msgid "HELP_Secondary playback audio language"
-msgstr "Nápověda - druhá audio stopa, pokud existuje"
-
-#: EnhancedMovieCenter.py:478
-msgid "Tertiary playback audio language"
-msgstr "Třetí audio stopa"
-
-#: EnhancedMovieCenter.py:478
-msgid "HELP_Tertiary playback audio language"
-msgstr "Nápověda - volba třetí audio jazykové stopy, pokud existuje"
-
-#: EnhancedMovieCenter.py:480 EnhancedMovieCenter.py:485
-#: EnhancedMovieCenter.py:511
-msgid "HELP_Advanced options separator"
-msgstr "Nápověda - rozšířené možnosti"
-
-#: EnhancedMovieCenter.py:481
-msgid "Description field update delay"
-msgstr "Zpoždění aktualizace popisu"
-
-#: EnhancedMovieCenter.py:481
-msgid "HELP_Description field update delay"
-msgstr ""
-"Nápověda - zpoždění pro aktualizaci pole popisu, aby to neblokovaly rychlé "
-"přechody přes položky pomocí šipky."
-
-#: EnhancedMovieCenter.py:482
-msgid "Key period value (50-900)"
-msgstr "Doba do opakování periody při přidržení tlačítka (50-900)"
-
-#: EnhancedMovieCenter.py:482
-msgid "HELP_Key period value (50-900)"
-msgstr "Nápověda - doba do opakování periody při přidržení tlačítka (50-900)"
-
-#: EnhancedMovieCenter.py:483
-msgid "Key repeat value (250-900)"
-msgstr "Rychlost opakování při přidržení tlačítka (50-900) "
-
-#: EnhancedMovieCenter.py:483
-msgid "HELP_Key repeat value (250-900)"
-msgstr "Nápověda - rychlost opakování při přidržení tlačítka (50-900) "
-
-#: EnhancedMovieCenter.py:486
-msgid "Show message if file added to playlist"
-msgstr ""
-
-#: EnhancedMovieCenter.py:486
-msgid "HELP_Show message if file added to playlist"
-msgstr ""
-
-#: EnhancedMovieCenter.py:488
-msgid "HELP_Advanced Skin options separator"
-msgstr ""
-
-#: EnhancedMovieCenter.py:489
-msgid "Use original EMC-skin (needs reopen)"
-msgstr ""
-
-#: EnhancedMovieCenter.py:489
-msgid "HELP_Use original EMC-skin (needs reopen)"
-msgstr ""
-
-#: EnhancedMovieCenter.py:492
-msgid "HELP_Advanced audio metadata options separator"
-msgstr ""
-
-#: EnhancedMovieCenter.py:498
-msgid "Download Mutagen-package for audio metadata"
-msgstr ""
-
-#: EnhancedMovieCenter.py:498
-msgid "HELP_Download Mutagen-package for audio metadata"
-msgstr ""
-
-#: EnhancedMovieCenter.py:504
-msgid "Show audio metadata (needs skin-changes)"
-msgstr ""
-
-#: EnhancedMovieCenter.py:504
-msgid "HELP_Show audio metadata (needs skin-changes)"
-msgstr ""
-
-#: EnhancedMovieCenter.py:509
-msgid "Upgrade/Download Mutagen v1.28(experimental)"
-msgstr ""
-
-#: EnhancedMovieCenter.py:509
-msgid "HELP_Upgrade/Download Mutagen v1.28(experimental)"
-msgstr ""
-
-#: EnhancedMovieCenter.py:512
-msgid "Enable EMC debug output"
-msgstr "EMC - povolit nastavení výstupu"
-
-#: EnhancedMovieCenter.py:512
-msgid "HELP_Enable EMC debug output"
-msgstr ""
-"Nápověda - odladění výstupu EMC. Použít pouze pro hledání chyby! Log soubor "
-"bude ve \"výstupním seznamu EMC\"."
-
-#: EnhancedMovieCenter.py:513
-msgid "EMC output directory"
-msgstr "EMC - výstupní složka"
-
-#: EnhancedMovieCenter.py:513
-msgid "HELP_EMC output directory"
-msgstr "Nápověda - EMC - výstupní složka logu"
-
-#: EnhancedMovieCenter.py:514
-msgid "Debug output file name"
-msgstr "Nastavit název výstupního souboru"
-
-#: EnhancedMovieCenter.py:514
-msgid "HELP_Debug output file name"
-msgstr "Nápověda - nastavení názvu výstupního log souboru"
-
-#: EnhancedMovieCenter.py:550 EnhancedMovieCenter.py:552
-msgid "Install Mutagen-package"
-msgstr ""
-
-#: EnhancedMovieCenter.py:612
-msgid "Load default settings will overwrite all settings, really load them?"
-msgstr ""
-"Při nastavení podle předvoleb bude přepsáno i stávající nastavení, "
-"pokračovat ?"
-
-#: EnhancedMovieCenter.py:702
-msgid "Some settings changes require GUI restart to take effect."
-msgstr "Některé změny potřebují restart GUI !"
-
-#: EnhancedMovieCenter.py:720
-msgid "Really close without saving settings?"
-msgstr "Opravdu zavřít bez uložení ?"
-
-#: EnhancedMovieCenter.py:738
-msgid "Select Location"
-msgstr "Vyber umístění"
-
-#: EnhancedMovieCenter.py:757
-#, python-format
-msgid "Given path %s does not exist. Please change."
-msgstr "Vybraná cesta %s neexistuje ! Opravte ji..."
-
-#: EnhancedMovieCenter.py:765 MovieSelection.py:2939
-msgid "Trashcan create failed. Check mounts and permissions."
-msgstr "Založení koše selhalo ! Zkontrolujte namapování a oprávnění."
-
-#: InfoBarSupport.py:112
-msgid "jump to previous marked position"
-msgstr "přejít na předchozí označenou pozici"
-
-#: InfoBarSupport.py:113
-msgid "jump to next marked position"
-msgstr "přejít na další označenou pozici"
-
-#: InfoBarSupport.py:114
-msgid "toggle a cut mark at the current position"
-msgstr "zap/vyp značky střihu na aktuální pozici"
-
-#: InfoBarSupport.py:153 InfoBarSupport.py:155
-msgid "Do you want to resume this playback?"
-msgstr "Chcete se vrátit na původní pozici přehrávání ?"
-
-#: InfoBarSupport.py:153 InfoBarSupport.py:155
-#, python-format
-msgid "Resume position at %s"
-msgstr "Pokračovat od pozice %s ?"
-
-#: InfoBarSupport.py:157
-msgid "Resuming playback"
-msgstr "Pokračovat v přehrávání"
-
-#: MovieCenter.py:1000
-msgid "trashcan"
-msgstr ""
-
-#: MovieCenter.py:1005
-msgid "Latest Recordings"
-msgstr "Poslední nahrávky"
-
-#: MovieCenter.py:2304
-msgid "VLC"
-msgstr "VLC"
-
-#: MovieCenter.py:2310
-msgid "VLC-Server"
-msgstr "VLC server"
-
-#: MovieCenter.py:2316
-msgid "VLC-Dir"
-msgstr "VLC složka"
-
-#: MovieCenter.py:2322
-msgid "Latest"
-msgstr "Poslední"
-
-#: MovieCenter.py:2328
-msgid "Up"
-msgstr "Nahoru"
-
-#: MovieCenter.py:2334 MovieCenter.py:2340
 msgid "Bookmark"
 msgstr "Záložka"
 
-#: MovieCenter.py:2360 MovieCenter.py:2371
-msgid "Trashcan"
-msgstr "Koš"
+msgid "Both"
+msgstr "Obě"
 
-#: MovieCenter.py:2460 MovieCenter.py:2468
-msgid "Directory"
-msgstr "Složka"
+msgid "Bouquet buttons behaviour"
+msgstr "Chování tlačítka Bouquet"
 
-#: MovieCenter.py:2462
-msgid "Link"
-msgstr "Odkaz"
+msgid "Button disabled"
+msgstr "Tlačítko vypnuto"
 
-#: MovieCenter.py:2464
+msgid "CSFD"
+msgstr "CSFD"
+
+msgid "CSFD Info"
+msgstr "CSFD info"
+
+msgid "Can not save "
+msgstr ""
+
+msgid "Can not save Cover in "
+msgstr ""
+
+msgid "Can not save current Playlist!"
+msgstr ""
+
+#, python-format
+msgid ""
+"Can not write Movie Information File\n"
+"\n"
+"%s"
+msgstr ""
+
+#, python-format
+msgid ""
+"Can not write Movie Information and Cover File\n"
+"\n"
+"%(info)s\n"
+"%(file)s"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Cannot delete the parent directory."
+msgstr "Nadřazenou složku nelze odstranit!"
+
+msgid "Change File/Moviename and/or Description"
+msgstr "Změnit soubor, název filmu a/nebo popis"
+
+msgid "Change Folder"
+msgstr "Změnit složku"
+
+msgid "Change Foldername"
+msgstr "Změnit název složky"
+
+msgid "Change the filename to save current Playlist:"
+msgstr ""
+
+msgid "Chap."
+msgstr "Kap."
+
+msgid "Chapter"
+msgstr "Kapitola"
+
+msgid "Check for dead links"
+msgstr ""
+
+msgid "Choose Directory:"
+msgstr ""
+
+msgid "Choose bookmark"
+msgstr "Vyber záložku"
+
+msgid "Choose directory"
+msgstr "Vybrat složku"
+
+msgid "Choose operation"
+msgstr "Vyberte příkaz"
+
+msgid "Choose plugin"
+msgstr "Vyber plugin"
+
+msgid "Choose script"
+msgstr "Vybrat skript"
+
+msgid "Close EMC"
+msgstr "Ukončit EMC centrum"
+
+msgid "Close EMC and do power button action"
+msgstr ""
+
 msgid "Collection"
 msgstr "Sbírka"
 
-#: MovieCenter.py:2480
-msgid "UNKNOWN"
-msgstr "Neznámé"
+msgid "Configured directories at the top of movielist"
+msgstr "Konfigurace složek nahoře v seznamu filmů"
 
-#: MovieInfo.py:30
-msgid "German"
-msgstr "Německy"
-
-#: MovieInfo.py:30
-msgid "English"
-msgstr "Anglicky"
-
-#: MovieInfo.py:31 MovieInfo.py:32 MovieInfo.py:33 MovieInfo.py:34
-#: MovieInfo.py:35
-msgid "Yes"
-msgstr "Ano"
-
-#: MovieInfo.py:31 MovieInfo.py:32 MovieInfo.py:33 MovieInfo.py:34
-#: MovieInfo.py:35 plugin.py:218 plugin.py:223 plugin.py:233 plugin.py:324
-msgid "No"
-msgstr "Ne"
-
-#: MovieInfo.py:62
-msgid "Movies"
-msgstr ""
-
-#: MovieInfo.py:62 MovieInfo.py:66
-msgid " - "
-msgstr ""
-
-#: MovieInfo.py:66
-msgid "TV Shows"
-msgstr ""
-
-#: MovieInfo.py:147 MovieInfo.py:202
 msgid "Content:"
 msgstr "Obsah:"
 
-#: MovieInfo.py:147 MovieInfo.py:202 MovieInfo.py:518 MovieSelection.py:275
-msgid "Runtime:"
-msgstr "Délka filmu:"
+msgid "Copy File"
+msgstr "Kopírovat soubor"
 
-#: MovieInfo.py:147 MovieInfo.py:202 MovieInfo.py:544
-msgid "Minutes"
-msgstr "minut"
-
-#: MovieInfo.py:147 MovieInfo.py:202 MovieInfo.py:519 MovieSelection.py:273
-msgid "Genre:"
-msgstr "Žánr:"
-
-#: MovieInfo.py:147 MovieInfo.py:202 MovieInfo.py:520
-msgid "Production Countries:"
-msgstr "Produkční země:"
-
-#: MovieInfo.py:147 MovieInfo.py:202 MovieInfo.py:521
-msgid "Release Date:"
-msgstr "Datum vydání:"
-
-#: MovieInfo.py:147 MovieInfo.py:202 MovieInfo.py:522
-msgid "Vote:"
-msgstr "Hlasování:"
-
-#: MovieInfo.py:164
-msgid "unknown"
+msgid "Copy Files"
 msgstr ""
 
-#: MovieInfo.py:269 MovieInfo.py:449 MovieInfo.py:461 MovieInfo.py:683
-msgid "Search results for:"
-msgstr "Vyhledané výsledky pro:"
+msgid "Copy file(s):"
+msgstr "Kopírovat soubor(y):"
 
-#: MovieInfo.py:272
-msgid "Movie Info"
-msgstr "Informace o filmu"
-
-#: MovieInfo.py:277
-msgid "movies found!"
-msgstr "filmů nalezeno!"
-
-#: MovieInfo.py:280 MovieInfo.py:303 MovieInfo.py:335
-msgid "An error occured! Internet connection broken?"
-msgstr "Došlo k chybě! Je internetové připojení funkční?"
-
-#: MovieInfo.py:283
-msgid "Movie Information Download (TMDb)"
-msgstr "Stahování filmových informací (TMDb)"
-
-#: MovieInfo.py:297 MovieInfo.py:574 MovieInfo.py:578
-msgid "Movie Information downloaded successfully!"
-msgstr "Informace o filmu byly úspěšně staženy!"
-
-#: MovieInfo.py:308 MovieInfo.py:607
 #, python-format
 msgid ""
 "Cover %s exists!\n"
@@ -1807,37 +300,1110 @@ msgid ""
 "Do you want to replace the existing cover?"
 msgstr ""
 
-#: MovieInfo.py:352 MovieInfo.py:459 MovieInfo.py:642
-msgid "Movie Information Preview for:"
-msgstr "Náhled filmových informací pro:"
+msgid "Cover Search"
+msgstr "Vyhledat obal"
 
-#: MovieInfo.py:366
-msgid "Movie Information Preview"
-msgstr "Náhled filmových informací"
+msgid "Cover background"
+msgstr "Pozadí obalů"
 
-#: MovieInfo.py:462
-msgid "Nothing was found !"
+msgid "Cover delay in ms"
+msgstr "Zpoždění zobrazení \"obalu\" v ms"
+
+msgid "Cover disabled in EMC-Setup"
+msgstr "Obaly vypnuty v Nastaveních EMC"
+
+msgid "Cover is Saved."
+msgstr "\"Potisk\" byl uložený"
+
+msgid "Cover search"
+msgstr "Vyhledat obal"
+
+msgid ""
+"Cover search with all Files in Subdirectories?\n"
+"\n"
+"This may take a while on huge Disks, or Directories!"
 msgstr ""
 
-#: MovieInfo.py:495
-msgid "Movie Information TMDb"
+msgid "Coversize"
 msgstr ""
 
-#: MovieInfo.py:570
-msgid "Movie Information and Cover downloaded successfully!"
+msgid "Create directory"
+msgstr "Vytvořit složku"
+
+msgid "Create link"
+msgstr "Vytvořit odkaz"
+
+msgid "Creating Search List.."
+msgstr "Vytvářím vyhledávaný seznam..."
+
+msgid "Current Playlist saved successfully!"
 msgstr ""
 
-#: MovieInfo.py:576
+msgid "Cursor predictive move after selection"
+msgstr "Předvolený posun kurzoru po výběru"
+
+msgid "Custom"
+msgstr "Uživatelský"
+
+msgid "DD.MM. HH:MM"
+msgstr "DD.MM. HH:MM"
+
+msgid "DD.MM.YYYY"
+msgstr "DD.MM.YYYY"
+
+msgid "DD.MM.YYYY HH:MM"
+msgstr ""
+
+msgid "DEBUG"
+msgstr ""
+
+msgid "DELAYS"
+msgstr ""
+
+msgid "DISPLAY-SETTINGS"
+msgstr ""
+
+msgid "DVD / BLU-RAY / FOLDERS"
+msgstr ""
+
+msgid "Daily cleanup time"
+msgstr "Vyprázdnit koš každý den v ..."
+
+msgid "Dark green"
+msgstr ""
+
+msgid "Dark grey"
+msgstr ""
+
+msgid "Dark orange"
+msgstr ""
+
+msgid "Dark red"
+msgstr ""
+
+msgid "Date format"
+msgstr "Formát datumu"
+
+msgid "Date sort"
+msgstr "Seřadit podle data"
+
+msgid "Date sort ascending (D+)"
+msgstr "Seřadit vzestupně podle data"
+
+msgid "Date sort descending (D-)"
+msgstr "Seřadit sestupně podle data"
+
+msgid "Day"
+msgstr ""
+
+msgid "Days"
+msgstr ""
+
+msgid "Debug output file name"
+msgstr "Nastavit název výstupního souboru"
+
+msgid "DeepStandby"
+msgstr "Vypnutí"
+
+msgid "Default"
+msgstr "Přednastavené"
+
+msgid ""
+"Default Playlist is not empty!\n"
+"\n"
+"Save default Playlist?"
+msgstr ""
+
+msgid "Default Playlist name"
+msgstr ""
+
+msgid "Default Playlist path"
+msgstr ""
+
+msgid "Default color for highlighted movie"
+msgstr ""
+
+msgid "Default color for partially watched movie"
+msgstr ""
+
+msgid "Default color for recording movie"
+msgstr ""
+
+#, fuzzy
+msgid "Default color for unwatched movie"
+msgstr "Předvolené seřazení"
+
+#, fuzzy
+msgid "Default color for watched movie"
+msgstr "Předvolené seřazení"
+
+msgid "Default sort mode"
+msgstr "Předvolené seřazení"
+
+msgid "Delete"
+msgstr "Odstranit"
+
+msgid "Delete All"
+msgstr ""
+
+msgid "Delete Entry"
+msgstr ""
+
+msgid "Delete current Playlist"
+msgstr ""
+
+msgid "Delete cut file(s)"
+msgstr ""
+
+msgid "Delete error:\n"
+msgstr "Chyba při odstranění :\n"
+
+msgid "Delete failed because the trashcan directory does not exist. Attempt to create it now?"
+msgstr "Odstranění selhalo, koš neexistuje! Má se vytvořit nový?"
+
+msgid "Delete failed!"
+msgstr "Odstranění selhalo!"
+
+msgid "Delete permanently"
+msgstr "Trvale odstranit"
+
+msgid "Delete validation"
+msgstr "Potvrzovat vyprázdnění koše"
+
+msgid "Description"
+msgstr ""
+
+msgid "Description field update delay"
+msgstr "Zpoždění aktualizace popisu"
+
+msgid "Description:"
+msgstr "Popis:"
+
+msgid "Directory"
+msgstr "Složka"
+
+#, python-format
+msgid "Directory %s already exists!"
+msgstr "Složka %s již existuje!"
+
+msgid "Directory back"
+msgstr "O složku zpět"
+
+msgid "Directory forward"
+msgstr "O složku dopředu"
+
+msgid "Directory is not empty! Do you really want to delete it?"
+msgstr "Složka není prázdný! Chceš přesto vymazat?"
+
+msgid "Directory up"
+msgstr "O složku nahoru"
+
+msgid "Directory-Cover search"
+msgstr ""
+
+msgid "Disable EMC"
+msgstr "Deaktivovat plugin EMC"
+
+msgid "Display directory reading text"
+msgstr "Zvýraznit složku <vybraného seznamu...> "
+
+msgid ""
+"Do you really want to delete the cut file?\n"
+"If you have selected a directory, all cut files within the folder and its subfolders will be deleted!"
+msgstr ""
+
+#, python-format
+msgid "Do you really want to lock the directory %s and all its subfolders?"
+msgstr "Chcete uzamknout složku %s a všechny její podsložky ?"
+
 #, python-format
 msgid ""
-"Movie Information downloaded successfully!\n"
+"Do you really want to remove your bookmark\n"
+"%s?"
+msgstr ""
+"Chcete skutečně odstranit záložku\n"
+"%s?"
+
+#, python-format
+msgid ""
+"Do you really want to remove your directory\n"
+"%s?"
+msgstr ""
+"Chcete skutečně odstranit složku\n"
+"%s?"
+
+#, python-format
+msgid ""
+"Do you really want to remove your link\n"
+"%s?"
+msgstr ""
+"Chcete skutečně odstranit odkaz\n"
+"%s?"
+
+msgid "Do you want to resume this playback?"
+msgstr "Chcete se vrátit na původní pozici přehrávání ?"
+
+msgid "Does not contain any scripts."
+msgstr "Neobsahuje žádné skripty!"
+
+msgid "Don't auto scan size of dirs from emc-noscan.cfg"
+msgstr ""
+
+msgid "Download Movie Info"
+msgstr "Stažení informací o filmu"
+
+msgid "Download Movie Information"
+msgstr "Stáhnout informace o filmu"
+
+msgid "Download cutlist from Cutlist.at"
+msgstr "Stáhnout ořezové značky z Cutlist.at"
+
+#, python-format
+msgid "Download: %s"
+msgstr "Stáhnout:  %s"
+
+msgid "E2 Bookmark"
+msgstr "E2 záložky"
+
+msgid "E2 Bookmarks"
+msgstr "E2 záložky"
+
+msgid "E2 Restart"
+msgstr "Restart GUI"
+
+msgid ""
+"EMC\n"
+"Zap to Live TV of record"
+msgstr ""
+"EMC centrum ...\n"
+"Zapnout záznam Live TV "
+
+msgid "EMC Bookmarks"
+msgstr "EMC záložky"
+
+msgid "EMC Cover Selecter"
+msgstr ""
+
+msgid "EMC Cover search"
+msgstr "EMC - vyhledávání potisků"
+
+msgid "EMC Cover search setup"
+msgstr "EMC - nastavení vyhledávání potisků"
+
+msgid "EMC Filebrowser"
+msgstr ""
+
+#, fuzzy
+msgid "EMC Help"
+msgstr "Nastavení EMC"
+
+msgid "EMC Playlist - current playlist"
+msgstr ""
+
+msgid "EMC Playlist Menu"
+msgstr ""
+
+msgid "EMC Playlist Setup"
+msgstr ""
+
+msgid "EMC Setup"
+msgstr "Nastavení EMC"
+
+msgid "EMC Trashcan Cleanup failed!"
+msgstr "Vyprázdnění koše EMC selhalo !"
+
+msgid "EMC always reload after open"
+msgstr "EMC vždy načte seznam filmů po otevření"
+
+msgid "EMC output directory"
+msgstr "EMC - výstupní složka"
+
+msgid "EMC path access limit"
+msgstr "EMC přístupový limit ke struktuře složek"
+
+msgid "EMC re-open list after Movie end"
+msgstr "Přejít po \"Exit\" ve filmu zpět do výchozí složky, ne=do TV"
+
+msgid "EMC re-open list after STOP-press"
+msgstr "Přejít po \"Stop\" ve filmu zpět do výchozí složky, ne=do TV"
+
+msgid "EMC-TMDB Info"
+msgstr ""
+
+msgid ""
+"EMC: Skipping Trashcan Cleanup\n"
+"Movie Home Path is equal to or a subfolder of the Trashcan"
+msgstr ""
+"EMC: Přeskočit vyprázdnění koše\n"
+"Cesta Movie Home se shoduje nebo leží pod košem"
+
+msgid "Edit Tags"
+msgstr ""
+
+msgid "Empty trashcan"
+msgstr "Vyprázdnit koš"
+
+msgid "Enable EMC debug output"
+msgstr "EMC - povolit nastavení výstupu"
+
+msgid "Enable daily trashcan cleanup"
+msgstr "Povolit každodenní vyprázdnění koše"
+
+msgid "Enable playback AC3-track first"
+msgstr ""
+
+msgid "Enable playback auto-language selection"
+msgstr "Povolit aut.výběr jazyka při přehrávání"
+
+msgid "Enable playback auto-subtitling"
+msgstr "Povolit aut.titulky při přehrávání"
+
+msgid "Enable remote recordings"
+msgstr "Povolit vzdálené nahrávání"
+
+msgid "English"
+msgstr "Anglicky"
+
+msgid "Enter Name for Playlist"
+msgstr ""
+
+msgid "Enter name for new directory:"
+msgstr "Zadej název nové složky :"
+
+msgid "Exist"
+msgstr "Existuje"
+
+#, python-format
+msgid "Exist: %s"
+msgstr "Existuje: %s"
+
+#, fuzzy
+msgid "F1-button"
+msgstr "Tlačítko \"TV\""
+
+msgid "File added to current Playlist."
+msgstr ""
+
+msgid "File exists in current Playlist."
+msgstr ""
+
+msgid "File not available."
+msgstr "Soubor není dostupný!"
+
+msgid "Filename:"
+msgstr "Soubor:"
+
+msgid "Files added to current Playlist."
+msgstr ""
+
+#, python-format
+msgid ""
+"Files added to current Playlist:\n"
+"%(add)s\n"
 "\n"
-"Can not write Movie Cover File\n"
-"\n"
+"Files exists in current Playlist:\n"
+"%(exist)s"
+msgstr ""
+
+#, python-format
+msgid ""
+"Files exists in current Playlist:\n"
 "%s"
 msgstr ""
 
-#: MovieInfo.py:580
+msgid "Finished watching percent"
+msgstr "Označit po x % jako shlédnuté"
+
+msgid "Foldername:"
+msgstr "Složka:"
+
+msgid "Force standby after auto-restart"
+msgstr "Po aut.restartu nastavit pohotovostní režim"
+
+msgid "Format AVSwitch"
+msgstr "Přepnout formát filmu"
+
+msgid ""
+"Found rogue files:\n"
+"\n"
+msgstr ""
+"Odstraněno samostatných souborů :\n"
+"\n"
+
+msgid "Free: "
+msgstr ""
+
+msgid "French"
+msgstr ""
+
+msgid "GENERAL"
+msgstr ""
+
+msgid "Genre:"
+msgstr "Žánr:"
+
+msgid "German"
+msgstr "Německy"
+
+#, python-format
+msgid "Given path %s does not exist. Please change."
+msgstr "Vybraná cesta %s neexistuje ! Opravte ji..."
+
+msgid "Go to trashcan"
+msgstr "Otevřít koš"
+
+msgid "Green"
+msgstr ""
+
+msgid "Grey"
+msgstr ""
+
+msgid "HELP_About"
+msgstr "Nápověda - informace o pluginu"
+
+msgid "HELP_After file OPs only re-scan affected dirs"
+msgstr ""
+
+msgid "HELP_Age of finished movies in movie folder (days)"
+msgstr "Nápověda - setrvání dnů od  \"shlédnutí \" filmu ve složce  \"Movie \" do přesunutí do koše."
+
+msgid "HELP_Always save last played progress as marker"
+msgstr "Nápověda - vždy uložit pozici po zastavení přehrávání jako značku. Lze pak přeskakovat pomocí kláves < >."
+
+msgid "HELP_Automatic timers list cleaning"
+msgstr "Nápověda - vyprázdnění seznamu automatického časovače "
+
+msgid "HELP_Blue button function"
+msgstr "Nápověda - k vybrané položce může být přiřazena funkce modrého tlačítka  "
+
+msgid "HELP_Bouquet buttons behaviour"
+msgstr "Nápověda - chování tlačítka Bouquet - skok na začátek/konec seznamu nebo vynechat jen několik položek"
+
+#, fuzzy
+msgid "HELP_Check for dead links"
+msgstr "Nápověda - zpoždění zobrazení \"obalu\" v ms"
+
+msgid "HELP_Configure in etc\\enigma2\\emc-topdir.cfg"
+msgstr "Nápověda - konfigurace v etc\\enigma2\\emc-topdir.cfg"
+
+msgid "HELP_Cover background"
+msgstr "Nápověda - změna pozadí, které je pod obaly"
+
+msgid "HELP_Cover delay in ms"
+msgstr "Nápověda - zpoždění zobrazení \"obalu\" v ms"
+
+msgid "HELP_Cursor predictive move after selection"
+msgstr "Nápověda - předvolený posun kurzoru z [VIDEO/PVR] pro posun tlačítkem při \"odskoku\" v daném směru."
+
+msgid "HELP_Daily auto-start"
+msgstr "Nápověda - denní automatický start"
+
+msgid "HELP_Daily cleanup time"
+msgstr "Nápověda - vyprázdnění koše podle zadané doby."
+
+msgid "HELP_Date format"
+msgstr "Nápověda - formát data"
+
+msgid "HELP_Debug output file name"
+msgstr "Nápověda - nastavení názvu výstupního log souboru"
+
+msgid "HELP_Default color highlighted"
+msgstr ""
+
+msgid "HELP_Default color partially watched"
+msgstr ""
+
+#, fuzzy
+msgid "HELP_Default color recording"
+msgstr "Nápověda - povolení vzdáleného úložiště nahrávek společně s jiným sat.přijímačem. Nahrávka má vlastní ikonu."
+
+msgid "HELP_Default color unwatched"
+msgstr ""
+
+#, fuzzy
+msgid "HELP_Default color watched"
+msgstr "Nápověda - formát data"
+
+msgid "HELP_Delete validation"
+msgstr "Nápověda - bezpečnostní potvrzení pro vyprázdnění koše"
+
+msgid "HELP_Description field update delay"
+msgstr "Nápověda - zpoždění pro aktualizaci pole popisu, aby to neblokovaly rychlé přechody přes položky pomocí šipky."
+
+msgid "HELP_Disable EMC"
+msgstr "Nápověda - deaktivace EMC jako celku. Speciální funkce, jako vyprázdnění časovače, koše nebo automatický restart Enigmy na pozadí bude stále funkční."
+
+msgid "HELP_Display directory reading text"
+msgstr "Nápověda - zvýraznění textu \"čtené\" složky "
+
+msgid "HELP_Don't auto scan size of dirs from emc-noscan.cfg"
+msgstr ""
+
+msgid "HELP_Download cutlist from Cutlist.at"
+msgstr "Nápověda - Stažení střihových značek seznamu z Cutlist.at"
+
+msgid "HELP_Dynamic trashcan"
+msgstr "Nápověda - dynamické vyprázdnění koše podle jeho naplnění, data, nebo obojího."
+
+msgid "HELP_EMC always reload after open"
+msgstr "Nápověda - při prvním otevření EMC bude vždy načtený seznam filmů. Pak zůstává v paměti pro další otevření EMC."
+
+msgid "HELP_EMC output directory"
+msgstr "Nápověda - EMC - výstupní složka logu"
+
+msgid "HELP_EMC path access limit"
+msgstr "Nápověda - Můžete zadat, jak dalece se dostanete zpět ve struktuře složek. V \"Menu\" ale máte možnost jít i nad toto omezení o složku výše."
+
+msgid "HELP_EMC re-open list after Movie end"
+msgstr "Nápověda - přejít po \"Exit\" ve filmu zpět do výchozí složky EMC. Jinak se vrátí do TV módu."
+
+msgid "HELP_EMC re-open list after STOP-press"
+msgstr "Nápověda - přejít po \"Stop\" ve filmu zpět do výchozí složky EMC. Jinak se vrátí do TV módu."
+
+msgid "HELP_Enable EMC debug output"
+msgstr "Nápověda - odladění výstupu EMC. Použít pouze pro hledání chyby! Log soubor bude ve \"výstupním seznamu EMC\"."
+
+msgid "HELP_Enable daily trashcan cleanup"
+msgstr "Nápověda - EMC nastaví dobu ponechání souborů v koši, než budou odstraněny."
+
+msgid "HELP_Enable playback AC3-track first"
+msgstr ""
+
+msgid "HELP_Enable playback auto-language selection"
+msgstr "Nápověda - aktivace přehrávání s automatickým výběrem jazyka"
+
+msgid "HELP_Enable playback auto-subtitling"
+msgstr "Nápověda - aktivace přehrávání s automatickým výběrem jazyka titulků"
+
+msgid "HELP_Enable remote recordings"
+msgstr "Nápověda - povolení vzdáleného úložiště nahrávek společně s jiným sat.přijímačem. Nahrávka má vlastní ikonu."
+
+msgid "HELP_Fallback Cover"
+msgstr ""
+
+msgid "HELP_Finished watching percent"
+msgstr "Nápověda - stav při přehrávání filmu v procentech. Označení se pak změní na zelené."
+
+msgid "HELP_Force standby after auto-start"
+msgstr "Nápověda - vynucený pohotovostního režim po automatickém spuštění"
+
+msgid "HELP_Hide movies being deleted"
+msgstr "Nápověda - nahrávka je normálně při odstraňování zvýrazněna. Na pozadí ovšem odstraněna bude."
+
+msgid "HELP_Hide movies being moved"
+msgstr "Nápověda - nahrávka je normálně při přesunu v seznamu zvýrazněna. Na pozadí ovšem k přesunu dojde."
+
+msgid "HELP_Horizontal alignment for count / size"
+msgstr ""
+
+msgid "HELP_Horizontal alignment for date"
+msgstr ""
+
+msgid "HELP_How many days files may remain in trashcan"
+msgstr "Nápověda - počet dnů před automatickým smazáním souborů z koše."
+
+msgid "HELP_Icon shown for initially unknown count / size"
+msgstr ""
+
+msgid "HELP_Jump to first mark when playing movie"
+msgstr "Nápověda - přeskok na první (střihovou) značku při spuštění přehrávání. Umožní spuštění přehrávání bez úvodní (reklamní) pasáže."
+
+msgid "HELP_Key period value (50-900)"
+msgstr "Nápověda - doba do opakování periody při přidržení tlačítka (50-900)"
+
+msgid "HELP_Key repeat value (250-900)"
+msgstr "Nápověda - rychlost opakování při přidržení tlačítka (50-900) "
+
+msgid "HELP_Latest Recordings directory limit"
+msgstr ""
+
+msgid "HELP_Latest Recordings directory use emc-noscan.cfg"
+msgstr ""
+
+msgid "HELP_Leave Movie with Exit"
+msgstr "Nápověda - přerušení přehrávání také tlačítkem Exit"
+
+msgid "HELP_Limit file operations in dirs from emc-noscan.cfg"
+msgstr ""
+
+msgid "HELP_List entries to skip"
+msgstr "Nápověda - přeskočit více zadání v seznamu"
+
+msgid "HELP_Listbox is skin able"
+msgstr "Nápověda - změna vzhledu boxu podle skinu (pouze <widget name=\"list\"). Jinak je vzhled nastavený v EMC."
+
+msgid "HELP_Long Blue button function"
+msgstr "Nápověda - k vybrané položce může být přiřazena funkce pro dlouhý stisk modrého tlačítka"
+
+msgid "HELP_Long Red button function"
+msgstr "Nápověda - k vybrané položce může být přiřazena funkce pro dlouhý stisk červeného tlačítka"
+
+msgid "HELP_Long Yellow button function"
+msgstr "Nápověda - k vybrané položce může být přiřazena funkce pro dlouhý stisk žlutého tlačítka"
+
+msgid "HELP_LongInfo Button"
+msgstr "Nápověda - volba pro dlouhý stisk tlačítka Info"
+
+msgid "HELP_Mark new recordings with a star"
+msgstr "Nápověda - označení nového záznamu hvězdičkou"
+
+msgid "HELP_Minimum file cache limit"
+msgstr ""
+
+msgid "HELP_Move finished movies in trashcan"
+msgstr "Nápověda - Přesunout všechny \"shlédnuté\" soubory z \"Movie\" a podsložek do koše. Tam mohou zůstat po nastavenou dobu."
+
+msgid "HELP_Movie home at start"
+msgstr "Nápověda - EMC startuje vždy na složce \"Movie\". (Jinak se otevírá na posledním použité složce.)"
+
+msgid "HELP_Movie home home path"
+msgstr "Nápověda - umístění složky \"Movie\"."
+
+msgid "HELP_Movie preview delay in ms"
+msgstr "Nápověda - náhled filmu se spožděním v ms"
+
+msgid "HELP_Movie preview offset in seconds"
+msgstr "Nápověda -náhled filmu po posunu v sek."
+
+msgid "HELP_No resume below 10 seconds"
+msgstr "Nápověda - ignorovat obnovení pokud je přehráno méně než 10 sek. Při zastavení uvnitř 10 sek. se nebude nabízet možnost obnovení přehrávání od poslední pozice."
+
+msgid "HELP_Own Path to movie picons"
+msgstr ""
+
+msgid "HELP_Path to movie picons"
+msgstr ""
+
+msgid "HELP_Position movie picons"
+msgstr ""
+
+msgid "HELP_Preferred EPG language"
+msgstr "Nápověda - předvolba jazyka pro EPG"
+
+msgid "HELP_Primary playback audio language"
+msgstr "Nápověda - volba první audio stopy při přehrávání"
+
+msgid "HELP_Primary playback subtitle language"
+msgstr "Nápověda - volba prvního jazyka titulků při přehrávání"
+
+msgid "HELP_Red button function"
+msgstr "Nápověda - k vybrané položce může být přiřazena funkce červeného tlačítka  "
+
+msgid "HELP_Replace special chars in title"
+msgstr "Nápověda - nahrazení speciálních znaků a teček v názvech mezerami"
+
+msgid "HELP_Resolve links and show real path"
+msgstr "Nápověda - vyhodnocení odkazu (linku) a zobrazení reálné cesty. Při problému s probuzením NASu tuto volba zrušte. Cesta bude zobrazena v rozšířeném popisu."
+
+msgid "HELP_Rewind finished movies before playing"
+msgstr "Nápověda - po přehrátí filmu, stav \"shlédnuto\"se vrátí na začátek. Změní se barevné označení."
+
+msgid "HELP_Scan for DVD structures"
+msgstr "Nápověda - prohledat strukturu DVD nebo ji spustit ji jako celek. Lze tak zamezit zbytečnému prohledávání dat a startu disků."
+
+msgid "HELP_Scan for bluray structures"
+msgstr "Nápověda - vyhledávání bluray struktur. Prochází složky a zjišťuje, zda se v nich nachází bluray disky/struktury. Lze tak zamezit zbytečnému prohledávání dat a startu disků."
+
+msgid "HELP_Scan for bluray structures in .iso"
+msgstr ""
+
+msgid "HELP_Scan for movie structures"
+msgstr "Nápověda - vyhledávání filmových struktur. Prochází složky a zjišťuje, zda se v nich nachází filmy podle koncovky např. avi."
+
+msgid "HELP_Secondary playback audio language"
+msgstr "Nápověda - druhá audio stopa, pokud existuje"
+
+msgid "HELP_Secondary playback subtitle language"
+msgstr "Nápověda - druhý jazyk titulků, pokud existuje"
+
+msgid "HELP_Short watching percent"
+msgstr "Nápověda - od kolika procent začít přehrávat. Část časové osy pak bude označena modrou barvou."
+
+msgid "HELP_Show Bookmarks in movielist"
+msgstr "Nápověda - zobrazení záložek v seznamu filmů"
+
+msgid "HELP_Show Cover"
+msgstr "Nápověda - zobrazení obalu"
+
+msgid "HELP_Show Cut-Nr if exist"
+msgstr "Nápověda - zobrazit střihové značky. Pokud během záznamu Enigma2 restartuje, bude tato nahrávka znovu aut.pokračovat od poslední značky. "
+
+msgid "HELP_Show EMC in extensions menu"
+msgstr "Nápověda - zobrazit EMC modul v rozšířeném menu. (Normálně je rozšířené menu pod modrým tlačítkem)"
+
+#, fuzzy
+msgid "HELP_Show EMC in main menu"
+msgstr "Nápověda - zobrazit EMC modul v rozšířeném menu. (Normálně je rozšířené menu pod modrým tlačítkem)"
+
+msgid "HELP_Show Latest Recordings directory"
+msgstr ""
+"Nápověda - zobrazení složky s posledními záznamy \"Movie\"\n"
+"a zde vnořených podsložek."
+
+msgid "HELP_Show Movie Format"
+msgstr "Nápověda - zobrazení formátu filmu"
+
+msgid "HELP_Show Path if no extended description available"
+msgstr ""
+
+msgid "HELP_Show VLC directory"
+msgstr "Nápověda - zobrazení složky pro VlcPlayerExtended modulu, pokud je nainstalovaný."
+
+#, fuzzy
+msgid "HELP_Show audio metadata"
+msgstr "Nápověda - zobrazení formátu filmu"
+
+msgid "HELP_Show directories"
+msgstr "Nápověda - zobrazí složky filmů"
+
+msgid "HELP_Show directories information"
+msgstr "Nápověda - zobrazení informací ze složek"
+
+msgid "HELP_Show directories within movielist"
+msgstr "Nápověda - zobrazí složky uvnitř seznamů filmů"
+
+msgid "HELP_Show directory size in skin"
+msgstr ""
+
+msgid "HELP_Show experimental options"
+msgstr ""
+
+msgid "HELP_Show link arrow"
+msgstr "Nápověda - zobrazení náhledu filmu."
+
+msgid "HELP_Show message if file added to playlist"
+msgstr ""
+
+msgid "HELP_Show movie icons"
+msgstr "Nápověda - zobrazení ikon v seznamu podle stavu filmu"
+
+msgid "HELP_Show movie picons"
+msgstr ""
+
+msgid "HELP_Show movie preview"
+msgstr "Nápověda - zobrazení náhledu filmu"
+
+msgid "HELP_Show movie progress"
+msgstr "Nápověda - zobrazení průběhu přehrávání filmu (pásek, procenta).  Při volbě \"Barvy filmu\" mohou být ikony a písmo barevně rozlišeny. Barvu písma může některý skin deaktivovat."
+
+msgid "HELP_Show plugin config in extensions menu"
+msgstr "Nápověda - zobrazit konfiguraci modulu v rozšířeném menu. (Normálně je pod modrým tlačítkem.)"
+
+msgid "HELP_Show real length of running records"
+msgstr "Nápověda - zobrazení reálné délky spuštěného záznamu."
+
+msgid "HELP_Show symlinks"
+msgstr "Nápověda - zobrazení odkazů v seznamu filmů"
+
+msgid "HELP_Show trashcan directory"
+msgstr "Nápověda - zobrazení složky koše v seznamu filmů. Koš lze vyvolat z menu."
+
+msgid "HELP_Sort mode at startup"
+msgstr "Nápověda - seznam filmů se při otevření vždy seřadí podle abecedy."
+
+msgid "HELP_Start EMC with"
+msgstr "Nápověda - nastavení spouštěcí klávesy pro start EMC..."
+
+msgid "HELP_Style for original EMC-skin (needs reopen)"
+msgstr ""
+
+msgid "HELP_Tertiary playback audio language"
+msgstr "Nápověda - volba třetí audio jazykové stopy, pokud existuje"
+
+msgid "HELP_Tertiary playback subtitle language"
+msgstr "Nápověda - volba třetího jazyka titulků, pokud existuje"
+
+msgid "HELP_Text shown for initially unknown count and size"
+msgstr ""
+
+msgid "HELP_Text shown for initially unknown directory size"
+msgstr ""
+
+msgid "HELP_Text shown for initially unknown file count"
+msgstr ""
+
+msgid "HELP_Trashcan enable"
+msgstr "Nápověda - aktivovace nebo deaktivace koše. Je-li koš vypnutý, odstraní se po bezpečnostním dotazu všechno."
+
+msgid "HELP_Trashcan path"
+msgstr "Nápověda - cesta k umístění koše. Je-li koš aktivivaný, budou odstraněny všechny soubory zde uložené."
+
+#, fuzzy
+msgid "HELP_Try to load extra title and more from .meta files"
+msgstr "Nápověda - načítat titulky z \".meta\" souborů, pokud existují. Jinak bude titul sestavený ze názvu souboru. Je-li aktivovaný \".meta\" i \".eit\", bude nejprve číst \".meta\"."
+
+msgid "HELP_Try to load titles from .eit files"
+msgstr "Nápověda - načítat titulky z \".eit\" souborů, pokud existuje. Jinak bude titul sestavený ze názvu souboru. Je-li aktivovaný \".meta\" i \".eit\", bude nejprve číst \".meta\"."
+
+msgid "HELP_Try to load titles from .meta files"
+msgstr "Nápověda - načítat titulky z \".meta\" souborů, pokud existují. Jinak bude titul sestavený ze názvu souboru. Je-li aktivovaný \".meta\" i \".eit\", bude nejprve číst \".meta\"."
+
+msgid "HELP_Use cache for files and directories"
+msgstr "Nápověda - využívat přednačtení souborů a složek."
+
+msgid "HELP_Use original EMC-skin (needs reopen)"
+msgstr ""
+
+msgid "HELP_Wake device when entering dir from emc-noscan.cfg"
+msgstr ""
+
+msgid "HELP_Yellow button function"
+msgstr "Nápověda - k vybrané položce může být přiřazena funkce žlutého tlačítka"
+
+msgid "HELP_Zap to channel after record EOF"
+msgstr "Nápověda - při nahrávání a dosažení konce - např. zrychlení nebo přeskoku vpřed se bude dále nahrávat a zobrazovat v reálu."
+
+msgid "HELP_auto-start window begin"
+msgstr "Nápověda - automatický start úvodního okna"
+
+msgid "HELP_auto-start window end"
+msgstr "Nápověda - automatický start okna ukončení"
+
+msgid "HELP_cfghide_enable"
+msgstr "Nápověda - soubory a složky, které chcete skrýt, zapisujte do '/etc/enigma2/emc-hide.cfg' Při změně nastavení je nutný restart Enigmy2."
+
+msgid "HELP_cfgscan_suppress"
+msgstr "Nápověda - zápis seznamu cest ke složkám (umístění) do souboru '/etc/enigma2/emc-noscan.cfg'  (např. DVD). Lze tady zamezit probuzení harddisku nebo jednotek v síti."
+
+#, fuzzy
+msgid "HELP_hide_MiniTV"
+msgstr "Nápověda - soubory a složky, které chcete skrýt, zapisujte do '/etc/enigma2/emc-hide.cfg' Při změně nastavení je nutný restart Enigmy2."
+
+msgid "HELP_hide_MiniTV cover"
+msgstr ""
+
+msgid "HELP_hide_MiniTV_method"
+msgstr ""
+
+msgid "HELP_scan_linked"
+msgstr "Nápověda - kontrola struktur odkazů (linky), např. DVD. Lze tady zamezit probuzení harddisku nebo jednotek v síti."
+
+msgid "Hide Cover"
+msgstr "Skrýt obal"
+
+msgid "Hide MiniTV"
+msgstr ""
+
+msgid "Hide MiniTV if Cover is shown"
+msgstr ""
+
+msgid "Hide configured entries"
+msgstr "Skrýt konfiguraci položek"
+
+msgid "Hide movies being deleted"
+msgstr "Skrýt vybraný soubor při mazání"
+
+msgid "Hide movies being moved"
+msgstr "Skrýt vybraný soubor při přesunu"
+
+msgid "HomeEnd"
+msgstr "Začátek/Konec"
+
+msgid "Horizontal alignment for count / size"
+msgstr ""
+
+msgid "Horizontal alignment for date"
+msgstr ""
+
+msgid "How many days files may remain in trashcan"
+msgstr "Kolik dnů ponechat data v koši ?"
+
+msgid ""
+"How to copy files:\n"
+"Select some movies with the VIDEO-button, move the cursor on top of the destination directory and press yellow long."
+msgstr ""
+"Jak kopírovat soubory:\n"
+"Vyberte soubory přes tlačítko \"Video\", přesuňte kurzor nahoru na cílovou složku\n"
+"a dlouze stiskněte žluté tlačítko."
+
+msgid ""
+"How to move files:\n"
+"Select some movies with the VIDEO-button, move the cursor on top of the destination directory and press yellow."
+msgstr ""
+"Jak přesunout soubory:\n"
+"Vyberte soubory přes tlačítko Video, přesuňte kurzor nahoru na cílovou složku\n"
+"a stiskněte krátce žluté tlačítko."
+
+msgid "IMDBSearch / EMC-TMDBInfo / TMDBInfo / TMBDInfo / CSFDInfo"
+msgstr ""
+
+msgid "IMDb"
+msgstr "IMDb"
+
+msgid "IMDb Search"
+msgstr "IMDb info"
+
+msgid "Icon shown for initially unknown count / size"
+msgstr ""
+
+msgid "Information"
+msgstr "Informace"
+
+msgid "Italian"
+msgstr ""
+
+msgid "Jump to first mark when playing movie"
+msgstr "Odskok na první značku při spuštění přehrávání filmu"
+
+msgid "KEYMAPPING"
+msgstr ""
+
+msgid "Key period value (50-900)"
+msgstr "Doba do opakování periody při přidržení tlačítka (50-900)"
+
+msgid "Key repeat value (250-900)"
+msgstr "Rychlost opakování při přidržení tlačítka (50-900) "
+
+msgid "LANGUAGE"
+msgstr ""
+
+msgid "Language:"
+msgstr "Jazyk:"
+
+msgid "Last played movie/playlist not available..."
+msgstr "Poslední spuštěný film (seznam filmů) není dostupný..."
+
+msgid "Latest"
+msgstr "Poslední"
+
+msgid "Latest Recordings"
+msgstr "Poslední nahrávky"
+
+msgid "Latest Recordings directory limit"
+msgstr ""
+
+msgid "Latest Recordings directory use emc-noscan.cfg"
+msgstr ""
+
+msgid "Leave Movie with Exit"
+msgstr "Přerušit přehrávání tlačítkem Exit"
+
+msgid "Light green"
+msgstr ""
+
+msgid "Light grey"
+msgstr ""
+
+msgid "Light orange"
+msgstr ""
+
+msgid "Light red"
+msgstr ""
+
+msgid "Limit file operations in dirs from emc-noscan.cfg"
+msgstr ""
+
+msgid "Link"
+msgstr "Odkaz"
+
+msgid "List entries to skip"
+msgstr "Přeskočit v seznamu x řádků"
+
+msgid "Listbox is skin able"
+msgstr "Povolit změnu vzhledu boxu"
+
+msgid "Load Genre:"
+msgstr "Načíst žánr:"
+
+msgid "Load Production Countries:"
+msgstr "Načíst produkční zemi:"
+
+msgid "Load Release Date:"
+msgstr "Načíst datum vydání:"
+
+msgid "Load Runtime:"
+msgstr "Načíst délku filmu:"
+
+msgid "Load Vote:"
+msgstr "Načíst hlasování:"
+
+msgid "Load default settings will overwrite all settings, really load them?"
+msgstr "Při nastavení podle předvoleb bude přepsáno i stávající nastavení, pokračovat ?"
+
+msgid "Locate rogue files and remove them? (permanently if no trashcan available, may take a minute or so)"
+msgstr "Najít osamocené soubory a odstranit je? (Natrvalo, pokud není aktivní koš. Může trvat několik minut.)"
+
+msgid "Location:"
+msgstr "Umístění:"
+
+msgid "Long Blue button function"
+msgstr "Funkce pro dlouhý stisk modrého tlačítka"
+
+msgid "Long Red button function"
+msgstr "Funkce pro dlouhý stisk červeného tlačítka"
+
+msgid "Long Yellow button function"
+msgstr "Funkce pro dlouhý stisk žlutého tlačítka"
+
+msgid "LongInfo Button"
+msgstr "Dlouhý stisk tlačítka \"Info\""
+
+msgid "MM/DD HH:MM"
+msgstr "MM/DD HH:MM"
+
+msgid "Manage Cover"
+msgstr "Správa potisku"
+
+msgid "Mark all movies"
+msgstr "Označit všechny filmy"
+
+msgid "Mark new recordings with a star"
+msgstr "Označit nově nahrané filmy hvězdičkou"
+
+msgid "Method of hiding MiniTV"
+msgstr ""
+
+msgid "Minimum file cache limit (0=cache everything)"
+msgstr ""
+
+msgid "Minutes"
+msgstr "minut"
+
+msgid "Month"
+msgstr ""
+
+msgid "Months"
+msgstr ""
+
+msgid "Move Cover to:"
+msgstr ""
+
+msgid "Move Directory:"
+msgstr ""
+
+msgid "Move File"
+msgstr ""
+
+msgid "Move Files"
+msgstr ""
+
+msgid "Move cursor down"
+msgstr "Přesunout kurzor dolů"
+
+msgid "Move cursor page down"
+msgstr "Přesunout kurzor o stránku dolů"
+
+msgid "Move cursor page up"
+msgstr "Přesunout kurzor o stránku nahoru"
+
+msgid "Move cursor to the end / Move cursor x entries down / Switch Folders in Movie Home (down)"
+msgstr "Přesunout kurzor na konec / Kurzor o x řádků dolů / Přepnout složky v Movie Home (dolů)"
+
+msgid "Move cursor to the top / Move cursor x entries up / Switch Folders in Movie Home (up)"
+msgstr "Přesunout kurzor nahoru / Kurzor o x řádků nahoru / Přepnout složky v Movie Home (nach oben)"
+
+msgid "Move cursor up"
+msgstr "Přesunout kurzor nahoru"
+
+msgid "Move file(s):"
+msgstr "Přesun souboru(ů):"
+
+msgid "Move finished movies in trashcan"
+msgstr "Přesunout shlédnuté soubory do koše"
+
+msgid "Movie Color"
+msgstr "Barvy filmu"
+
 #, python-format
 msgid ""
 "Movie Cover downloaded successfully!\n"
@@ -1847,386 +1413,587 @@ msgid ""
 "%s"
 msgstr ""
 
-#: MovieInfo.py:582
-#, python-format
-msgid ""
-"Can not write Movie Information and Cover File\n"
-"\n"
-"%s\n"
-"%s"
-msgstr ""
-
-#: MovieInfo.py:584
-#, python-format
-msgid ""
-"Can not write Movie Information File\n"
-"\n"
-"%s"
-msgstr ""
-
-#: MovieInfo.py:715
-msgid "Language:"
-msgstr "Jazyk:"
-
-#: MovieInfo.py:716
-msgid "Load Runtime:"
-msgstr "Načíst délku filmu:"
-
-#: MovieInfo.py:717
-msgid "Load Genre:"
-msgstr "Načíst žánr:"
-
-#: MovieInfo.py:718
-msgid "Load Production Countries:"
-msgstr "Načíst produkční zemi:"
-
-#: MovieInfo.py:719
-msgid "Load Release Date:"
-msgstr "Načíst datum vydání:"
-
-#: MovieInfo.py:720
-msgid "Load Vote:"
-msgstr "Načíst hlasování:"
-
-#: MovieInfo.py:721
-msgid "Save Cover"
-msgstr ""
-
-#: MovieInfo.py:722
-msgid "Coversize"
-msgstr ""
-
-#: MovieInfo.py:723
-msgid "Switch complete to new Version"
-msgstr ""
-
-#: MovieInfo.py:741
 msgid "Movie Information Download Setup"
 msgstr "Stahování informací o filmu - Nastavení"
 
-#: MovieRetitle.py:27 MovieRetitle.py:63
-msgid "Location:"
-msgstr "Umístění:"
+msgid "Movie Information Preview for:"
+msgstr "Náhled filmových informací pro:"
 
-#: MovieRetitle.py:78
-msgid "Foldername:"
-msgstr "Složka:"
+msgid "Movie Information TMDb"
+msgstr ""
 
-#: MovieRetitle.py:80
-msgid "Filename:"
-msgstr "Soubor:"
+msgid "Movie Information and Cover downloaded successfully!"
+msgstr ""
 
-#: MovieRetitle.py:81
+msgid "Movie Information downloaded successfully!"
+msgstr "Informace o filmu byly úspěšně staženy!"
+
+#, python-format
+msgid ""
+"Movie Information downloaded successfully!\n"
+"\n"
+"Can not write Movie Cover File\n"
+"\n"
+"%s"
+msgstr ""
+
+msgid "Movie Selection Menu"
+msgstr "Menu výběru"
+
+msgid "Movie home"
+msgstr "Výchozí složka filmů"
+
+msgid "Movie home at start"
+msgstr "Začít na základní složce filmů"
+
+msgid "Movie home home path"
+msgstr "Cesta k základní složka filmů"
+
+msgid "Movie information"
+msgstr "Informace o filmu"
+
+msgid "Movie preview delay in ms"
+msgstr "Zpoždění \"náhledu\" filmu v ms"
+
+msgid "Movies"
+msgstr ""
+
 msgid "Movietitle:"
 msgstr "Název filmu:"
 
-#: MovieRetitle.py:82
-msgid "Description:"
-msgstr "Popis:"
+msgid "N/A"
+msgstr "N/A"
 
-#: MovieRetitle.py:112
-msgid "Change Foldername"
-msgstr "Změnit název složky"
+msgid "Next auto-start in "
+msgstr "Další automatický start v"
 
-#: MovieRetitle.py:114
-msgid "Change File/Moviename and/or Description"
-msgstr "Změnit soubor, název filmu a/nebo popis"
+msgid "No"
+msgstr "Ne"
 
-#: MovieSelection.py:103
-msgid ""
-"EMC: Skipping Trashcan Cleanup\n"
-"Movie Home Path is equal to or a subfolder of the Trashcan"
-msgstr ""
-"EMC: Přeskočit vyprázdnění koše\n"
-"Cesta Movie Home se shoduje nebo leží pod košem"
+#, python-format
+msgid "No Cover: %s"
+msgstr "Žádný obal : %s"
 
-#: MovieSelection.py:140
-msgid "EMC Trashcan Cleanup failed!"
-msgstr "Vyprázdnění koše EMC selhalo !"
+msgid "No DVD-Player found!"
+msgstr "DVD přehrávač není dostupný !"
 
-#: MovieSelection.py:269
-msgid "Artist:"
+msgid "No Movies found!"
 msgstr ""
 
-#: MovieSelection.py:271
-msgid "Album:"
-msgstr ""
-
-#: MovieSelection.py:502 MovieSelection.py:1636
-msgid "Reading directory..."
-msgstr "Načítám složky..."
-
-#: MovieSelection.py:520
-msgid "Play selected movie(s)"
-msgstr "Přehrát vybraný film(y)"
-
-#: MovieSelection.py:522 MovieSelectionMenu.py:99
-msgid "Play All"
-msgstr "Přehrávat vše"
-
-#: MovieSelection.py:523 MovieSelectionMenu.py:100
-msgid "Shuffle All"
-msgstr "Přehrát s náhodným výběrem"
-
-#: MovieSelection.py:524
-msgid "Close EMC"
-msgstr "Ukončit EMC centrum"
-
-#: MovieSelection.py:525
-msgid "Open menu"
-msgstr "Otevřít menu"
-
-#: MovieSelection.py:526
-msgid "Show event info"
-msgstr "Zobrazit info události"
-
-#: MovieSelection.py:527
-msgid "IMDBSearch / EMC-TMDBInfo / TMDBInfo / TMBDInfo / CSFDInfo"
-msgstr ""
-
-#: MovieSelection.py:541
-msgid "Move cursor page up"
-msgstr "Přesunout kurzor o stránku nahoru"
-
-#: MovieSelection.py:542
-msgid "Move cursor page down"
-msgstr "Přesunout kurzor o stránku dolů"
-
-#: MovieSelection.py:543
-msgid "Move cursor up"
-msgstr "Přesunout kurzor nahoru"
-
-#: MovieSelection.py:544
-msgid "Move cursor down"
-msgstr "Přesunout kurzor dolů"
-
-#: MovieSelection.py:545
-msgid ""
-"Move cursor to the top / Move cursor x entries up / Switch Folders in Movie "
-"Home (up)"
-msgstr ""
-"Přesunout kurzor nahoru / Kurzor o x řádků nahoru / Přepnout složky v Movie "
-"Home (nach oben)"
-
-#: MovieSelection.py:546
-msgid ""
-"Move cursor to the end / Move cursor x entries down / Switch Folders in "
-"Movie Home (down)"
-msgstr ""
-"Přesunout kurzor na konec / Kurzor o x řádků dolů / Přepnout složky v Movie "
-"Home (dolů)"
-
-#: MovieSelection.py:547
-msgid "Directory forward"
-msgstr "O složku dopředu"
-
-#: MovieSelection.py:549
-msgid "Directory back"
-msgstr "O složku zpět"
-
-#: MovieSelection.py:551
-msgid "Toggle service selection"
-msgstr "Změnit výběr"
-
-#: MovieSelection.py:552
-msgid "Remove service selection"
-msgstr "Odznačit výběr"
-
-#: MovieSelection.py:553 MovieSelection.py:555
-msgid "Available plugins menu"
-msgstr "Menu dostupných pluginů"
-
-#: MovieSelection.py:556
-msgid "Reload movie file list"
-msgstr "Znovu načíst seznam filmů"
-
-#: MovieSelection.py:557
-msgid "Open Timer List"
-msgstr "Otevřít seznam časovačů"
-
-#: MovieSelection.py:558
-msgid "Toggle viewed / not viewed"
-msgstr "Přepnout viditelné/neviditelné"
-
-#: MovieSelection.py:560
-msgid "Start / end multiselection"
-msgstr "Začít/Ukončit vícenásobný výběr"
-
-#: MovieSelection.py:1021
-msgid "E2 Bookmark"
-msgstr "E2 záložky"
-
-#: MovieSelection.py:1022 MovieSelectionMenu.py:165
-msgid "Open E2 Bookmark path"
-msgstr "Otevřít E2 záložky"
-
-#: MovieSelection.py:1130
-msgid "No script operation for VLC streams."
-msgstr "Žádný skript pro VLC soubory"
-
-#: MovieSelection.py:1146
-msgid "Does not contain any scripts."
-msgstr "Neobsahuje žádné skripty!"
-
-#: MovieSelection.py:1150
-msgid "Choose script"
-msgstr "Vybrat skript"
-
-#: MovieSelection.py:1169
-msgid ""
-"Cover search with all Files in Subdirectories?\n"
-"\n"
-"This may take a while on huge Disks, or Directories!"
-msgstr ""
-
-#: MovieSelection.py:1204
 msgid "No functionality set..."
 msgstr "Žádná funkce není nastavena..."
 
-#: MovieSelection.py:1296
-msgid "*** Multiselection active ***"
-msgstr "*** Aktivní vícenásobný výběr ***"
-
-#: MovieSelection.py:1669
-msgid "Sort Mode"
-msgstr "Mód řazení"
-
-#: MovieSelection.py:1670
-msgid "Sort Order"
-msgstr "Řazení"
-
-#: MovieSelection.py:1694 MovieSelection.py:1710 MovieSelection.py:1726
-msgid "Hide Cover"
-msgstr "Skrýt obal"
-
-#: MovieSelection.py:1698 MovieSelection.py:1714 MovieSelection.py:1730
-#: plugin.py:179 plugin.py:200
-msgid "Button disabled"
-msgstr "Tlačítko vypnuto"
-
-#: MovieSelection.py:1699 MovieSelection.py:1715 MovieSelection.py:1731
-msgid "Cover disabled in EMC-Setup"
-msgstr "Obaly vypnuty v Nastaveních EMC"
-
-#: MovieSelection.py:1869
-msgid "File not available."
-msgstr "Soubor není dostupný!"
-
-#: MovieSelection.py:1925
-msgid "File added to current Playlist."
+msgid "No limit"
 msgstr ""
 
-#: MovieSelection.py:1927
-msgid "File exists in current Playlist."
+msgid "No override"
+msgstr "nepoužívat"
+
+msgid "No resume below 10 seconds"
+msgstr "Ignorovat obnovení pod rozsah 10 sek."
+
+msgid "No rogue files found."
+msgstr "Osamocené soubory nebyly nalezeny."
+
+msgid "No script operation for VLC streams."
+msgstr "Žádný skript pro VLC soubory"
+
+#, fuzzy
+msgid "Not all timers have been stopped. Modify them with the timer editor."
+msgstr "Nezastavovat žádné opakující se časovače. Mohou se upravit editorem časovačů."
+
+msgid "Nothing was found !"
 msgstr ""
 
-#: MovieSelection.py:1930
-msgid "Files added to current Playlist."
+msgid "OK"
+msgstr "OK"
+
+msgid "OSError - please reload list (EMC menu)"
 msgstr ""
 
-#: MovieSelection.py:1932
-#, python-format
-msgid ""
-"Files added to current Playlist:\n"
-"%s\n"
-"\n"
-"Files exists in current Playlist:\n"
-"%s"
+msgid "OTHER"
 msgstr ""
 
-#: MovieSelection.py:1934
-#, python-format
-msgid ""
-"Files exists in current Playlist:\n"
-"%s"
+msgid "Off"
+msgstr "Vypnuto"
+
+msgid "Open"
 msgstr ""
 
-#: MovieSelection.py:1975
-msgid "Last played movie/playlist not available..."
-msgstr "Poslední spuštěný film (seznam filmů) není dostupný..."
+msgid "Open E2 Bookmark path"
+msgstr "Otevřít E2 záložky"
 
-#: MovieSelection.py:1979
-msgid "Play last movie starting"
-msgstr "Přehrát poslední spuštěný film"
+msgid "Open E2 bookmarks"
+msgstr "Otevřít E2 záložky"
 
-#: MovieSelection.py:1998
+msgid "Open EMC Bookmark path"
+msgstr "Otevřít EMC záložky"
+
+msgid "Open Timer List"
+msgstr "Otevřít seznam časovačů"
+
+msgid "Open menu"
+msgstr "Otevřít menu"
+
+msgid "Orange"
+msgstr ""
+
+msgid "Own Path to movie picons"
+msgstr ""
+
+msgid "Path to movie picons"
+msgstr ""
+
+msgid "Percent (%)"
+msgstr "Procent (%)"
+
+msgid "Performance"
+msgstr "Výkon"
+
+msgid "Permanently delete all files in trashcan?"
+msgstr "Odstranit trvale všechny soubory z koše?"
+
+msgid "Play All"
+msgstr "Přehrávat vše"
+
 msgid "Play All starting"
 msgstr "Spustit vše"
 
-#: MovieSelection.py:2017
+msgid "Play current Playlist"
+msgstr ""
+
+msgid "Play last"
+msgstr "Přehrát poslední"
+
+msgid "Play last movie starting"
+msgstr "Přehrát poslední spuštěný film"
+
+msgid "Play random current Playlist"
+msgstr ""
+
+msgid "Play selected movie(s)"
+msgstr "Přehrát vybraný film(y)"
+
+msgid "Playlist Options"
+msgstr ""
+
+msgid "Playlist Setup"
+msgstr ""
+
+msgid "Playlist open"
+msgstr ""
+
+msgid ""
+"Playlist with same name exists!\n"
+"\n"
+"Try to save the Playlist with another name?"
+msgstr ""
+
+msgid "Portuguese"
+msgstr ""
+
+msgid "Position movie picons"
+msgstr ""
+
+msgid "Preferred EPG language"
+msgstr "Preferovaný jazyk EPG"
+
+msgid "Preferred cover resolution (if possible):"
+msgstr ""
+
+msgid "Press green button to start search"
+msgstr "Hledat přes zelené tlačítko"
+
+msgid "Primary playback audio language"
+msgstr "První audio stopa při přehrávání"
+
+msgid "Primary playback subtitle language"
+msgstr "První jazyk titulků při přehrávání"
+
+msgid "Production Countries:"
+msgstr "Produkční země:"
+
+msgid "Progress sort"
+msgstr "Seřadit podle progresu přehrání"
+
+msgid "Progress sort ascending (P+)"
+msgstr "Seřadit vzestupně podle progresu přehrání (P+)"
+
+msgid "Progress sort descending (P-)"
+msgstr "Seřadit sestupně podle progresu přehrání (P-)"
+
+msgid "ProgressBar"
+msgstr "Ukazatel přehrání"
+
+msgid "REC"
+msgstr ""
+
+msgid "Radio-button"
+msgstr "Tlačítko \"Radio\""
+
+msgid "Reading directory..."
+msgstr "Načítám složky..."
+
+msgid "Really close without saving settings?"
+msgstr "Opravdu zavřít bez uložení ?"
+
+msgid "Reboot"
+msgstr "Restart"
+
+msgid "Red"
+msgstr ""
+
+msgid "Red button function"
+msgstr "Funkce červeného tlačítka"
+
+msgid "Release Date:"
+msgstr "Datum vydání:"
+
+msgid "Reload current directory"
+msgstr "Znovu načíst aktuální adresář"
+
+msgid "Reload movie file list"
+msgstr "Znovu načíst seznam filmů"
+
+msgid "Remove all cut file marker permanently?"
+msgstr "Odstranit trvale všechny soubory se značkami střihu?"
+
+msgid "Remove all marker permanently?"
+msgstr ""
+
+msgid "Remove cut list marker"
+msgstr "Odstraní značku střihu"
+
+msgid "Remove directory from E2 Bookmarks"
+msgstr "Odebrat složku z E2 záložek"
+
+msgid "Remove directory from EMC Bookmarks"
+msgstr "Odstranit složku z EMC záložek"
+
+msgid "Remove permanent sort"
+msgstr "Odstranit trvalé řazení"
+
+msgid "Remove permanent sort from parent"
+msgstr "Odstranit trvalé řazení z nadřazené složky"
+
+msgid "Remove rogue files"
+msgstr "Odstranit osamocené soubory"
+
+msgid "Remove selected E2 Bookmark"
+msgstr "Odstranit vybranou E2 záložku"
+
+msgid "Remove selected EMC Bookmark"
+msgstr "Odstranit vybranou EMC záložku"
+
+msgid "Remove service selection"
+msgstr "Odznačit výběr"
+
+msgid "Rename selected movie(s)"
+msgstr "Přejmenovat vybraný film(y)"
+
+msgid "Replace special chars in title"
+msgstr "Nahradit spec.znaky v titulku"
+
+msgid "Reset marker from selected movie(s)"
+msgstr ""
+
+msgid "Resolve links and show real path"
+msgstr "Vyhledat linky a vybrat reálnou cestu"
+
+#, python-format
+msgid "Resume position at %s"
+msgstr "Pokračovat od pozice %s ?"
+
+msgid "Resuming playback"
+msgstr "Pokračovat v přehrávání"
+
+msgid "Rewind finished movies before playing"
+msgstr "Po přehrátí filmu se vrátit na začátek"
+
+msgid "Runtime:"
+msgstr "Délka filmu:"
+
+msgid "SKIN-SETTINGS"
+msgstr ""
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid "Save Cover"
+msgstr ""
+
+msgid "Save current Playlist"
+msgstr ""
+
+msgid "Save description to movie.txt file:"
+msgstr ""
+
+msgid "Scan for DVD structures"
+msgstr "DVD struktura jako celek"
+
+msgid "Scan for bluray structures"
+msgstr "Vyhledávat bluray struktury"
+
+msgid "Scan for bluray structures in .iso"
+msgstr ""
+
+msgid "Scan for movie structures"
+msgstr "Vyhledávat filmové struktury"
+
+msgid "Scan linked folders"
+msgstr "Prohledat odkazy (linky) na složky"
+
+msgid "Search"
+msgstr "Hledat"
+
+#, fuzzy, python-format
+msgid "Search Results per Search Site%s:"
+msgstr "Vyhledané výsledky pro:"
+
+msgid "Search filter for matching existing terms in the title:"
+msgstr ""
+
+msgid "Search results for:"
+msgstr "Vyhledané výsledky pro:"
+
+#, python-format
+msgid "Searching for %s"
+msgstr "Vyhledávám %s"
+
+msgid "Searching..."
+msgstr "Vyhledávám..."
+
+msgid "Secondary playback audio language"
+msgstr "Druhá audio stopa"
+
+msgid "Secondary playback subtitle language"
+msgstr "Druhý jazyk titulků"
+
+msgid "Seek backward"
+msgstr "Rychle zpět"
+
+msgid "Seek forward"
+msgstr "Rychle dopředu"
+
+msgid "Select Location"
+msgstr "Vyber umístění"
+
+msgid "Set path to save the folder Cover:"
+msgstr ""
+
+msgid "Set permanent sort"
+msgstr "Nastavit trvalé řazení"
+
+msgid "Settings have been Saved."
+msgstr ""
+
+msgid "Setup"
+msgstr "Nastavení"
+
+msgid "Setup open"
+msgstr ""
+
+msgid "Short watching percent"
+msgstr "Zkrácení - od kolika % začít přehrávat"
+
+msgid "Show Bookmarks in movielist"
+msgstr "Zobrazit záložky v seznamu filmů"
+
+msgid "Show Cover"
+msgstr "Zobrazit obal"
+
+msgid "Show Cut-Nr if exist"
+msgstr "Zobrazit značky střihu, pokud existují"
+
+msgid "Show EMC in extensions menu"
+msgstr "Zobrazit EMC modul v rozšířeném menu"
+
+#, fuzzy
+msgid "Show EMC in main menu"
+msgstr "Zobrazit EMC modul v rozšířeném menu"
+
+msgid "Show Latest Recordings directory"
+msgstr "Zobrazit složku s posledním záznamem"
+
+msgid "Show Movie Format"
+msgstr "Zobrazit formát filmu"
+
+msgid "Show Path if no extended description available"
+msgstr ""
+
+msgid "Show VLC directory"
+msgstr "Zobrazit VLC složku"
+
+msgid "Show audio metadata"
+msgstr ""
+
+msgid "Show current Playlist"
+msgstr ""
+
+msgid "Show directories"
+msgstr "Zobrazit složky"
+
+msgid "Show directories information"
+msgstr "Zobrazit informace o složkách"
+
+msgid "Show directories within movielist"
+msgstr "Zobrazit složky uvnitř seznamů filmů"
+
+msgid "Show directory size in skin"
+msgstr ""
+
+msgid "Show event info"
+msgstr "Zobrazit info události"
+
+msgid "Show experimental options"
+msgstr ""
+
+msgid "Show fallback cover"
+msgstr ""
+
+msgid "Show info at the bottom"
+msgstr ""
+
+msgid "Show info at the bottom (with MiniTV)"
+msgstr ""
+
+msgid "Show info on the left"
+msgstr ""
+
+msgid "Show info on the left (with MiniTV)"
+msgstr ""
+
+msgid "Show link arrow"
+msgstr "Ukázat odkaz šipkou"
+
+msgid "Show message if file added to playlist"
+msgstr ""
+
+msgid "Show movie icons"
+msgstr "Zobrazit ikony k filmu"
+
+msgid "Show movie picons"
+msgstr ""
+
+msgid "Show movie preview"
+msgstr "Zobrazit náhled filmu"
+
+msgid "Show movie progress"
+msgstr "Zobrazit průběh filmu"
+
+msgid "Show plugin config in extensions menu"
+msgstr "Zobrazit konfiguraci EMC v rozšířeném menu"
+
+msgid "Show real length of running records"
+msgstr "Zobrazit reálnou délku spuštěného záznamu"
+
+msgid "Show symlinks"
+msgstr "Zobrazovat odkazy"
+
+msgid "Show trashcan directory"
+msgstr "Zobrazit složku koše"
+
+msgid "Show trashcan information"
+msgstr "Zobrazit info o koši"
+
+msgid "Shuffle All"
+msgstr "Přehrát s náhodným výběrem"
+
 msgid "Shuffle All starting"
 msgstr "Přehrát vše náhodně"
 
-#: MovieSelection.py:2049
-msgid "Not stopping any repeating timers. Modify them with the timer editor."
-msgstr ""
-"Nezastavovat žádné opakující se časovače. Mohou se upravit editorem časovačů."
+msgid "Single Search:"
+msgstr "Jednoltivé vyhledávání:"
 
-#: MovieSelection.py:2056
+msgid "Single search"
+msgstr "Samostatné vyhledání"
+
+msgid "Skip"
+msgstr "Přeskočit"
+
+msgid ""
+"Skipping movie, the file does not exist.\n"
+"\n"
+msgstr ""
+"Přeskočit neexistující filmy.\n"
+"\n"
+
+msgid "Some settings changes require GUI restart to take effect."
+msgstr "Některé změny potřebují restart GUI !"
+
+msgid "Sort Mode"
+msgstr "Mód řazení"
+
+msgid "Sort Options"
+msgstr "Možnosti řazení"
+
+msgid "Sort Order"
+msgstr "Řazení"
+
+msgid "Spanish"
+msgstr ""
+
+msgid "Standby"
+msgstr "Pohotovostní režim"
+
+msgid "Start / end multiselection"
+msgstr "Začít/Ukončit vícenásobný výběr"
+
+msgid "Start EMC with"
+msgstr "Nastavit spouštěcí klávesu pro EMC centrum"
+
+msgid "Start movie preview before last position"
+msgstr "Start \"náhledu\" filmu před poslední pozicí"
+
 msgid "Stop ongoing recording?\n"
 msgstr "Zastavit probíhající nahrávání?\n"
 
-#: MovieSelection.py:2109
+msgid "Stop playback"
+msgstr "Zastavit přehrávání"
+
+msgid "Style for original EMC-skin (needs reopen)"
+msgstr ""
+
+msgid "Suppress scan in selected folders"
+msgstr "Potlačit prohledávání ve vybraných složkách"
+
+msgid "TMBD Info"
+msgstr ""
+
+msgid "TMDB Info"
+msgstr "TMDB info"
+
+msgid "TMDb"
+msgstr "TMDb"
+
+msgid "TRASHCAN"
+msgstr ""
+
+msgid "TV Shows"
+msgstr ""
+
+msgid "TV-button"
+msgstr "Tlačítko \"TV\""
+
+msgid "Tertiary playback audio language"
+msgstr "Třetí audio stopa"
+
+msgid "Tertiary playback subtitle language"
+msgstr "Třetí jazyk titulků"
+
+msgid "Text shown for initially unknown count and size"
+msgstr ""
+
+msgid "Text shown for initially unknown directory size"
+msgstr ""
+
+msgid "Text shown for initially unknown file count"
+msgstr ""
+
 #, python-format
-msgid ""
-"Do you really want to remove your link\n"
-"%s?"
-msgstr ""
-"Chcete skutečně odstranit odkaz\n"
-"%s?"
+msgid "The directory %s is already locked. Do you want to unlock it and all its subfolders?"
+msgstr "Složka %s je již uzamčena. Chcete ji uvolnit a všechny její podsložky ?"
 
-#: MovieSelection.py:2111
-#, python-format
-msgid ""
-"Do you really want to remove your directory\n"
-"%s?"
-msgstr ""
-"Chcete skutečně odstranit složku\n"
-"%s?"
-
-#: MovieSelection.py:2151 MovieSelection.py:2173 MovieSelectionMenu.py:449
-#: MovieSelectionMenu.py:481
-#, python-format
-msgid ""
-"Do you really want to remove your bookmark\n"
-"%s?"
-msgstr ""
-"Chcete skutečně odstranit záložku\n"
-"%s?"
-
-#: MovieSelection.py:2192
-msgid ""
-" Deleting remotely recorded and it will display an rec-error dialog on the "
-"other DB."
-msgstr ""
-"Odebrání vzdálených nahrávek a zobrazení dialogu chyb nahrávání na druhém "
-"přístroji."
-
-#: MovieSelection.py:2198
-msgid " permanently"
-msgstr " trvale"
-
-#: MovieSelection.py:2215
-msgid " currently played?"
-msgstr "momentálně přehrávané?"
-
-#: MovieSelection.py:2235
-msgid " all selected video files?"
-msgstr "všechny vybrané filmy?"
-
-#: MovieSelection.py:2240
-msgid ""
-" all selected video files? The currently playing movie is also one of the "
-"selections and its playback will be stopped."
-msgstr ""
-" všechny vybrané filmy? Momentálně přehrávaný film je jedním z vybraných - "
-"jeho přehrávání bude zastaveno!"
-
-#: MovieSelection.py:2242
-msgid "Delete error:\n"
-msgstr "Chyba při odstranění :\n"
-
-#: MovieSelection.py:2274 MovieSelection.py:2318
 #, python-format
 msgid ""
 "The following files are used for other entrys in List !\n"
@@ -2236,695 +2003,363 @@ msgid ""
 "%s"
 msgstr ""
 
-#: MovieSelection.py:2362
 msgid "This element belongs to a locked folder and cannot be deleted!"
 msgstr "Tento prvek patří do uzamčené složky a nelze ho odstranit! "
 
-#: MovieSelection.py:2373
-msgid ""
-"Delete failed because the trashcan directory does not exist. Attempt to "
-"create it now?"
-msgstr "Odstranění selhalo, koš neexistuje! Má se vytvořit nový?"
-
-#: MovieSelection.py:2397
 msgid "This folder is locked or contains a locked subfolder, unlock it first!"
-msgstr ""
-"Tato složka je uzamčena nebo obsahuje uzamčené podsložky. Nejprve je "
-"uvolněte."
+msgstr "Tato složka je uzamčena nebo obsahuje uzamčené podsložky. Nejprve je uvolněte."
 
-#: MovieSelection.py:2417
-msgid "Directory is not empty! Do you really want to delete it?"
-msgstr "Složka není prázdný! Chceš přesto vymazat?"
+msgid "Title"
+msgstr "Název"
 
-#: MovieSelection.py:2422
-msgid "Cannot delete the parent directory."
-msgstr "Nadřazenou složku nelze odstranit!"
-
-#: MovieSelection.py:2502 MovieSelection.py:2583
-msgid "Delete failed!"
-msgstr "Odstranění selhalo!"
-
-#: MovieSelection.py:2739 MovieSelection.py:2779
-msgid "Move file(s):"
-msgstr "Přesun souboru(ů):"
-
-#: MovieSelection.py:2767 MovieSelection.py:2788
-msgid ""
-"How to move files:\n"
-"Select some movies with the VIDEO-button, move the cursor on top of the "
-"destination directory and press yellow."
-msgstr ""
-"Jak přesunout soubory:\n"
-"Vyberte soubory přes tlačítko Video, přesuňte kurzor nahoru na cílovou "
-"složku\n"
-"a stiskněte krátce žluté tlačítko."
-
-#: MovieSelection.py:2811 MovieSelection.py:2851
-msgid "Copy file(s):"
-msgstr "Kopírovat soubor(y):"
-
-#: MovieSelection.py:2839 MovieSelection.py:2860
-msgid ""
-"How to copy files:\n"
-"Select some movies with the VIDEO-button, move the cursor on top of the "
-"destination directory and press yellow long."
-msgstr ""
-"Jak kopírovat soubory:\n"
-"Vyberte soubory přes tlačítko \"Video\", přesuňte kurzor nahoru na cílovou "
-"složku\n"
-"a dlouze stiskněte žluté tlačítko."
-
-#: MovieSelection.py:2876
-msgid "Move Directory:"
-msgstr ""
-
-#: MovieSelection.py:2969 MovieSelection.py:2975
-msgid "IMDb"
-msgstr "IMDb"
-
-#: MovieSelection.py:2971
-msgid "TMDb"
-msgstr "TMDb"
-
-#: MovieSelection.py:2973
-msgid "CSFD"
-msgstr "CSFD"
-
-#: MovieSelectionMenu.py:81
-msgid "Choose operation"
-msgstr "Vyberte příkaz"
-
-#: MovieSelectionMenu.py:84 plugin.py:169 plugin.py:190
-msgid "Movie home"
-msgstr "Výchozí složka filmů"
-
-#: MovieSelectionMenu.py:87
-msgid "Directory up"
-msgstr "O složku nahoru"
-
-#: MovieSelectionMenu.py:89
-msgid "Reload current directory"
-msgstr "Znovu načíst aktuální adresář"
-
-#: MovieSelectionMenu.py:91 MovieSelectionMenu.py:208
-msgid "Playlist Options"
-msgstr ""
-
-#: MovieSelectionMenu.py:95 MovieSelectionMenu.py:213
-msgid "Add to current Playlist"
-msgstr ""
-
-#: MovieSelectionMenu.py:97 plugin.py:173 plugin.py:194
-msgid "Play last"
-msgstr "Přehrát poslední"
-
-#: MovieSelectionMenu.py:102
-msgid "Cover search"
-msgstr "Vyhledat obal"
-
-#: MovieSelectionMenu.py:105
-msgid "Directory-Cover search"
-msgstr ""
-
-#: MovieSelectionMenu.py:114 MovieSelectionMenu.py:116
-msgid "Delete permanently"
-msgstr "Trvale odstranit"
-
-#: MovieSelectionMenu.py:117
-msgid "Empty trashcan"
-msgstr "Vyprázdnit koš"
-
-#: MovieSelectionMenu.py:118
-msgid "Go to trashcan"
-msgstr "Otevřít koš"
-
-#: MovieSelectionMenu.py:120
-msgid "Mark all movies"
-msgstr "Označit všechny filmy"
-
-#: MovieSelectionMenu.py:121
-msgid "Remove rogue files"
-msgstr "Odstranit osamocené soubory"
-
-#: MovieSelectionMenu.py:123
-msgid "Delete cut file(s)"
-msgstr ""
-
-#: MovieSelectionMenu.py:125
-msgid "Create link"
-msgstr "Vytvořit odkaz"
-
-#: MovieSelectionMenu.py:126 MovieSelectionMenu.py:247
-msgid "Create directory"
-msgstr "Vytvořit složku"
-
-#: MovieSelectionMenu.py:128
-msgid "(Un-)Lock Directory"
-msgstr "Zamknout/Odemknout složku"
-
-#: MovieSelectionMenu.py:135
-msgid "Copy Files"
-msgstr ""
-
-#: MovieSelectionMenu.py:136
-msgid "Move Files"
-msgstr ""
-
-#: MovieSelectionMenu.py:138 plugin.py:176 plugin.py:197
-msgid "Copy File"
-msgstr "Kopírovat soubor"
-
-#: MovieSelectionMenu.py:139 plugin.py:171 plugin.py:192
-msgid "Move File"
-msgstr ""
-
-#: MovieSelectionMenu.py:143
-msgid "Download Movie Information"
-msgstr "Stáhnout informace o filmu"
-
-#: MovieSelectionMenu.py:147
-msgid "Rename selected movie(s)"
-msgstr "Přejmenovat vybraný film(y)"
-
-#: MovieSelectionMenu.py:148
-msgid "Remove cut list marker"
-msgstr "Odstraní značku střihu"
-
-#: MovieSelectionMenu.py:149
-msgid "Reset marker from selected movie(s)"
-msgstr ""
-
-#: MovieSelectionMenu.py:167
-msgid "Add directory to E2 Bookmarks"
-msgstr "Přidat složku do E2 záložek"
-
-#: MovieSelectionMenu.py:169
-msgid "Remove directory from E2 Bookmarks"
-msgstr "Odebrat složku z E2 záložek"
-
-#: MovieSelectionMenu.py:172
-msgid "Remove selected E2 Bookmark"
-msgstr "Odstranit vybranou E2 záložku"
-
-#: MovieSelectionMenu.py:174
-msgid "Open EMC Bookmark path"
-msgstr "Otevřít EMC záložky"
-
-#: MovieSelectionMenu.py:176
-msgid "Add directory to EMC Bookmarks"
-msgstr "Přidat složku do EMC záložek"
-
-#: MovieSelectionMenu.py:178
-msgid "Remove directory from EMC Bookmarks"
-msgstr "Odstranit složku z EMC záložek"
-
-#: MovieSelectionMenu.py:181
-msgid "Remove selected EMC Bookmark"
-msgstr "Odstranit vybranou EMC záložku"
-
-#: MovieSelectionMenu.py:183
-msgid "Set permanent sort"
-msgstr "Nastavit trvalé řazení"
-
-#: MovieSelectionMenu.py:185
-msgid "Remove permanent sort"
-msgstr "Odstranit trvalé řazení"
-
-#: MovieSelectionMenu.py:189
-msgid "Remove permanent sort from parent"
-msgstr "Odstranit trvalé řazení z nadřazené složky"
-
-#: MovieSelectionMenu.py:192
-msgid "EMC Setup"
-msgstr "Nastavení EMC"
-
-#: MovieSelectionMenu.py:195
-msgid "Choose plugin"
-msgstr "Vyber plugin"
-
-#: MovieSelectionMenu.py:201
-msgid "Choose bookmark"
-msgstr "Vyber záložku"
-
-#: MovieSelectionMenu.py:209
-msgid "Show current Playlist"
-msgstr ""
-
-#: MovieSelectionMenu.py:215
-msgid "Play current Playlist"
-msgstr ""
-
-#: MovieSelectionMenu.py:216
-msgid "Play random current Playlist"
-msgstr ""
-
-#: MovieSelectionMenu.py:217
-msgid "Delete current Playlist"
-msgstr ""
-
-#: MovieSelectionMenu.py:218
-msgid "Playlist Setup"
-msgstr ""
-
-#: MovieSelectionMenu.py:246
-msgid "Enter name for new directory:"
-msgstr "Zadej název nové složky :"
-
-#: MovieSelectionMenu.py:253
-#, python-format
-msgid "Directory %s already exists!"
-msgstr "Složka %s již existuje!"
-
-#: MovieSelectionMenu.py:267
-#, python-format
-msgid "Do you really want to lock the directory %s and all its subfolders?"
-msgstr "Chcete uzamknout složku %s a všechny její podsložky ?"
-
-#: MovieSelectionMenu.py:269
-#, python-format
-msgid ""
-"The directory %s is already locked. Do you want to unlock it and all its "
-"subfolders?"
-msgstr ""
-"Složka %s je již uzamčena. Chcete ji uvolnit a všechny její podsložky ?"
-
-#: MovieSelectionMenu.py:293
-msgid "Create Link"
-msgstr "Vytvořit odkaz"
-
-#: MovieSelectionMenu.py:324
-msgid "Permanently delete all files in trashcan?"
-msgstr "Odstranit trvale všechny soubory z koše?"
-
-#: MovieSelectionMenu.py:336
-msgid "Movie Selection Menu"
-msgstr "Menu výběru"
-
-#: MovieSelectionMenu.py:344
-msgid "exception "
-msgstr "vyjímka"
-
-#: MovieSelectionMenu.py:353
-msgid ""
-"Locate rogue files and remove them? (permanently if no trashcan available, "
-"may take a minute or so)"
-msgstr ""
-"Najít osamocené soubory a odstranit je? (Natrvalo, pokud není aktivní koš. "
-"Může trvat několik minut.)"
-
-#: MovieSelectionMenu.py:370
-msgid "Remove all cut file marker permanently?"
-msgstr "Odstranit trvale všechny soubory se značkami střihu?"
-
-#: MovieSelectionMenu.py:384
-msgid "Remove all marker permanently?"
-msgstr ""
-
-#: MovieSelectionMenu.py:517
-msgid ""
-"Do you really want to delete the cut file?\n"
-"If you have selected a directory, all cut files within the folder and its "
-"subfolders will be deleted!"
-msgstr ""
-
-#: plugin.py:55
-msgid "no"
-msgstr "ne"
-
-#: plugin.py:55
-msgid "yes"
-msgstr "ano"
-
-#: plugin.py:133
-msgid "No override"
-msgstr "nepoužívat"
-
-#: plugin.py:134
-msgid "Video-button"
-msgstr "Tlačítko \"Video\" "
-
-#: plugin.py:135
-msgid "TV-button"
-msgstr "Tlačítko \"TV\""
-
-#: plugin.py:136
-msgid "Radio-button"
-msgstr "Tlačítko \"Radio\""
-
-#: plugin.py:137
-msgid "Quick-button"
-msgstr "Tlačítko \"Quick\""
-
-#: plugin.py:138
-msgid "Timeshift-button"
-msgstr "Tlačítko \"Časovače\""
-
-#: plugin.py:141 plugin.py:150 plugin.py:159
-msgid "Off"
-msgstr "Vypnuto"
-
-#: plugin.py:142
-msgid "DD.MM.YYYY"
-msgstr "DD.MM.YYYY"
-
-#: plugin.py:143
-msgid "DD.MM.YYYY HH:MM"
-msgstr ""
-
-#: plugin.py:144
-msgid "DD.MM HH:MM"
-msgstr "DD.MM HH:MM"
-
-#: plugin.py:145
-msgid "DD.MM. HH:MM"
-msgstr "DD.MM. HH:MM"
-
-#: plugin.py:146
-msgid "YYYY/MM/DD"
-msgstr "YYYY/MM/DD"
-
-#: plugin.py:147
-msgid "YYYY/MM/DD HH:MM"
-msgstr ""
-
-#: plugin.py:148
-msgid "MM/DD HH:MM"
-msgstr "MM/DD HH:MM"
-
-#: plugin.py:151
-msgid "Description"
-msgstr ""
-
-#: plugin.py:152
-msgid "( # )"
-msgstr "( # )"
-
-#: plugin.py:153
-msgid "( # / GB )"
-msgstr "( # / GB )"
-
-#: plugin.py:154
-msgid "( GB )"
-msgstr "( GB )"
-
-#: plugin.py:156
-msgid "ProgressBar"
-msgstr "Ukazatel přehrání"
-
-#: plugin.py:157
-msgid "Percent (%)"
-msgstr "Procent (%)"
-
-#: plugin.py:158
-msgid "Movie Color"
-msgstr "Barvy filmu"
-
-#: plugin.py:172 plugin.py:193
-msgid "Add to Playlist"
-msgstr ""
-
-#: plugin.py:174 plugin.py:195
-msgid "Cover Search"
-msgstr "Vyhledat obal"
-
-#: plugin.py:175 plugin.py:196
-msgid "Download Movie Info"
-msgstr "Stažení informací o filmu"
-
-#: plugin.py:177 plugin.py:198
-msgid "Open E2 bookmarks"
-msgstr "Otevřít E2 záložky"
-
-#: plugin.py:178
 msgid "Toggle Cover Button"
 msgstr "Tlačítko pro zap/vyp obalu"
 
-#: plugin.py:183
-msgid "Sort Options"
-msgstr "Možnosti řazení"
+msgid "Toggle service selection"
+msgstr "Změnit výběr"
 
-#: plugin.py:209
-msgid "down"
-msgstr "dolů"
+msgid "Toggle viewed / not viewed"
+msgstr "Přepnout viditelné/neviditelné"
 
-#: plugin.py:210
-msgid "up/down"
-msgstr "nahoru/dolů"
+msgid "Total"
+msgstr "Celkem"
 
-#: plugin.py:211
-msgid "off"
-msgstr "vypnuto"
+msgid "Trashcan"
+msgstr "Koš"
 
-#: plugin.py:213
-msgid "type 1 - OSD + black (#00000000)"
-msgstr "typ 1 - OSD + černá (#00000000)"
+msgid "Trashcan create failed. Check mounts and permissions."
+msgstr "Založení koše selhalo ! Zkontrolujte namapování a oprávnění."
 
-#: plugin.py:214
-msgid "type 2 - transparent + white (#FFFFFFFF)"
-msgstr "typ 2 - transparentní + bílá (#FFFFFFFF)"
+msgid "Trashcan enable"
+msgstr "Aktivovat koš"
 
-#: plugin.py:215
-msgid "type 3 - OSD + black (#00FFFFFF)"
-msgstr "typ 3 - OSD + černá (#00FFFFFF)"
+msgid "Trashcan path"
+msgstr "Umístění koše"
 
-#: plugin.py:216
-msgid "type 4 - transparent + black (#FF000000)"
-msgstr "typ 4 - transparentní + černá (#FF000000)"
+#, fuzzy
+msgid "Try to load extra title and more from .meta files"
+msgstr "Načíst názvy ze souborů \".meta\" "
 
-#: plugin.py:219
-msgid "E2 Bookmarks"
-msgstr "E2 záložky"
+msgid "Try to load titles from .eit files"
+msgstr "Načíst titulky ze souboru \".eit\""
 
-#: plugin.py:220
-msgid "EMC Bookmarks"
-msgstr "EMC záložky"
+msgid "Try to load titles from .meta files"
+msgstr "Načíst názvy ze souborů \".meta\" "
 
-#: plugin.py:221
-msgid "Both"
-msgstr "Obě"
+msgid "UNKNOWN"
+msgstr "Neznámé"
 
-#: plugin.py:224
-msgid "Standby"
-msgstr "Pohotovostní režim"
+msgid "Up"
+msgstr "Nahoru"
 
-#: plugin.py:225
-msgid "DeepStandby"
-msgstr "Vypnutí"
+msgid "Use cache for files and directories"
+msgstr "Použít cache pro soubory a složky"
 
-#: plugin.py:226
-msgid "Reboot"
-msgstr "Restart"
-
-#: plugin.py:227
-msgid "E2 Restart"
-msgstr "Restart GUI"
-
-#: plugin.py:229
-msgid "HomeEnd"
-msgstr "Začátek/Konec"
-
-#: plugin.py:230
-msgid "Skip"
-msgstr "Přeskočit"
-
-#: plugin.py:231
-msgid "Change Folder"
-msgstr "Změnit složku"
-
-#: plugin.py:239
-msgid "Date sort descending (D-)"
-msgstr "Seřadit sestupně podle data"
-
-#: plugin.py:239 plugin.py:245
-msgid "Date sort"
-msgstr "Seřadit podle data"
-
-#: plugin.py:240
-msgid "Alpha sort ascending (AZ)"
-msgstr "Seřadit vzestupně podle abecedy (AZ)"
-
-#: plugin.py:240 plugin.py:246
-msgid "Alpha sort"
-msgstr "Seřadit podle abecedy"
-
-#: plugin.py:241
-msgid "Alpha sort ascending, Date descending (AZD-)"
+msgid "Use original EMC-skin (needs reopen)"
 msgstr ""
 
-#: plugin.py:241 plugin.py:247
-msgid "Alpha sort date newest"
+msgid "VLC"
+msgstr "VLC"
+
+msgid "VLC Server not reachable"
+msgstr "VLC server není dostupný"
+
+msgid "VLC-Dir"
+msgstr "VLC složka"
+
+msgid "VLC-Server"
+msgstr "VLC server"
+
+msgid "Video-button"
+msgstr "Tlačítko \"Video\" "
+
+msgid "Vote:"
+msgstr "Hlasování:"
+
+#, fuzzy
+msgid "WD DD.MM. HH:MM"
+msgstr "DD.MM. HH:MM"
+
+#, fuzzy
+msgid "WD DD.MM.YYYY"
+msgstr "DD.MM.YYYY"
+
+#, fuzzy
+msgid "WD DD.MM.YYYY HH:MM"
+msgstr "DD.MM. HH:MM"
+
+#, fuzzy
+msgid "WD MM/DD HH:MM"
+msgstr "MM/DD HH:MM"
+
+#, fuzzy
+msgid "WD YYYY/MM/DD"
+msgstr "YYYY/MM/DD"
+
+#, fuzzy
+msgid "WD YYYY/MM/DD HH:MM"
+msgstr "MM/DD HH:MM"
+
+msgid "Wake device when entering dir from emc-noscan.cfg"
 msgstr ""
 
-#: plugin.py:242
-msgid "Alpha sort ascending with meta (AZM)"
-msgstr ""
-
-#: plugin.py:242 plugin.py:248
-msgid "Alpha sort meta"
-msgstr ""
-
-#: plugin.py:243
-msgid "Alpha sort ascending with meta, Date descending (AZMD-)"
-msgstr ""
-
-#: plugin.py:243 plugin.py:249
-msgid "Alpha sort meta date newest"
-msgstr ""
-
-#: plugin.py:244
-msgid "Progress sort ascending (P+)"
-msgstr "Seřadit vzestupně podle progresu přehrání (P+)"
-
-#: plugin.py:244 plugin.py:250
-msgid "Progress sort"
-msgstr "Seřadit podle progresu přehrání"
-
-#: plugin.py:245
-msgid "Date sort ascending (D+)"
-msgstr "Seřadit vzestupně podle data"
-
-#: plugin.py:246
-msgid "Alpha sort descending (ZA)"
-msgstr "Seřadit sestupně podle abecedy (ZA)"
-
-#: plugin.py:247
-msgid "Alpha sort descending, Date ascending (ZAD+)"
-msgstr ""
-
-#: plugin.py:248
-msgid "Alpha sort descending with meta (ZAM)"
-msgstr ""
-
-#: plugin.py:249
-msgid "Alpha sort descending with meta, Date ascending (ZAMD+)"
-msgstr ""
-
-#: plugin.py:250
-msgid "Progress sort descending (P-)"
-msgstr "Seřadit sestupně podle progresu přehrání (P-)"
-
-#: plugin.py:313
-msgid "left from Name"
-msgstr ""
-
-#: plugin.py:313
-msgid "right from Name"
-msgstr ""
-
-#: plugin.py:324
-msgid "Yes, without Message"
-msgstr ""
-
-#: plugin.py:324
-msgid "Yes, with Message"
-msgstr ""
-
-#: plugin.py:346
-msgid ""
-"ATTENTION\n"
-"\n"
-"This option will move all finished movies in Movie Home automatically to "
-"Your trashcan at the given time.\n"
-"At next trashcan cleanup all movies will be deleted.\n"
-"\n"
-"Confirm this with the blue key followed by the green key."
-msgstr ""
-"Upozornění :\n"
-"\n"
-"Tato volba přesune automaticky všechny ukončené filmy ze základní složky do "
-"koše v nastavené době.\n"
-"Později (podle nastavení) budou všechny filmy odstraněny i z koše.\n"
-"\n"
-"Toto potvrďte modrým tlačítkem a následně tlačítkem zeleným."
-
-#: plugin.py:365
-msgid "center"
-msgstr ""
-
-#: plugin.py:365
-msgid "right"
-msgstr ""
-
-#: plugin.py:370
-#, python-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: plugin.py:379
-msgid "Day"
-msgstr ""
-
-#: plugin.py:382
-msgid "Days"
-msgstr ""
-
-#: plugin.py:387
 msgid "Week"
 msgstr ""
 
-#: plugin.py:390
 msgid "Weeks"
 msgstr ""
 
-#: plugin.py:395
-msgid "Month"
+msgid "White"
 msgstr ""
 
-#: plugin.py:398
-msgid "Months"
+msgid "YYYY/MM/DD"
+msgstr "YYYY/MM/DD"
+
+msgid "YYYY/MM/DD HH:MM"
 msgstr ""
 
-#: plugin.py:403
-msgid "No limit"
+msgid "Yellow button function"
+msgstr "Funkce žlutého tlačítka"
+
+msgid "Yes"
+msgstr "Ano"
+
+msgid "Yes, everything"
 msgstr ""
 
-#: plugin.py:434
-msgid "IMDb Search"
-msgstr "IMDb info"
-
-#: plugin.py:434
-msgid "EMC-TMDB Info"
+msgid "Yes, only extra title"
 msgstr ""
 
-#: plugin.py:434
-msgid "TMDB Info"
-msgstr "TMDB info"
-
-#: plugin.py:434
-msgid "TMBD Info"
+msgid "Yes, with Message"
 msgstr ""
 
-#: plugin.py:434
-msgid "CSFD Info"
-msgstr "CSFD info"
+msgid "Yes, without Message"
+msgstr ""
 
-#: plugin.py:524
+msgid ""
+"Your Box is about to go into DeepStandby, continue?\n"
+" Select no to delay one hour"
+msgstr ""
+"Přijímač se má vypnout, pokračovat?\n"
+" Volba Ne odloží vypnutí o jednu hodinu."
+
+msgid ""
+"Your Box is about to go into E2 Restart, continue?\n"
+" Select no to delay one hour"
+msgstr ""
+"Přijímač má restartovat GUI, pokračovat?\n"
+" Volba Ne odloží restart GUI o jednu hodinu."
+
+msgid ""
+"Your Box is about to go into Reboot, continue?\n"
+" Select no to delay one hour"
+msgstr ""
+"Přijímač se má restartovat, pokračovat?\n"
+" Volba Ne odloží restart o jednu hodinu."
+
+msgid ""
+"Your Box is about to go into Standby, continue?\n"
+" Select no to delay one hour"
+msgstr ""
+"Přijímač má přejít do pohotovostního režimu, pokračovat?\n"
+" Volba Ne odloží přechod o hodinu"
+
+msgid "Zap to channel after record EOF"
+msgstr "Přehrávat záznam po zastavení (konec rychlení, skok) "
+
+msgid "after reload list"
+msgstr ""
+
+#, fuzzy
+msgid "after standby"
+msgstr "Pohotovostní režim"
+
+msgid "all"
+msgstr "vše"
+
+msgid "always"
+msgstr ""
+
+msgid "always hide"
+msgstr ""
+
+msgid "auto-start is currently not active."
+msgstr "aut. start není momentálně aktivní."
+
+msgid "auto-start window begin"
+msgstr "Okno - aut. start v..."
+
+msgid "auto-start window end"
+msgstr "Okno - aut. konec v..."
+
+msgid "center"
+msgstr ""
+
 msgid "configuration"
 msgstr "konfigurace"
 
-#: plugin.py:527
+msgid "covers in"
+msgstr "obalů za"
+
+msgid "daily auto-start"
+msgstr "Startovat denně automaticky přes..."
+
+msgid "down"
+msgstr "dolů"
+
+msgid "every single one"
+msgstr ""
+
+msgid "forward to the next chapter"
+msgstr "přejít na další kapitolu"
+
+msgid "found"
+msgstr "nalezeno"
+
+msgid "from"
+msgstr "z"
+
+msgid "hide live TV"
+msgstr ""
+
+msgid "hide live TV and timeshift"
+msgstr ""
+
+#, fuzzy
+msgid "hide playback"
+msgstr "Zastavit přehrávání"
+
+#, fuzzy
+msgid "imdb.com"
+msgstr "imdb.de"
+
+msgid "jump back to the previous title"
+msgstr "přejít na předchozí titul"
+
+msgid "jump forward to the next title"
+msgstr "přejít na následující titul"
+
+msgid "jump to next marked position"
+msgstr "přejít na další označenou pozici"
+
+msgid "jump to previous marked position"
+msgstr "přejít na předchozí označenou pozici"
+
+msgid "left"
+msgstr ""
+
+msgid "left from Name"
+msgstr ""
+
 msgid "movie manipulation list"
 msgstr "Seznam nahrávek"
 
-#: RogueFileCheck.py:42
-msgid " files\n"
-msgstr " souborů\n"
+msgid "movies in"
+msgstr "filmů za"
 
-#: RogueFileCheck.py:43
-msgid "No rogue files found."
-msgstr "Osamocené soubory nebyly nalezeny."
-
-#: RogueFileCheck.py:44
-msgid ""
-"Found rogue files:\n"
-"\n"
+msgid "never hide"
 msgstr ""
-"Odstraněno samostatných souborů :\n"
-"\n"
 
-#: VlcPluginInterface.py:156
-msgid "VLC Server not reachable"
-msgstr "VLC server není dostupný"
+msgid "no limit"
+msgstr ""
+
+msgid "off"
+msgstr "vypnuto"
+
+msgid "only initially"
+msgstr ""
+
+msgid "overall"
+msgstr ""
+
+msgid "rewind to the previous chapter"
+msgstr "přejít na předchozí kapitolu"
+
+msgid "right"
+msgstr ""
+
+msgid "right from Name"
+msgstr ""
+
+msgid "sec"
+msgstr "sek"
+
+msgid "sec found. Avg. Speed:"
+msgstr "sek vyhledáno. Prům.rychlost:"
+
+msgid "sec."
+msgstr "sek."
+
+msgid "show DVD main menu"
+msgstr "otevřít hlavní menu DVD"
+
+msgid "single pixel TV, muted"
+msgstr ""
+
+#, fuzzy
+msgid "standard cover"
+msgstr "Správa potisku"
+
+msgid "stop service"
+msgstr ""
+
+msgid "switch to the next angle"
+msgstr "přepnout na další úhel pohledu"
+
+msgid "switch to the next audio track"
+msgstr "přepnout na další audio stopu"
+
+msgid "switch to the next subtitle language"
+msgstr "přepnout na další jazyk titulků"
+
+msgid "themoviedb.org"
+msgstr "themoviedb.org"
+
+#, fuzzy
+msgid "themoviedb.org + thetvdb.com"
+msgstr "themoviedb.org"
+
+msgid "thetvdb cover number (standard cover):"
+msgstr ""
+
+msgid "thetvdb cover range per title:"
+msgstr ""
+
+msgid "thetvdb.com"
+msgstr "thetvdb.com"
+
+msgid "three contiguous"
+msgstr ""
+
+msgid "toggle a cut mark at the current position"
+msgstr "zap/vyp značky střihu na aktuální pozici"
+
+msgid "trashcan"
+msgstr ""
+
+msgid "two contiguous"
+msgstr ""
+
+msgid "type 1 - OSD + black (#00000000)"
+msgstr "typ 1 - OSD + černá (#00000000)"
+
+msgid "type 2 - transparent + white (#FFFFFFFF)"
+msgstr "typ 2 - transparentní + bílá (#FFFFFFFF)"
+
+msgid "type 3 - OSD + black (#00FFFFFF)"
+msgstr "typ 3 - OSD + černá (#00FFFFFF)"
+
+msgid "type 4 - transparent + black (#FF000000)"
+msgstr "typ 4 - transparentní + černá (#FF000000)"
+
+msgid "unknown"
+msgstr ""
+
+msgid "up/down"
+msgstr "nahoru/dolů"
+
+msgid "view extensions..."
+msgstr "otevřít rozšířené menu..."
+
+msgid "x"
+msgstr ""
