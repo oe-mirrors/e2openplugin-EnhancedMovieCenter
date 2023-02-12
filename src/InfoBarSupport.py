@@ -39,7 +39,7 @@ from . import _
 from .EMCTasker import emcDebugOut
 from .DelayedFunction import DelayedFunction
 
-from .MovieCenter import sidDVD, sidDVB
+from .CommonSupport import sidDVD, sidDVB
 
 SeekbarPlg = "%s%s" % (resolveFilename(SCOPE_PLUGINS), "Extensions/Seekbar/plugin.py")
 

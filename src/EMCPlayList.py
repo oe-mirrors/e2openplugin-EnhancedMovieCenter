@@ -4,7 +4,7 @@ from __future__ import print_function, absolute_import
 import os
 
 from . import _
-from enigma import eListboxPythonMultiContent, RT_VALIGN_CENTER, RT_HALIGN_RIGHT, gFont, eListbox, getDesktop
+from enigma import eListboxPythonMultiContent, RT_VALIGN_CENTER, RT_HALIGN_RIGHT, gFont, eListbox, getDesktop, eServiceCenter, iServiceInformation
 
 from Screens.Screen import Screen
 from Screens.ChoiceBox import ChoiceBox
@@ -23,8 +23,7 @@ from Tools.Directories import fileExists
 
 from skin import parseColor, parseFont
 
-from .MetaSupport import MetaList
-from .MovieCenter import plyDVB
+from .CommonSupport import getMetaTitleFromDescription, plyDVB
 
 sz_w = getDesktop(0).size().width()
 
@@ -34,24 +33,6 @@ config.EMC.playlist = ConfigSubsection()
 config.EMC.playlist.default_playlist_path = ConfigDirectory(default="/media/hdd/")
 config.EMC.playlist.default_playlist_name = ConfigText(default="EmcPlaylist")
 config.EMC.playlist.save_default_list = ConfigYesNo(default=False)
-
-
-def readPlaylist(path):
-	if path:
-		overview = []
-		plist = open(path, "r")
-		if os.path.splitext(path)[1] == ".e2pls":
-			while True:
-				service = plist.readline()
-				if service == "":
-					break
-				service = service.replace('\n', '')
-				spos = service.find('/')
-				servicepath = service[spos:]
-				service = servicepath.split('/')[-1]
-				name = service + "\n"
-				overview.append(name)
-		return overview
 
 
 class EMCPlaylist():
@@ -303,6 +284,7 @@ class PlayList(GUIComponent):
 		self.l.setFont(1, self.nameFont)
 
 		self.onSelectionChanged = []
+		self.serviceHandler = eServiceCenter.getInstance()
 
 	def selectionChanged(self):
 		for f in self.onSelectionChanged:
@@ -371,12 +353,6 @@ class PlayList(GUIComponent):
 				pos += 1
 				self.addEntry(pos, x)
 
-	def getMetaInfos(self, path):
-		eventtitle = ""
-		meta = MetaList(path)
-		if meta:
-			eventtitle = meta.getMetaTitle()
-		return eventtitle
 
 	def playlistEntrys(self, pos, name, service):
 		entrys = [service]
@@ -386,10 +362,13 @@ class PlayList(GUIComponent):
 		if movie_metaload:
 			path = service.getPath()
 			ext = os.path.splitext(path)[1].lower()
-			if ext in plyDVB:
-				metastring = self.getMetaInfos(path)
-				if metastring != "":
-					name = name + " - " + metastring
+			if ext in plyDVB and service:
+				info = self.serviceHandler.info(service)
+				if info:
+					desc = info.getInfoString(service, iServiceInformation.sDescription) or ""
+					metastring = getMetaTitleFromDescription(desc)
+					if metastring != "":
+						name = name + " - " + metastring
 		if self.screenwidth and self.screenwidth == 1920:
 			entrys.append((eListboxPythonMultiContent.TYPE_TEXT, 5, 1, self.posWidth, 34, 0, RT_VALIGN_CENTER | RT_HALIGN_RIGHT, pos, self.posColor, self.posColorSel))
 			entrys.append((eListboxPythonMultiContent.TYPE_TEXT, 5 + self.posWidth + 30, 1, self.nameWidth, 34, 1, RT_VALIGN_CENTER, name, self.nameColor, self.nameColorSel))

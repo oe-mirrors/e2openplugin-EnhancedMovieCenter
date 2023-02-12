@@ -36,10 +36,11 @@ from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixm
 from Tools.LoadPixmap import LoadPixmap
 from Tools.Directories import fileExists, resolveFilename, SCOPE_CURRENT_SKIN
 from skin import parseColor, parseFont, parseSize
-from enigma import eListboxPythonMultiContent, eListbox, gFont, RT_HALIGN_LEFT, RT_HALIGN_RIGHT, RT_HALIGN_CENTER, eServiceReference, eServiceCenter, ePythonMessagePump, loadPNG, getDesktop
+from enigma import eListboxPythonMultiContent, eListbox, gFont, RT_HALIGN_LEFT, RT_HALIGN_RIGHT, RT_HALIGN_CENTER, eServiceReference, eServiceCenter, ePythonMessagePump, loadPNG, getDesktop, iServiceInformation
 from timer import TimerEntry
 
 from . import _, PY3
+from .CommonSupport import *
 from .EMCFileCache import movieFileCache
 from .EMCMountPoints import mountPoints
 from .RecordingsControl import RecordingsControl, getRecording
@@ -49,8 +50,6 @@ from .VlcPluginInterface import VlcPluginInterfaceList, vlcSrv, vlcDir, vlcFil
 from .VlcPluginInterface import DEFAULT_VIDEO_PID, DEFAULT_AUDIO_PID, ENIGMA_SERVICE_ID
 from operator import itemgetter
 from .CutListSupport import CutList
-from .MetaSupport import MetaList
-from .EitSupport import EitList
 from .PermanentSort import PermanentSort
 from .E2Bookmarks import E2Bookmarks
 from .EMCBookmarks import EMCBookmarks
@@ -100,54 +99,6 @@ global cmtDir, cmtUp, cmtTrash, cmtLRec, cmtVLC, cmtBME2, cmtBMEMC, virVLC, virA
 global vlcSrv, vlcDir, vlcFil
 global plyDVB, plyM2TS, plyDVD, plyMP3, plyVLC, plyAll
 global sidDVB, sidDVD, sidMP3
-
-# Set definitions
-
-# Media types
-extAudio = frozenset([".ac3", ".dts", ".flac", ".m4a", ".mp2", ".mp3", ".ogg", ".wav", ".wma", ".aac"])
-extVideo = frozenset([".ts", ".trp", ".avi", ".divx", ".f4v", ".flv", ".img", ".ifo", ".iso", ".m2ts", ".m4v", ".mkv", ".mov", ".mp4", ".mpeg", ".mpg", ".mts", ".vob", ".wmv", ".bdmv", ".asf", ".stream", ".webm"])
-extPlaylist = frozenset([".m3u", ".e2pls"])#, ".pls"])
-extMedia = extAudio | extVideo | extPlaylist
-extDir = frozenset([""])
-extList = extMedia | extDir
-
-# Additional file types
-extTS = frozenset([".ts", ".trp"])
-extM2ts = frozenset([".m2ts"])
-#extDvd      = frozenset([".iso", ".img", ".ifo"])
-extIfo = frozenset([".ifo"])
-extIso = frozenset([".iso", ".img"])
-extDvd = extIfo | extIso
-extVLC = frozenset([vlcFil])
-extBlu = frozenset([".bdmv"])
-# blue disk movie
-# mimetype("video/x-bluray") ext (".bdmv")
-
-# Player types
-plyDVB = extTS											# ServiceDVB
-plyM2TS = extM2ts											# ServiceM2TS
-plyDVD = extDvd											# ServiceDVD
-plyMP3 = extMedia - plyDVB - plyM2TS - plyDVD - extBlu						# ServiceMP3 GStreamer
-plyVideo = extMedia - extAudio
-plyVLC = extVLC											# VLC Plugin
-#plyBLU      = extBlu | extIso										# BludiscPlayer Plugin
-plyAll = plyDVB | plyM2TS | plyDVD | plyMP3 | plyVLC | extBlu
-
-
-# Type definitions
-
-# Service ID types for E2 service identification
-sidDVB = eServiceReference.idDVB									# eServiceFactoryDVB::id   enum { id = 0x1 };
-sidDVD = 4369 											# eServiceFactoryDVD::id   enum { id = 0x1111 };
-sidMP3 = 4097											# eServiceFactoryMP3::id   enum { id = 0x1001 };
-# For later purpose
-sidM2TS = 3 											# eServiceFactoryM2TS::id  enum { id = 0x3 };
-#TODO
-#sidXINE = 4112												# eServiceFactoryXine::id  enum { id = 0x1010 };
-#additionalExtensions = "4098:m3u 4098:e2pls 4098:pls"
-
-# Grouped service ids
-sidsCuts = frozenset([sidDVB, sidDVD])
 
 # Custom types: Used by EMC internally for sorting and type identification
 
@@ -315,6 +266,11 @@ def getPlayerService(path, name="", ext=None):
 	if name:
 		service.setName(name)
 	return service
+
+
+def updatePlayerService(service, name):
+	if service and service.type != sidDVD and name:
+		service.setName(name)
 
 
 def getMovieNameWithoutExt(moviename=""):
@@ -681,6 +637,7 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 		self.hideitemlist = readBasicCfgFile("/etc/enigma2/emc-hide.cfg") or []
 		self.nostructscan = readBasicCfgFile("/etc/enigma2/emc-noscan.cfg") or []
 		self.topdirlist = readBasicCfgFile("/etc/enigma2/emc-topdir.cfg") or []
+		self.serviceHandler = eServiceCenter.getInstance()
 
 		config.EMC.cfghide_enable.addNotifier(self.changedCfgHideEnable, initial_call=False, immediate_feedback=True)
 
@@ -1259,19 +1216,6 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 					title = title.replace("_", " ")
 					title = title.replace(".", " ")
 
-				# Very bad but there can be both encodings
-				# E2 recordings are always in utf8
-				# User files can be in cp1252
-				#TODO Is there no other way?
-				if not PY3: # FIXME
-					try:
-						title.decode('utf-8')
-					except UnicodeDecodeError:
-						try:
-							title = title.decode("cp1252").encode("utf-8")
-						except UnicodeDecodeError:
-							title = title.decode("iso-8859-1").encode("utf-8")
-
 				service = getPlayerService(path, title)
 
 				sorttitle = title.lower()
@@ -1306,6 +1250,7 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 				# Filename, Title, Date, Sortingkeys handling
 				# First we extract as much as possible informations from the filename
 				service = None
+				serviceInfo = None
 				title, date, cutnr = "", "", ""
 				length = 0
 				#TODO metalength, eitlength and priority handling
@@ -1372,66 +1317,63 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 				# If the user wants it, extract information from the meta and eit files
 				# But it is very slow
 
+				service = getPlayerService(path, "", ext)
+				
+				if service:
+					serviceInfo = self.serviceHandler.info(service)
+					
 				if movie_metaload and not isExtHDDSleeping:
-					# read title from META
-					meta = MetaList(path)
-					if meta:
-						metastring = meta.getMetaName()
+					if serviceInfo:
+						metastring = serviceInfo.getName(service)
 						if config.EMC.movie_metaload_all.value == "title":
-							eventtitle = meta.getMetaTitle()
+							desc = serviceInfo.getInfoString(service, iServiceInformation.sDescription) or ""
+							eventtitle = getMetaTitleFromDescription(desc)
 						if not eventtitle and config.EMC.movie_metaload_all.value == "everything":
-							eventtitle = meta.getMetaDescription()
+							eventtitle = serviceInfo.getInfoString(service, iServiceInformation.sDescription)
 						if not date:
-							date = meta.getMetaDate()
-						# Improve performance and avoid calculation of movie length
-						length = meta.getMetaLength()
-
+							dt = serviceInfo.getInfo(service, iServiceInformation.sTimeCreate)
+							if dt > 0:
+								date = datetime.fromtimestamp(dt)
+						length = serviceInfo.getLength(service)
 				if not metastring and movie_eitload and not isExtHDDSleeping:
-						# read title from EIT
-						eit = EitList(path)
-						if eit:
-							eitstring = eit.getEitName()
+					if serviceInfo:
+						event = serviceInfo and serviceInfo.getEvent(service)
+						if event:							
+							eitstring = event.getEventName()
 							if not date:
-								date = eit.getEitDate()
+								starttimestamp = event.getBeginTime()
+								if starttimestamp:
+									date = datetime.fromtimestamp(starttimestamp)
 							if not length:
-								length = eit.getEitLengthInSeconds()
+								length = event.getDuration()
 				# get piconpath
 				if config.EMC.movie_picons.value and not isExtHDDSleeping:
-					meta = MetaList(path)
-					metaref = meta.getMetaServiceReference()
-					if config.EMC.movie_picons_path_own.value:
-						pos = metaref.rfind(':')
-						if pos != -1:
-							metaref = metaref[:pos].rstrip(':').replace(':', '_')
-					# now we need to check if picon-file exists
-					if newPiconRenderer:
+					if serviceInfo:
+						metaref = serviceInfo.getInfoString(service, iServiceInformation.sServiceref) or ""
 						if config.EMC.movie_picons_path_own.value:
-							picon = config.EMC.movie_picons_path.value + "/" + metaref + '.png'
+							pos = metaref.rfind(':')
+							if pos != -1:
+								metaref = metaref[:pos].rstrip(':').replace(':', '_')
+						# now we need to check if picon-file exists
+						if newPiconRenderer:
+							if config.EMC.movie_picons_path_own.value:
+								picon = config.EMC.movie_picons_path.value + "/" + metaref + '.png'
+							else:
+								picon = getPiconName(metaref)
 						else:
-							picon = getPiconName(metaref)
-					else:
-						picon = config.EMC.movie_picons_path.value + "/" + metaref + '.png'
-					if fileExists(picon):
-						piconpath = picon
+							picon = config.EMC.movie_picons_path.value + "/" + metaref + '.png'
+						if fileExists(picon):
+							piconpath = picon
 
 				# Priority and fallback handling
 
 				# Set title priority here
 				# Fallback is the filename
-				title = metastring or eitstring or title or filename
-
-				# Very bad but there can be both encodings
-				# E2 recordings are always in utf8
-				# User files can be in cp1252
-				#TODO Is there no other way?
-				if not PY3: # FIXME
-					try:
-						title.decode('utf-8')
-					except UnicodeDecodeError:
-						try:
-							title = title.decode("cp1252").encode("utf-8")
-						except UnicodeDecodeError:
-							title = title.decode("iso-8859-1").encode("utf-8")
+				# (metastring first only if not equal to filename)
+				if metastring and metastring != filename:
+					title = metastring
+				else:
+					title = eitstring or title or filename
 
 				# Set date priority here
 				# Fallback get date from filesystem, but it is very slow
@@ -1459,8 +1401,12 @@ class MovieCenterData(VlcPluginInterfaceList, PermanentSort, E2Bookmarks, EMCBoo
 				if movie_show_format:
 					title += " [" + ext[1:] + "]"
 
-				# Get player service and set formatted title
-				service = getPlayerService(path, title, ext)
+				if not service:
+					# Get player service and set formatted title
+					service = getPlayerService(path, title, ext)
+				elif title:
+					# set formatted title only
+					updatePlayerService(service, title)
 
 				# Bad workaround to get all information into our Service Source
 				service.date = date

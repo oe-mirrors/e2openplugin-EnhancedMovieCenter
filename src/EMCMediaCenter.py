@@ -65,7 +65,8 @@ from Components.AVSwitch import AVSwitch
 from Components.Pixmap import Pixmap
 from enigma import ePicLoad
 
-from .MovieCenter import sidDVD, sidDVB, toggleProgressService, getPosterPath
+from .MovieCenter import toggleProgressService, getPosterPath
+from .CommonSupport import sidDVD, sidDVB
 
 from .RecordingsControl import getRecording
 import NavigationInstance
