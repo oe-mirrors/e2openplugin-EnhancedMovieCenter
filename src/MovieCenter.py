@@ -442,17 +442,30 @@ def dirInfo(folder, bsize=False):
 		hideitemlist = readBasicCfgFile("/etc/enigma2/emc-hide.cfg") or []
 	else:
 		hideitemlist = []
-	extCount = extList - extBlu - extIfo
+	
+	def isHideItem(item):
+		return hideitemlist and item and (item in hideitemlist or (item[0:1] == "." and item[0:2] != ".." and ".*" in hideitemlist))
+	
+	dirDict = set()
+	
 	if os.path.exists(folder):
 		#for m in os.listdir(path):
 		for (path, dirs, files) in os.walk(folder):
+			if path in dirDict:
+				continue
 			for dir in dirs:
+				if isHideItem(dir):
+					dirPath = os.path.join(path, dir)
+					dirDict.add(dirPath)
+					continue
 				if dir.lower() in structlist:
 					count += 1						# add dvd/blustructure movies
 					dirs.remove(dir)			# structure's subtree won't be explored
 			#count += len(dirs)					# don't count dirs
 			for m in files:
 				if os.path.splitext(m)[1].lower() in extList:
+					if isHideItem(m):
+						continue
 					count += 1
 					if bsize:
 						# Only retrieve the file size if it is requested,
