@@ -3,36 +3,44 @@ msgstr ""
 "Project-Id-Version: EMC V.4.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-12 22:31+0100\n"
-"PO-Revision-Date: 2016-05-08 15:10+0200\n"
-"Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
-"Language-Team: ANONLANGUAGE <anon@anon.org>\n"
+"PO-Revision-Date: 2024-03-17 21:45+0100\n"
+"Last-Translator: Marián Hikaník <https://www.mojepreklady.net>\n"
+"Language-Team: \n"
 "Language: sk_SK\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.8.7\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: src\n"
 
 msgid " (without counting cover range)"
-msgstr ""
+msgstr " (bez výpočtu rozsahu obalov)"
 
-msgid " Deleting remotely recorded and it will display an rec-error dialog on the other DB."
-msgstr " Mazanie vzdialene nahratých a zobrazenie dialógu chyby nahrávania na druhom DB."
+msgid ""
+" Deleting remotely recorded and it will display an rec-error dialog on the "
+"other DB."
+msgstr ""
+" Vymazanie položiek nahraných vzdialene a zobrazenie chyby nahrávania na "
+"druhom DB."
 
 msgid " all selected video files?"
-msgstr " všetky vybrané video súbory?"
+msgstr " všetky vybrané súbory s videom?"
 
-msgid " all selected video files? The currently playing movie is also one of the selections and its playback will be stopped."
-msgstr " všetky vybrané video súbory? Momentálne prehrávaný súbor je jedným z vybratých a jeho prehrávanie sa zastaví."
+msgid ""
+" all selected video files? The currently playing movie is also one of the "
+"selections and its playback will be stopped."
+msgstr ""
+" všetky vybrané súbory s videom? Aktuálne prehrávaný súbor je tiež jedným z "
+"vybraných a jeho prehrávanie sa zastaví."
 
 msgid " currently played?"
-msgstr " momentálne prehrávané?"
+msgstr " aktuálne prehrávané?"
 
 msgid " files\n"
-msgstr " súborov\n"
+msgstr " súb.\n"
 
 msgid " permanently"
 msgstr " natrvalo"
@@ -40,174 +48,175 @@ msgstr " natrvalo"
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d sekunda"
+msgstr[1] "%d sekundy"
+msgstr[2] "%d sekúnd"
 
 #, python-format
 msgid "%s not removed. Write protect?"
-msgstr ""
+msgstr "%s neodstránené. Ochrana pred zápisom?"
 
 #, python-format
 msgid "%s removed."
-msgstr ""
+msgstr "%s odstránené."
 
 msgid "( # )"
-msgstr ""
+msgstr "( # )"
 
 msgid "( # / GB )"
-msgstr ""
+msgstr "( # / GB )"
 
 msgid "( GB )"
-msgstr ""
+msgstr "( GB )"
 
 msgid "(Un-)Lock Directory"
-msgstr ""
+msgstr "Zamknúť/odomknúť priečinok"
 
 msgid "(show optional DVD audio menu)"
-msgstr "(zobraziť volitelné DVD audio menu)"
+msgstr "(zobraziť voliteľné menu pre DVD audio)"
 
 msgid "*** Multiselection active ***"
-msgstr "*** Multivýber aktívny ***"
+msgstr "*** Viacnásobný výber aktívny ***"
 
 msgid ".../foldername.jpg"
-msgstr ""
+msgstr ".../nazov-priecinka.jpg"
 
 msgid ".../foldername/folder.jpg"
-msgstr ""
+msgstr ".../nazov-priecinka/priecinok.jpg"
 
 msgid ".../foldername/foldername.jpg"
-msgstr ""
+msgstr ".../nazov-priecinka/nazov-priecinka.jpg"
 
 msgid ""
 "ATTENTION\n"
 "\n"
-"This option will move all finished movies in Movie Home automatically to Your trashcan at the given time.\n"
+"This option will move all finished movies in Movie Home automatically to "
+"Your trashcan at the given time.\n"
 "At next trashcan cleanup all movies will be deleted.\n"
 "\n"
 "Confirm this with the blue key followed by the green key."
 msgstr ""
-"UPOZORNENIE\n"
+"POZOR\n"
 "\n"
-"Táto volba automaticky presunie všetky dopozerané filmy v domovskom priečinku filmov do vašeho koša v zadaný čas.\n"
+"Táto voľba automaticky v nastavenom čase presunie všetky dopozerané filmy z "
+"domovského priečinka filmov do koša.\n"
 "Pri ďalšom čistení koša budú všetky filmy vymazané.\n"
 "\n"
-"Potvrdte modrým tlačidlom a následne stlačte zelené."
+"Potvrďte toto hlásenie modrým tlačidlom a následne zeleným tlačidlom."
 
 msgid "AUDIO METADATA"
-msgstr ""
+msgstr "METADÁTA ZVUKU"
 
 msgid "AUTOSTART"
-msgstr ""
+msgstr "AUTOMATICKÉ SPUSTENIE"
 
 msgid "About"
-msgstr "O rozšírení"
+msgstr "O doplnku"
 
 msgid "Add directory to E2 Bookmarks"
-msgstr "Pridať priečinok do E2 záložiek"
+msgstr "Pridať priečinok do záložiek E2"
 
 msgid "Add directory to EMC Bookmarks"
-msgstr ""
+msgstr "Pridať priečinok do záložiek EMC"
 
 msgid "Add to Playlist"
-msgstr ""
+msgstr "Pridať do playlistu"
 
 msgid "Add to current Playlist"
-msgstr ""
+msgstr "Pridať do aktuálneho playlistu"
 
 msgid "After file OPs only re-scan affected dirs"
-msgstr ""
+msgstr "Po manipulácii so súbormi opätovne prehľadávať iba dotknuté priečinky"
 
 msgid "Age of finished movies in movie folder (days)"
-msgstr "Vek dopozeraných filmov v priečinku filmu (dni)"
+msgstr "Vek dopozeraných filmov v priečinku pre filmy (dni)"
 
 msgid "Album:"
-msgstr ""
+msgstr "Album:"
 
 msgid "Alpha sort"
-msgstr "Abecedne"
+msgstr "Zoradiť abecedne"
 
 msgid "Alpha sort ascending (AZ)"
-msgstr ""
+msgstr "Zoradiť: A-Z"
 
 msgid "Alpha sort ascending with meta (AZM)"
-msgstr ""
+msgstr "Zoradiť: A-Z s meta (AZM)"
 
 msgid "Alpha sort ascending with meta, Date descending (AZMD-)"
-msgstr ""
+msgstr "Zoradiť: A-Z s meta, dátumovo zostupne (AZMD-)"
 
 msgid "Alpha sort ascending, Date descending (AZD-)"
-msgstr ""
+msgstr "Zoradiť: A-Z, dátumovo zostupne (AZD-)"
 
 msgid "Alpha sort date newest"
-msgstr ""
+msgstr "Zoradiť abecedne, najnovší dátum"
 
 msgid "Alpha sort descending (ZA)"
-msgstr ""
+msgstr "Zoradiť: Z-A"
 
 msgid "Alpha sort descending with meta (ZAM)"
-msgstr ""
+msgstr "Zoradiť: Z-A s meta (ZAM)"
 
 msgid "Alpha sort descending with meta, Date ascending (ZAMD+)"
-msgstr ""
+msgstr "Zoradiť: Z-A s meta, dátumovo vzostupne (ZAMD+)"
 
 msgid "Alpha sort descending, Date ascending (ZAD+)"
-msgstr ""
+msgstr "Zoradiť: Z-A, dátumovo vzostupne (ZAD+)"
 
 msgid "Alpha sort meta"
-msgstr ""
+msgstr "Zoradiť abecedne, meta"
 
 msgid "Alpha sort meta date newest"
-msgstr ""
+msgstr "Zoradiť abecedne, meta, najnovší dátum"
 
 msgid "Always save current Playlist"
-msgstr ""
+msgstr "Vždy uložiť aktuálny playlist"
 
 msgid "Always save last played progress as marker"
-msgstr "Vždy uložiť priebeh prehrávania ako značku"
+msgstr "Vždy uložiť priebeh posledného prehrávania ako značku"
 
 msgid "Artist:"
-msgstr ""
+msgstr "Umelec:"
 
 msgid "Automatic timers list cleaning"
-msgstr "Automatické mazanie zoznamu časovačov"
+msgstr "Automatické čistenie zoznamu časovačov"
 
 msgid "Available plugins menu"
-msgstr "Ponuka dostupných modulov"
+msgstr "Menu pre dostupné pluginy"
 
 msgid "Black"
-msgstr ""
+msgstr "Čiernej farby"
 
 msgid "Blue button function"
-msgstr "Funkcia modrého tlačítka"
+msgstr "Funkcia modrého tlačidla"
 
-#, fuzzy
 msgid "Bookmark"
 msgstr "Záložka"
 
 msgid "Both"
-msgstr ""
+msgstr "Obidvoje"
 
 msgid "Bouquet buttons behaviour"
-msgstr ""
+msgstr "Správanie sa tlačidiel pre prehľady"
 
 msgid "Button disabled"
-msgstr ""
+msgstr "Tlačidlo zablokované"
 
 msgid "CSFD"
-msgstr ""
+msgstr "CSFD"
 
 msgid "CSFD Info"
-msgstr ""
+msgstr "CSFD Info"
 
 msgid "Can not save "
-msgstr ""
+msgstr "Nemožno uložiť "
 
 msgid "Can not save Cover in "
-msgstr ""
+msgstr "Obal nemožno uložiť do "
 
 msgid "Can not save current Playlist!"
-msgstr ""
+msgstr "Aktuálny playlist nemožno uložiť!"
 
 #, python-format
 msgid ""
@@ -215,6 +224,9 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Nemožno zapísať súbor s informáciou o filme\n"
+"\n"
+"%s"
 
 #, python-format
 msgid ""
@@ -223,24 +235,28 @@ msgid ""
 "%(info)s\n"
 "%(file)s"
 msgstr ""
+"Nemožno zapísať informáciu o filme a súbor s obalom\n"
+"\n"
+"%(info)s\n"
+"%(file)s"
 
 msgid "Cancel"
 msgstr "Zrušiť"
 
 msgid "Cannot delete the parent directory."
-msgstr "Nemôžem zmazať nadradený adresár."
+msgstr "Nemožno vymazať rodičovský priečinok."
 
 msgid "Change File/Moviename and/or Description"
-msgstr ""
+msgstr "Zmeniť názov súboru/filmu a/alebo opis"
 
 msgid "Change Folder"
-msgstr ""
+msgstr "Zmeniť priečinok"
 
 msgid "Change Foldername"
-msgstr ""
+msgstr "Zmeniť názov priečinka"
 
 msgid "Change the filename to save current Playlist:"
-msgstr ""
+msgstr "Zmeniť názov súboru pre uloženie aktuálneho playlistu:"
 
 msgid "Chap."
 msgstr "Kap."
@@ -249,50 +265,49 @@ msgid "Chapter"
 msgstr "Kapitola"
 
 msgid "Check for dead links"
-msgstr ""
+msgstr "Kontrolovať nefunkčné odkazy"
 
 msgid "Choose Directory:"
-msgstr ""
+msgstr "Vyberte priečinok:"
 
 msgid "Choose bookmark"
-msgstr ""
+msgstr "Vyberte záložku"
 
 msgid "Choose directory"
-msgstr "Vybrať adresár"
+msgstr "Vyberte priečinok"
 
 msgid "Choose operation"
-msgstr "Výber operácie"
+msgstr "Vyberte operáciu"
 
 msgid "Choose plugin"
-msgstr "Vybrať modul"
+msgstr "Vyberte plugin"
 
-#, fuzzy
 msgid "Choose script"
-msgstr "Vybrať skript"
+msgstr "Vyberte skript"
 
 msgid "Close EMC"
-msgstr "Ukončiť EMC"
+msgstr "Zavrieť EMC"
 
 msgid "Close EMC and do power button action"
-msgstr ""
+msgstr "Zavrieť EMC a vykonať akciu tlačidla napájania"
 
 msgid "Collection"
-msgstr ""
+msgstr "Zbierka"
 
 msgid "Configured directories at the top of movielist"
-msgstr ""
+msgstr "Nakonfigurované priečinky nad zoznamom filmov"
 
 msgid "Content:"
-msgstr ""
+msgstr "Obsah:"
 
 msgid "Copy File"
-msgstr ""
+msgstr "Kopírovať súbor"
 
 msgid "Copy Files"
-msgstr ""
+msgstr "Kopírovať súbory"
 
 msgid "Copy file(s):"
-msgstr ""
+msgstr "Kopírovať súbor(y):"
 
 #, python-format
 msgid ""
@@ -300,231 +315,244 @@ msgid ""
 "\n"
 "Do you want to replace the existing cover?"
 msgstr ""
+"Obal %s už existuje!\n"
+"\n"
+"Chcete nahradiť existujúci obal?"
 
 msgid "Cover Search"
-msgstr ""
+msgstr "Vyhľadávanie obalu"
 
 msgid "Cover background"
-msgstr ""
+msgstr "Pozadie obalu"
 
 msgid "Cover delay in ms"
-msgstr ""
+msgstr "Oneskorenie obalu v ms"
 
 msgid "Cover disabled in EMC-Setup"
-msgstr ""
+msgstr "Obal zablokovaný v nastaveniach EMC"
 
 msgid "Cover is Saved."
-msgstr ""
+msgstr "Obal je uložený."
 
 msgid "Cover search"
-msgstr ""
+msgstr "Vyhľadávanie obalov"
 
 msgid ""
 "Cover search with all Files in Subdirectories?\n"
 "\n"
 "This may take a while on huge Disks, or Directories!"
 msgstr ""
+"Vyhľadávanie obalu so všetkými súbormi v podpriečinkoch?\n"
+"\n"
+"Pri veľkých diskoch alebo priečinkoch to môže chvíľu trvať!"
 
 msgid "Coversize"
-msgstr ""
+msgstr "Veľkosť obalu"
 
 msgid "Create directory"
 msgstr "Vytvoriť priečinok"
 
-#, fuzzy
 msgid "Create link"
 msgstr "Vytvoriť odkaz"
 
 msgid "Creating Search List.."
-msgstr ""
+msgstr "Vytváranie zoznamu vyhľadávania."
 
 msgid "Current Playlist saved successfully!"
-msgstr ""
+msgstr "Aktuálny playlist bol úspešne uložený!"
 
 msgid "Cursor predictive move after selection"
-msgstr "Kurzor zoznamu odhadne posun po výbere"
+msgstr "Prediktívny presun kurzora po výbere"
 
 msgid "Custom"
-msgstr ""
+msgstr "Používateľské"
 
 msgid "DD.MM. HH:MM"
-msgstr ""
+msgstr "DD.MM. HH:MM"
 
 msgid "DD.MM.YYYY"
-msgstr ""
+msgstr "DD.MM.RRRR"
 
 msgid "DD.MM.YYYY HH:MM"
-msgstr ""
+msgstr "DD.MM.RRRR HH:MM"
 
 msgid "DEBUG"
-msgstr ""
+msgstr "LADENIE"
 
 msgid "DELAYS"
-msgstr ""
+msgstr "ONESKORENIA"
 
 msgid "DISPLAY-SETTINGS"
-msgstr ""
+msgstr "NASTAVENIA ZOBRAZOVANIA"
 
 msgid "DVD / BLU-RAY / FOLDERS"
-msgstr ""
+msgstr "PRIEČINKY DVD/BLU-RAY"
 
-#, fuzzy
 msgid "Daily cleanup time"
 msgstr "Čas denného čistenia"
 
 msgid "Dark green"
-msgstr ""
+msgstr "Tmavá zelená"
 
 msgid "Dark grey"
-msgstr ""
+msgstr "Tmavá sivá"
 
 msgid "Dark orange"
-msgstr ""
+msgstr "Tmavá oranžová"
 
 msgid "Dark red"
-msgstr ""
+msgstr "Tmavá červená"
 
-#, fuzzy
 msgid "Date format"
 msgstr "Formát dátumu"
 
 msgid "Date sort"
-msgstr "Podľa dátumu"
+msgstr "Zoradiť podľa dátumu"
 
 msgid "Date sort ascending (D+)"
-msgstr ""
+msgstr "Zoradenie podľa dátumu, vzostupne (D+)"
 
 msgid "Date sort descending (D-)"
-msgstr ""
+msgstr "Zoradiť podľa dátumu, zostupne (D-)"
 
 msgid "Day"
-msgstr ""
+msgstr "Deň"
 
 msgid "Days"
-msgstr ""
+msgstr "Dní"
 
 msgid "Debug output file name"
-msgstr "Názov súboru s ladiacimi informáciami"
+msgstr "Názov súboru s informáciami pre ladenie"
 
 msgid "DeepStandby"
-msgstr ""
+msgstr "Vypnutie"
 
 msgid "Default"
-msgstr ""
+msgstr "Predvolené"
 
 msgid ""
 "Default Playlist is not empty!\n"
 "\n"
 "Save default Playlist?"
 msgstr ""
+"Predvolený playlist nie je prázdny!\n"
+"\n"
+"Chcete uložiť predvolený playlist?"
 
 msgid "Default Playlist name"
-msgstr ""
+msgstr "Predvolený názov playlistu"
 
 msgid "Default Playlist path"
-msgstr ""
+msgstr "Predvolená cesta k playlistu"
 
 msgid "Default color for highlighted movie"
-msgstr ""
+msgstr "Predvolená farba pre zvýraznený film"
 
 msgid "Default color for partially watched movie"
-msgstr ""
+msgstr "Predvolená farba pre čiastočne videný film"
 
 msgid "Default color for recording movie"
-msgstr ""
+msgstr "Predvolená farba pre nahrávku"
 
 msgid "Default color for unwatched movie"
-msgstr ""
+msgstr "Predvolená farba pre nedopozeraný film"
 
 msgid "Default color for watched movie"
-msgstr ""
+msgstr "Predvolená farba pre dopozeraný film"
 
 msgid "Default sort mode"
-msgstr ""
+msgstr "Predvolený režim zoraďovania"
 
 msgid "Delete"
-msgstr "Zmazať"
+msgstr "Vymazať"
 
 msgid "Delete All"
-msgstr ""
+msgstr "Vymazať všetko"
 
 msgid "Delete Entry"
-msgstr ""
+msgstr "Vymazať záznam"
 
 msgid "Delete current Playlist"
-msgstr ""
+msgstr "Vymazať aktuálny playlist"
 
 msgid "Delete cut file(s)"
-msgstr ""
+msgstr "Vymazať súbor(y) so strihom"
 
 msgid "Delete error:\n"
-msgstr "Chyba pri mazaní:\n"
+msgstr "Chyba pri vymazávaní:\n"
 
-msgid "Delete failed because the trashcan directory does not exist. Attempt to create it now?"
-msgstr "Zmazanie zlyhalo, pretože kôš neexistuje. Mám sa pokúsiť ho vytvoriť teraz?"
+msgid ""
+"Delete failed because the trashcan directory does not exist. Attempt to "
+"create it now?"
+msgstr ""
+"Vymazávanie bolo neúspešné, pretože neexistuje priečinok pre kôš. Chcete sa "
+"pokúsiť o jeho vytvorenie?"
 
 msgid "Delete failed!"
-msgstr ""
+msgstr "Vymazávanie sa nepodarilo!"
 
 msgid "Delete permanently"
-msgstr "Zmazať natrvalo"
+msgstr "Vymazať natrvalo"
 
 msgid "Delete validation"
-msgstr "Zmazať overovanie"
+msgstr "Vymazať overenie"
 
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 msgid "Description field update delay"
-msgstr "Oneskorenie aktualizácie poľa popisu"
+msgstr "Oneskorenie aktualizácie poľa opisu"
 
 msgid "Description:"
-msgstr ""
+msgstr "Opis:"
 
 msgid "Directory"
-msgstr "Adresár"
+msgstr "Priečinok"
 
 #, python-format
 msgid "Directory %s already exists!"
-msgstr ""
+msgstr "Priečinok %s už existuje!"
 
 msgid "Directory back"
-msgstr "Predchádzajúci priečinok"
+msgstr "O priečinok dozadu"
 
 msgid "Directory forward"
-msgstr "Nasledujúci priečinok"
+msgstr "O priečinok dopredu"
 
 msgid "Directory is not empty! Do you really want to delete it?"
-msgstr ""
+msgstr "Priečinok nie je úplne prázdny! Naozaj ho chcete vymazať?"
 
-#, fuzzy
 msgid "Directory up"
-msgstr "Priečinok nahor"
+msgstr "O priečinok nahor"
 
 msgid "Directory-Cover search"
-msgstr ""
+msgstr "Priečinok pre vyhľadávanie obalov"
 
 msgid "Disable EMC"
-msgstr "Zakázať EMC"
+msgstr "Deaktivovať EMC"
 
 msgid "Display directory reading text"
-msgstr "Zobraziť text načítavania adresára"
+msgstr "Pri čítaní priečinka zobraziť text"
 
 msgid ""
 "Do you really want to delete the cut file?\n"
-"If you have selected a directory, all cut files within the folder and its subfolders will be deleted!"
+"If you have selected a directory, all cut files within the folder and its "
+"subfolders will be deleted!"
 msgstr ""
+"Naozaj chcete vymazať súbor so strihom?\n"
+"Ak ste vybrali priečinok, vymažú sa všetky súbory so strihom v danom "
+"priečinku a jeho podpriečinkoch!"
 
 #, python-format
 msgid "Do you really want to lock the directory %s and all its subfolders?"
-msgstr ""
+msgstr "Naozaj chcete uzamknúť priečinok %s a všetky jeho podpriečinky?"
 
 #, python-format
 msgid ""
 "Do you really want to remove your bookmark\n"
 "%s?"
 msgstr ""
-"Určite chcete zmazať vašu záložku\n"
+"Naozaj chcete odstrániť vašu záložku\n"
 "%s?"
 
 #, python-format
@@ -532,7 +560,7 @@ msgid ""
 "Do you really want to remove your directory\n"
 "%s?"
 msgstr ""
-"Určite chcete zmazať váš adresár\n"
+"Naozaj chcete odstrániť váš priečinok\n"
 "%s?"
 
 #, python-format
@@ -540,7 +568,7 @@ msgid ""
 "Do you really want to remove your link\n"
 "%s?"
 msgstr ""
-"Určite chcete zmazať váš odkaz\n"
+"Naozaj chcete odstrániť váš odkaz\n"
 "%s?"
 
 msgid "Do you want to resume this playback?"
@@ -550,152 +578,153 @@ msgid "Does not contain any scripts."
 msgstr "Neobsahuje žiadne skripty."
 
 msgid "Don't auto scan size of dirs from emc-noscan.cfg"
-msgstr ""
+msgstr "Nezisťovať automaticky veľkosť priečinkov z emc-noscan.cfg"
 
 msgid "Download Movie Info"
-msgstr ""
+msgstr "Stiahnuť informácie o filme"
 
 msgid "Download Movie Information"
-msgstr ""
+msgstr "Stiahnuť informáciu o filme"
 
 msgid "Download cutlist from Cutlist.at"
-msgstr ""
+msgstr "Stiahnuť zoznam strihov z Cutlist.at"
 
 #, python-format
 msgid "Download: %s"
-msgstr ""
+msgstr "Stiahnutie: %s"
 
 msgid "E2 Bookmark"
-msgstr ""
+msgstr "Záložka E2"
 
 msgid "E2 Bookmarks"
-msgstr ""
+msgstr "Záložky E2"
 
 msgid "E2 Restart"
-msgstr ""
+msgstr "Reštart E2"
 
 msgid ""
 "EMC\n"
 "Zap to Live TV of record"
 msgstr ""
+"EMC\n"
+"Prepnúť na Live TV nahrávky"
 
 msgid "EMC Bookmarks"
-msgstr ""
+msgstr "Záložky EMC"
 
 msgid "EMC Cover Selecter"
-msgstr ""
+msgstr "Nástroj na výber obalov v EMC"
 
 msgid "EMC Cover search"
-msgstr ""
+msgstr "Vyhľadávanie obalu EMC"
 
 msgid "EMC Cover search setup"
-msgstr ""
+msgstr "Nastavenie vyhľadávania obalu v EMC"
 
 msgid "EMC Filebrowser"
-msgstr ""
+msgstr "Prehliadač súborov EMC"
 
-#, fuzzy
 msgid "EMC Help"
-msgstr "EMC Nastavenie"
+msgstr "Pomocník EMC"
 
 msgid "EMC Playlist - current playlist"
-msgstr ""
+msgstr "Playlist EMC - aktuálny playlist"
 
 msgid "EMC Playlist Menu"
-msgstr ""
+msgstr "Menu pre playlist EMC"
 
 msgid "EMC Playlist Setup"
-msgstr ""
+msgstr "Nastavenie playlistu EMC"
 
-#, fuzzy
 msgid "EMC Setup"
-msgstr "EMC Nastavenie"
+msgstr "Nastavenie EMC"
 
 msgid "EMC Trashcan Cleanup failed!"
-msgstr ""
+msgstr "Čistenie koša EMC sa nepodarilo!"
 
 msgid "EMC always reload after open"
-msgstr "Vždy po otvoreni znovunačítať filmový zoznam"
+msgstr "Po otvorení EMC vždy vykonať opätovné načítanie"
 
 msgid "EMC output directory"
-msgstr "Výstupný adresár EMC"
+msgstr "Výstupný priečinok EMC"
 
 msgid "EMC path access limit"
-msgstr "Ohraničenie prístupu cesty EMC"
+msgstr "Obmedzenie prístupovej cesty EMC"
 
 msgid "EMC re-open list after Movie end"
-msgstr "Znovu otvoriť filmový zoznam po stiskutí STOP"
+msgstr "Po skončení filmu znovu otvoriť zoznam v EMC"
 
 msgid "EMC re-open list after STOP-press"
-msgstr "Znovu otvoriť filmový zoznam po stiskutí STOP"
+msgstr "Po stlačení tlačidla STOP znovu otvoriť zoznam v EMC"
 
 msgid "EMC-TMDB Info"
-msgstr ""
+msgstr "EMC-TMDB Info"
 
 msgid ""
 "EMC: Skipping Trashcan Cleanup\n"
 "Movie Home Path is equal to or a subfolder of the Trashcan"
 msgstr ""
+"EMC: Preskakuje sa čistenie koša\n"
+"Cesta k domovskému priečinku filmov je totožná ako cesta ku košu či "
+"podpriečinku koša"
 
 msgid "Edit Tags"
-msgstr ""
+msgstr "Upraviť značky"
 
 msgid "Empty trashcan"
 msgstr "Vyprázdniť kôš"
 
 msgid "Enable EMC debug output"
-msgstr "Povoliť ladiace informácie"
+msgstr "Povoliť výstup pre ladenie EMC"
 
 msgid "Enable daily trashcan cleanup"
-msgstr "Povoliť denné vyprázdnenie koša"
+msgstr "Povoliť denné vyčistenie koša"
 
 msgid "Enable playback AC3-track first"
-msgstr ""
+msgstr "Povoliť najskôr prehrávanie stopy AC3"
 
 msgid "Enable playback auto-language selection"
-msgstr "Povoliť automatický výber jazyka  pri prehrávaní"
+msgstr "Povoliť automatický výber jazyka pri prehrávaní"
 
 msgid "Enable playback auto-subtitling"
-msgstr "Povoliť titulky pri prehrávaní"
+msgstr "Povoliť automatické zobrazenie titulkov pri prehrávaní"
 
-#, fuzzy
 msgid "Enable remote recordings"
-msgstr "Enable remote recordings"
+msgstr "Zapnúť vzdialené nahrávky"
 
 msgid "English"
-msgstr ""
+msgstr "Anglicky"
 
 msgid "Enter Name for Playlist"
-msgstr ""
+msgstr "Zadajte názov playlistu"
 
 msgid "Enter name for new directory:"
-msgstr ""
+msgstr "Zadajte názov nového priečinka:"
 
 msgid "Exist"
-msgstr ""
+msgstr "Existujúce"
 
 #, python-format
 msgid "Exist: %s"
-msgstr ""
+msgstr "Existujúce: %s"
 
-#, fuzzy
 msgid "F1-button"
-msgstr "Tlačidlo TV"
+msgstr "Tlačidlo F1"
 
 msgid "File added to current Playlist."
-msgstr ""
+msgstr "Súbor bol pridaný do aktuálneho playlistu."
 
 msgid "File exists in current Playlist."
-msgstr ""
+msgstr "Súbor už existuje v aktuálnom playliste."
 
 msgid "File not available."
-msgstr "Súbor nie je k dispozícii."
+msgstr "Súbor nie je dostupný."
 
 msgid "Filename:"
-msgstr ""
+msgstr "Názov súboru:"
 
 msgid "Files added to current Playlist."
-msgstr ""
+msgstr "Súbory boli pridané do aktuálneho playlistu."
 
 #, python-format
 msgid ""
@@ -705,81 +734,90 @@ msgid ""
 "Files exists in current Playlist:\n"
 "%(exist)s"
 msgstr ""
+"Súbory pridané do aktuálneho playlistu:\n"
+"%(add)s\n"
+"\n"
+"Súbory existujúce v aktuálnom playliste:\n"
+"%(exist)s"
 
 #, python-format
 msgid ""
 "Files exists in current Playlist:\n"
 "%s"
 msgstr ""
+"Súbory existujúce v aktuálnom playliste:\n"
+"%s"
 
 msgid "Finished watching percent"
-msgstr "Úplne pozrené v percentách"
+msgstr "Percento prehratia pre označenie položiek ako dopozeraných"
 
 msgid "Foldername:"
-msgstr ""
+msgstr "Názov priečinka:"
 
 msgid "Force standby after auto-restart"
-msgstr "Vynútiť standby po autoreštarte"
+msgstr "Vynútiť pohotovostný režim po automatickom reštartovaní"
 
-#, fuzzy
 msgid "Format AVSwitch"
 msgstr "Formát AVSwitch"
 
-#, fuzzy
 msgid ""
 "Found rogue files:\n"
 "\n"
 msgstr ""
-"Nájdené osirelé súbory:\n"
+"Počet nájdených osamotených súborov:\n"
 "\n"
 
 msgid "Free: "
-msgstr ""
+msgstr "Voľné"
 
 msgid "French"
-msgstr ""
+msgstr "Francúzsky"
 
 msgid "GENERAL"
-msgstr ""
+msgstr "VŠEOBECNÉ"
 
 msgid "Genre:"
-msgstr ""
+msgstr "Žáner:"
 
 msgid "German"
-msgstr ""
+msgstr "Nemecky"
 
 #, python-format
 msgid "Given path %s does not exist. Please change."
 msgstr "Zadaná cesta %s neexistuje. Prosím, zmeňte ju."
 
 msgid "Go to trashcan"
-msgstr "Prejsť ku košu"
+msgstr "Prejsť na kôš"
 
 msgid "Green"
-msgstr ""
+msgstr "Zelená"
 
 msgid "Grey"
-msgstr ""
+msgstr "Sivá"
 
 msgid "HELP_About"
-msgstr "Otorí dialóg O..."
+msgstr "Otvorí sa dialógové okno s informáciami o EMC"
 
 msgid "HELP_After file OPs only re-scan affected dirs"
 msgstr ""
 
 msgid "HELP_Age of finished movies in movie folder (days)"
-msgstr "Set how many days finished (watched) recordings may remain in your \"Movie home\"."
+msgstr ""
+"Tu môžete nastaviť, koľko dní po skončení (sledovaní) nahrávky môže zostať v "
+"domovskom priečinku filmov."
 
 msgid "HELP_Always save last played progress as marker"
 msgstr ""
-"With this option a marker is set for the position every time the playback is stopped.\n"
-"When restarting the playback the < > buttons can be used to jump to this position (independent from the resume function)."
+"Tu môžete nastaviť značku pre pozíciu zakaždým, keď je zastavené "
+"prehrávanie.\n"
+"Pri reštartovaní je možné použiť tlačidlá < > na preskočenie na túto pozíciu "
+"(nezávisle od funkcie Pokračovať)."
 
 msgid "HELP_Automatic timers list cleaning"
-msgstr "Finished Timers will be removed from the TimerList automatically."
+msgstr "Dokončené časovače sa automaticky odstránia zo zoznamu časovačov."
 
 msgid "HELP_Blue button function"
-msgstr "A selection of functions can be assigned to the blue button."
+msgstr "Výber funkcií, ktoré možno prideliť modrému tlačidlu."
 
 msgid "HELP_Bouquet buttons behaviour"
 msgstr ""
@@ -798,20 +836,21 @@ msgstr ""
 
 msgid "HELP_Cursor predictive move after selection"
 msgstr ""
-"Po vybraní tlačidlom [VIDEO/PVR], kurzor sa presunie do vybraného priečinku.\n"
-"Tlačidlami \"hore/dole\" kurzor sleduje posledný nastavený smer."
+"Po výbere tlačidlom [VIDEO/PVR] sa kurzor presunie do určeného smeru.\n"
+"Pri stláčaní tlačidiel \"nahor/nadol\" kurzor sleduje posledný nastavený "
+"smer."
 
 msgid "HELP_Daily auto-start"
 msgstr ""
 
 msgid "HELP_Daily cleanup time"
-msgstr "Time when EMC deletes all files in the trashcan beyond the expiration limit."
+msgstr "Čas, kedy EMC vymaže všetky súbory v koši, ktorých platnosť vypršala."
 
 msgid "HELP_Date format"
-msgstr "Select the date and time format, which will be displayed behind the files."
+msgstr "Vyberte formát dátumu a času, ktoré sa zobrazia za súbormi."
 
 msgid "HELP_Debug output file name"
-msgstr "Name of the log-file for debugging."
+msgstr "Názov súboru so záznamom informácií pre ladenie."
 
 msgid "HELP_Default color highlighted"
 msgstr ""
@@ -819,32 +858,36 @@ msgstr ""
 msgid "HELP_Default color partially watched"
 msgstr ""
 
-#, fuzzy
 msgid "HELP_Default color recording"
 msgstr ""
-"Detect recordings from a other Dreambox to a common volume.\n"
-"This recording get a spezial icon"
+"Deteguje nahrávky z iného prijímača na spoločnej jednotke.\n"
+"Takáto nahrávka získa špeciálnu ikonu."
 
 msgid "HELP_Default color unwatched"
 msgstr ""
 
-#, fuzzy
 msgid "HELP_Default color watched"
-msgstr "Select the date and time format, which will be displayed behind the files."
+msgstr ""
 
 msgid "HELP_Delete validation"
-msgstr "When activated and the trashcan is used, EMC will never ask for a confirmation."
+msgstr "Pri aktivovaní a použití koša nebude EMC vyžadovať potvrdenie."
 
 msgid "HELP_Description field update delay"
 msgstr ""
-"Delay for displaying the description in the filmlist.\n"
-"(Improves the navigation speed when pressing multiple times the up/down button. Because the description is only loaded after the choosen delay.)"
+"Oneskorenie pre zobrazovanie opisu v zozname filmov.\n"
+"(Zlepší rýchlosť navigovania pri viacnásobnom stlačení tlačidla nahor/nadol. "
+"Opis sa totiž načíta až po zadanej dobe oneskorenia.)"
 
 msgid "HELP_Disable EMC"
-msgstr "Úplne zakáže EMC. Niektoré špeciálne funckie ako [čistenie zoznamu časovačov],[čistenie koša] and [automatický reštart] zostanú aktívne na pozadí."
+msgstr ""
+"Úplné deaktivovanie EMC (zoznam filmov). Niektoré špeciálne funkcie, ako je "
+"napríklad\n"
+"[čistenie zoznamu časovačov], [čistenie koša] a [automatické reštartovanie] "
+"budú naďalej aktívne\n"
+"na pozadí."
 
 msgid "HELP_Display directory reading text"
-msgstr "Display the message \"Reading directory...\" during the directory reading."
+msgstr "Zobrazenie správy o čítaní priečinka počas čítania obsahu priečinka."
 
 msgid "HELP_Don't auto scan size of dirs from emc-noscan.cfg"
 msgstr ""
@@ -853,73 +896,77 @@ msgid "HELP_Download cutlist from Cutlist.at"
 msgstr ""
 
 msgid "HELP_Dynamic trashcan"
-msgstr "Display amount of recordings and/or how many disk space these are using in your trashcan."
+msgstr "Zobrazenie počtu nahrávok a/alebo toho, koľko miesta zaberajú v koši."
 
 msgid "HELP_EMC always reload after open"
 msgstr ""
-"Directory is reread with every start of EMC.\n"
-"(Otherwise the directory is read from cache onwards the 2nd start.)"
+"Pri každom spustení EMC sa znovu prečíta obsah priečinka.\n"
+"(V opačnom prípade sa od druhého spustenia bude priečinok načítavať z "
+"vyrovnávacej pamäte.)"
 
 msgid "HELP_EMC output directory"
-msgstr "Select the output directory for the log-file."
+msgstr "Výber výstupného priečinka pre súbor so záznamom."
 
 msgid "HELP_EMC path access limit"
 msgstr ""
-"Obmedziť prístupovú cestu z vašeho \"Domovského priečinku\" filmov.\n"
-"Tlačidlami [<] a [>] (vedľa tlačidla 0) je možné obíjsť toto obmedzenie."
+"Obmedzenie prístupovej cesty smerom von z domovského priečinka filmov.\n"
+"Tlačidlami [<] a [>] (vedľa tlačidla 0) je možné toto obmedzenie potlačiť."
 
 msgid "HELP_EMC re-open list after Movie end"
 msgstr ""
-"If playback reaches the end, the EMC MovieList is displayed again.\n"
-"(Otherwise TV Modus gets active again.)"
+"Po skončení prehrávania sa opäť zobrazí zoznam filmov v EMC.\n"
+"(V opačnom prípade sa opäť aktivuje režim TV.)"
 
 msgid "HELP_EMC re-open list after STOP-press"
 msgstr ""
-"If playback is stopped, the EMC MovieList is displayed again.\n"
-"(Otherwise TV Modus gets active again.)"
+"Po zastavení prehrávania sa znovu zobrazí zoznam filmov v EMC.\n"
+"(V opačnom prípade sa opäť aktivuje režim TV.)"
 
 msgid "HELP_Enable EMC debug output"
 msgstr ""
-"Activate the EMC-debugging.  The log-file will be saved in the directory \"EMC output directory\".\n"
-"ACTIVATE ONLY IN CASE OF PROBLEMS !!!"
+"Aktivovanie ladenia EMC. Súbor so záznamom sa uloží v priečinku pre výstup "
+"EMC.\n"
+"TÚTO VOĽBU AKTIVUJTE IBA V PRÍPADE PROBLÉMOV!!!"
 
 msgid "HELP_Enable daily trashcan cleanup"
-msgstr "EMC deletes old files in your trashcan, when they reach the expiration limit you set in the next entry."
+msgstr ""
+"EMC vymaže staré súbory v koši vtedy, keď dosiahnu exspiráciu nastavovanú v "
+"ďalšej položke."
 
 msgid "HELP_Enable playback AC3-track first"
 msgstr ""
 
 msgid "HELP_Enable playback auto-language selection"
-msgstr "Activate the automatic selection of the audio channel."
+msgstr "Aktivovanie automatického výberu zvukového kanála"
 
 msgid "HELP_Enable playback auto-subtitling"
-msgstr "Activate the automatic selection of the subtitle languages."
+msgstr "Aktivovanie automatického výberu jazyka titulkov"
 
 msgid "HELP_Enable remote recordings"
 msgstr ""
-"Detect recordings from a other Dreambox to a common volume.\n"
-"This recording get a spezial icon"
+"Detegovať nahrávky z iného zariadenia na spoločnú jednotku.\n"
+"Táto nahrávka bude mať špeciálnu ikonu"
 
 msgid "HELP_Fallback Cover"
 msgstr ""
 
 msgid "HELP_Finished watching percent"
 msgstr ""
-"Specifies what percentage of progress is classified as \"seen\". \n"
-"The progress bar will change to green."
+"Určuje, koľko percent je považovaných za \"dopozeranie\". \n"
+"Stĺpec s postupom sa zafarbí nazeleno."
 
 msgid "HELP_Force standby after auto-start"
 msgstr ""
 
 msgid "HELP_Hide movies being deleted"
 msgstr ""
-"The recording will be hidden from the MovieList while deleting.\n"
-"(Anyhow the delete action will be executed in background.)"
+"Nahrávka bude počas vymazávania skrytá zo zoznamu filmov.\n"
+"(Vymazanie však prebieha na pozadí.)"
 
 msgid "HELP_Hide movies being moved"
 msgstr ""
-"The recording will be hidden from the MovieList while moving.\n"
-"(Anyhow the move action will be executed in background.)"
+"Nahrávka bude počas presúvania skrytá zo zoznamu filmov.\n"
+"(Presun však prebieha na pozadí.)"
 
 msgid "HELP_Horizontal alignment for count / size"
 msgstr ""
@@ -929,22 +976,25 @@ msgstr ""
 
 msgid "HELP_How many days files may remain in trashcan"
 msgstr ""
-"Set how many days files may remain in trashcan before EMC deletes them permanently.\n"
-"(When set to [0] the files will deleted immediately)."
+"Nastavenie toho, koľko dní môžu byť súbory v koši predtým, než ich EMC "
+"natrvalo vymaže.\n"
+"(Ak je nastavená hodnota [0], súbory sa vymažú okamžite)."
 
 msgid "HELP_Icon shown for initially unknown count / size"
 msgstr ""
 
 msgid "HELP_Jump to first mark when playing movie"
 msgstr ""
-"Jumps automatically to the first Marker if availiable in the beginning of a recording.\n"
-"(Can help to skip the lead time automatically.)"
+"Automaticky preskočiť na prvú značku, ak je dostupná na začiatku nahrávky.\n"
+"(Môže pomôcť pri automatickom preskočení úvodu.)"
 
 msgid "HELP_Key period value (50-900)"
-msgstr "Time untill resending the button when keeping the button pressed."
+msgstr ""
+"Čas do opakovaného odoslania príkazu tlačidla, keď držíte tlačidlo stlačené."
 
 msgid "HELP_Key repeat value (250-900)"
-msgstr "Speed of resending the button when keeping the button pressed."
+msgstr ""
+"Rýchlosť opakovaného odoslania príkazu, pokiaľ držíte tlačidlo stlačené."
 
 msgid "HELP_Latest Recordings directory limit"
 msgstr ""
@@ -953,7 +1003,9 @@ msgid "HELP_Latest Recordings directory use emc-noscan.cfg"
 msgstr ""
 
 msgid "HELP_Leave Movie with Exit"
-msgstr "The playback of a recording can be stopped with the EXIT button, additional to the Stop button."
+msgstr ""
+"Prehrávanie nahrávky je možné zastaviť aj tlačidlom EXIT, nielen tlačidlom "
+"Stop."
 
 msgid "HELP_Limit file operations in dirs from emc-noscan.cfg"
 msgstr ""
@@ -963,8 +1015,9 @@ msgstr ""
 
 msgid "HELP_Listbox is skin able"
 msgstr ""
-"The visual display of the MovieList from the Skin (if availiable) will be used (only <widget name=\"list\").\n"
-"Otherwise the EMC Setup will be applied."
+"Použije sa vizuálne zobrazenie zoznamu filmov podľa skinu (ak je dostupný) "
+"(<widget name=\\\"list\\\").\n"
+"V ostatných prípadoch sa aplikuje nastavenie EMC."
 
 msgid "HELP_Long Blue button function"
 msgstr ""
@@ -985,15 +1038,18 @@ msgid "HELP_Minimum file cache limit"
 msgstr ""
 
 msgid "HELP_Move finished movies in trashcan"
-msgstr "Move all finished (watched) recordings from \"Movie home\" to the trashcan, when they reach the expiration limit you set in the next entry."
+msgstr ""
+"Presunutie všetkých dokončených (dopozeraných) nahrávok z domovského "
+"priečinka filmov do koša, ak dosiahli exspiráciu nastavovanú v ďalšej "
+"položke."
 
 msgid "HELP_Movie home at start"
 msgstr ""
-"EMC sa vždy spustí v \"Domovskom priečinku\" filmov.\n"
-"(V ďalšej položke môžete nastaviť \"Domovský priečinok\" filmov)."
+"EMC sa vždy spustí v domovskom priečinku filmov.\n"
+"(Domovský priečinok filmov môžete nastaviť v ďalšej položke)."
 
 msgid "HELP_Movie home home path"
-msgstr "Nastaví \"Domovský priečinok\" filmov."
+msgstr "Nastavte cestu k domovskému priečinku filmov."
 
 msgid "HELP_Movie preview delay in ms"
 msgstr ""
@@ -1003,8 +1059,9 @@ msgstr ""
 
 msgid "HELP_No resume below 10 seconds"
 msgstr ""
-"Ignores the Start Marker below 10 seconds.\n"
-"If playback is stopped during the first 10 seconds, no Resume will be proposed at next playback."
+"Ignorovanie značky spustenia pod 10 sekúnd.\n"
+"Ak sa prehrávanie zastaví počas prvých 10 sekúnd, nebude sa pri ďalšom "
+"prehrávaní navrhovať pokračovanie sledovania."
 
 msgid "HELP_Own Path to movie picons"
 msgstr ""
@@ -1016,31 +1073,34 @@ msgid "HELP_Position movie picons"
 msgstr ""
 
 msgid "HELP_Preferred EPG language"
-msgstr "Here you can specify the prefered language for the EPG."
+msgstr "Tu môžete určiť preferovaný jazyk pre EPG."
 
 msgid "HELP_Primary playback audio language"
-msgstr "First audio channel which should be selected, if availiable."
+msgstr "Prvý zvukový kanál, ktorý by sa mal zvoliť (ak je dostupný)."
 
 msgid "HELP_Primary playback subtitle language"
-msgstr "First language which should be selected, if availiable, for the subtitles."
+msgstr "Prvý jazyk, ktorý by sa mal zvoliť pre titulky (ak je dostupný)."
 
 msgid "HELP_Red button function"
 msgstr ""
 
 msgid "HELP_Replace special chars in title"
-msgstr "Replace underscores and points in titles with spaces."
+msgstr "Nahradenie symbolov podčiarknutia a bodky v názvoch, medzerami."
 
 msgid "HELP_Resolve links and show real path"
 msgstr ""
-"Path of links will be resolved.\n"
-"On problems with spinner or NAS wakeup, disable this option. (Path will be displayed as \"Extended Description\".)"
+"Cesta odkazov bude rozlišovaná.\n"
+"Túto voľbu deaktivujte v prípade problémov spojených s čakaním alebo "
+"prebúdzaním NAS. (Cesta sa zobrazuje ako rozšírený opis.)"
 
 msgid "HELP_Rewind finished movies before playing"
-msgstr "If a recording with status \"seen\" is restarted, the movie will be replayed from the beginning."
+msgstr ""
+"Pri reštartovaní nahrávky so statusom dopozerané sa bude film prehrávať od "
+"začiatku."
 
 msgid "HELP_Scan for DVD structures"
 msgstr ""
-"Zakáže prehladávanie DVD štruktúr vo všetkých priečinkoch.\n"
+"Vypnutie analyzovania štruktúr DVD vo všetkých priečinkoch.\n"
 "Týmto sa zabráni nechcenému prebudeniu (sieťových) diskov."
 
 msgid "HELP_Scan for bluray structures"
@@ -1053,15 +1113,15 @@ msgid "HELP_Scan for movie structures"
 msgstr ""
 
 msgid "HELP_Secondary playback audio language"
-msgstr "Second audio channel which should be selected, if availiable."
+msgstr "Druhý zvukový kanál, ktorý by sa mal vybrať (ak je dostupný)."
 
 msgid "HELP_Secondary playback subtitle language"
-msgstr "Second language which should be selected, if availiable, for the subtitles."
+msgstr "Druhý jazyk, ktorý by sa mal vybrať pre titulky, ak je dostupný."
 
 msgid "HELP_Short watching percent"
 msgstr ""
-"Specifies what percentage of progress is classified as \"being watched\". \n"
-"The progress bar will change to blue."
+"Určuje, koľko percent je považovaných za pozeranie filmu.\n"
+"Ukazovateľ sa zafarbí namodro."
 
 msgid "HELP_Show Bookmarks in movielist"
 msgstr ""
@@ -1071,43 +1131,45 @@ msgstr ""
 
 msgid "HELP_Show Cut-Nr if exist"
 msgstr ""
-"If Enigma2 reboots during a recording the recording is continued automatically with an index number at the end of the filename.\n"
-"With this option the index is appended to the title."
+"Ak bude systém Enigma2 reštartovaný počas nahrávania, nahrávka bude "
+"automaticky pokračovať a na koniec názvu súboru sa pridá indexovacie číslo.\n"
+"Pomocou tejto voľby pridáte k názvu aj index."
 
 msgid "HELP_Show EMC in extensions menu"
 msgstr ""
-"Zobraziť alebo skryť zapnutie moduu EMC v rozšírenej ponuke.\n"
-"Rozšírená ponuka je štandardne dostupná cez [modré] tlačidlo."
+"Zobrazenie alebo skrytie spustenia pluginu EMC v menu pre rozšírenia.\n"
+"Menu pre rozšírenie je za normálnych okolností dostupné stlačením [modrého] "
+"tlačidla."
 
-#, fuzzy
 msgid "HELP_Show EMC in main menu"
 msgstr ""
-"Zobraziť alebo skryť zapnutie moduu EMC v rozšírenej ponuke.\n"
-"Rozšírená ponuka je štandardne dostupná cez [modré] tlačidlo."
 
 msgid "HELP_Show Latest Recordings directory"
 msgstr ""
-"Zobrazí virtuálny priečinok vo vašom \"Domovskom priečinku\" filmov so zoznamom posledných nahrávok. Rovnako aj zo všetkých pod-priečinkov vo vašom \"Domovskom priečinku\" filmov.\n"
+"Zobrazí sa virtuálny priečinok vo vašom domovskom priečinku filmov so "
+"zoznamom posledných nahrávok. Rovnako aj zo všetkých podpriečinkov vo vašom "
+"domovskom priečinku filmov.\n"
 "(Iba jedna strana)"
 
 msgid "HELP_Show Movie Format"
-msgstr "The file extention (file format) will be appended to the title."
+msgstr "K názvu bude pripojená koncovka (formát súboru)."
 
 msgid "HELP_Show Path if no extended description available"
 msgstr ""
 
 msgid "HELP_Show VLC directory"
-msgstr "Zobraziť alebo skryť priečinok VLC v prípade, ak VlcPlayerExtended modul je nainštalovaný."
+msgstr ""
+"Zobrazí sa alebo sa skryje priečinok VLC v prípade, ak je nainštalovaný "
+"plugin VlcPlayerExtended."
 
-#, fuzzy
 msgid "HELP_Show audio metadata"
-msgstr "The file extention (file format) will be appended to the title."
+msgstr ""
 
 msgid "HELP_Show directories"
-msgstr "Zobraziť alebo skryť priečinky v zozname filmov"
+msgstr "Zobrazia sa alebo sa skryjú priečinky v zozname filmov"
 
 msgid "HELP_Show directories information"
-msgstr "Zobrazí počet nahrávok a/alebo koľko miesta na disku zaberajú."
+msgstr "Zobrazí sa počet nahrávok a/alebo koľko miesta zaberajú na disku."
 
 msgid "HELP_Show directories within movielist"
 msgstr ""
@@ -1125,7 +1187,7 @@ msgid "HELP_Show message if file added to playlist"
 msgstr ""
 
 msgid "HELP_Show movie icons"
-msgstr "A corresponding icon is displayed in the MovieList."
+msgstr "V zozname súborov sa zobrazí zodpovedajúca ikona."
 
 msgid "HELP_Show movie picons"
 msgstr ""
@@ -1134,12 +1196,14 @@ msgid "HELP_Show movie preview"
 msgstr ""
 
 msgid "HELP_Show movie progress"
-msgstr "A progress bar in front of the movies is displayed in the MovieList."
+msgstr "V zozname filmov sa pred filmami zobrazí postup sledovania."
 
 msgid "HELP_Show plugin config in extensions menu"
 msgstr ""
-"Zobraziť alebo skryť konfiguráciu EMC v rozšírenej ponuke.\n"
-"Rozšírená ponuka je štandardne dostupná cez [modré] tlačidlo."
+"V menu pre rozšírenia sa zobrazí alebo skryje konfigurácia prídavného "
+"modulu.\n"
+"Do menu pre rozšírenia sa za normálnych okolností dostanete pomocou "
+"[modrého] tlačidla."
 
 msgid "HELP_Show real length of running records"
 msgstr ""
@@ -1149,23 +1213,23 @@ msgstr ""
 
 msgid "HELP_Show trashcan directory"
 msgstr ""
-"Display the trashcan directory in EMC.\n"
-"(When is hidden, however you can access the trashcan over the EMC [MENU])"
+"Zobraziť priečinok pre kôš v EMC.\n"
+"(Ak je skrytý, môžete získať prístup ku košu cez EMC [MENU])"
 
 msgid "HELP_Sort mode at startup"
 msgstr ""
 
 msgid "HELP_Start EMC with"
-msgstr "Nastaví priame tlačidlo na otovrenie EMC."
+msgstr "Nastavenie priameho tlačidla pre spustenie EMC"
 
 msgid "HELP_Style for original EMC-skin (needs reopen)"
 msgstr ""
 
 msgid "HELP_Tertiary playback audio language"
-msgstr "Third audio channel which should be selected, if availiable."
+msgstr "Tretí zvukový kanál, ktorý by sa mal zvoliť (ak je dostupný)."
 
 msgid "HELP_Tertiary playback subtitle language"
-msgstr "Third language which should be selected, if availiable, for the subtitles."
+msgstr "Tretí jazyk, ktorý by sa mal zvoliť pre titulky, ak je dostupný."
 
 msgid "HELP_Text shown for initially unknown count and size"
 msgstr ""
@@ -1177,31 +1241,33 @@ msgid "HELP_Text shown for initially unknown file count"
 msgstr ""
 
 msgid "HELP_Trashcan enable"
-msgstr "Enable the trashcan functionality. On delete all files will be first move to the trashcan directory."
+msgstr ""
+"Aktivovanie koša. Pri vymazávaní súborov sa tieto súbory najskôr presunú do "
+"koša."
 
 msgid "HELP_Trashcan path"
 msgstr ""
-"Set your trashcan path.\n"
-"Pressing [delete] will move the recordings to the activated trashcan instead of deleting the files immediately."
+"Nastavenie cesty ku košu.\n"
+"Po výbere voľby [Vymazať] sa nahrávky presunú do aktivovaného koša, "
+"neprebehne priamo vymazanie súborov."
 
-#, fuzzy
 msgid "HELP_Try to load extra title and more from .meta files"
 msgstr ""
-"Titles will be loaded from the .meta if availiable.\n"
-"Otherwise the title will be extracted from the filename.\n"
-"(Is .meta and .eit activatetd, the .meta will be read first.)"
+"Extra-názvy sa načítajú zo súborov .meta, ak sú dostupné.\n"
+"V opačnom prípade sa názov extrahuje z názvu súboru.\n"
+"(ak sú aktivované súbory .meta a .eit, najskôr sa číta súbor .meta.)"
 
 msgid "HELP_Try to load titles from .eit files"
 msgstr ""
-"Titles will be loaded from the .eit if availiable.\n"
-"Otherwise the title will be extracted from the filename.\n"
-"(Is .meta and .eit activatetd, the .meta will be read first.)"
+"Názvy sa načítajú zo súborov .eit, ak sú dostupné.\n"
+"V opačnom prípade sa názov extrahuje z názvu súboru.\n"
+"(ak sú aktivované súbory .meta a .eit, najskôr sa číta súbor .meta.)"
 
 msgid "HELP_Try to load titles from .meta files"
 msgstr ""
-"Titles will be loaded from the .meta if availiable.\n"
-"Otherwise the title will be extracted from the filename.\n"
-"(Is .meta and .eit activatetd, the .meta will be read first.)"
+"Názvy sa načítajú zo súborov .meta, ak sú dostupné.\n"
+"V opačnom prípade sa názov extrahuje z názvu súboru.\n"
+"(ak sú aktivované súbory .meta a .eit, najskôr sa číta súbor .meta.)"
 
 msgid "HELP_Use cache for files and directories"
 msgstr ""
@@ -1216,7 +1282,10 @@ msgid "HELP_Yellow button function"
 msgstr ""
 
 msgid "HELP_Zap to channel after record EOF"
-msgstr "If the player reach the end of a running record, because of fast forward or jump forward, close emc and zap directly to the live tv channel of the record."
+msgstr ""
+"Keď prehrávač dosiahne koniec prebiehajúcej nahrávky kvôli rýchlym "
+"preskočeniam dopredu alebo dozadu, zatvorí sa EMC a z nahrávky sa prepne "
+"priamo na live TV."
 
 msgid "HELP_auto-start window begin"
 msgstr ""
@@ -1226,19 +1295,20 @@ msgstr ""
 
 msgid "HELP_cfghide_enable"
 msgstr ""
-"Skryje súbory a priečinky v '/etc/enigma2/emc-hide.cfg'.\n"
-"Zmena týchto nastavení vyžaduje reštarovanie prijímača!"
+"Skryť súbory a priečinky uvedené v '/etc/enigma2/emc-hide.cfg'.\n"
+"Po zmene týchto nastavení sa vyžaduje reštart systému Enigma2!"
 
 msgid "HELP_cfgscan_suppress"
 msgstr ""
-"Don't parse for DVD-structures in subdirectories from paths listed in '/etc/enigma2/emc-noscan.cfg'. This avoids unwanted wake up of (network)disks.\n"
-"Changing this setting requires a Enigma2 restart!"
+"Neanalyzovať štruktúry DVD v podpriečinkoch z ciest uvedených v súbore '/etc/"
+"enigma2/emc-noscan.cfg'. Týmto sa zabráni neželanému prebudeniu (sieťových) "
+"diskov.\n"
+"Po zmene týchto nastavení sa vyžaduje reštart systému Enigma2!"
 
-#, fuzzy
 msgid "HELP_hide_MiniTV"
 msgstr ""
-"Skryje súbory a priečinky v '/etc/enigma2/emc-hide.cfg'.\n"
-"Zmena týchto nastavení vyžaduje reštarovanie prijímača!"
+"Skryť súbory a priečinky uvedené v '/etc/enigma2/emc-hide.cfg'.\n"
+"Po zmene týchto nastavení sa vyžaduje reštart systému Enigma2!"
 
 msgid "HELP_hide_MiniTV cover"
 msgstr ""
@@ -1248,237 +1318,251 @@ msgstr ""
 
 msgid "HELP_scan_linked"
 msgstr ""
-"Disable the parsing for DVD-structures in Symlinks refering to subdirectories.\n"
-"This avoids unwanted wake up of (network)disks."
+"Vypnúť analyzovanie štruktúr DVD v symbolických odkazoch odkazujúcich na "
+"podpriečinky.\n"
+"Týmto sa zabráni neželanému prebudeniu (sieťových) diskov."
 
 msgid "Hide Cover"
-msgstr ""
+msgstr "Skryť obal"
 
 msgid "Hide MiniTV"
-msgstr ""
+msgstr "Skryť MiniTV"
 
 msgid "Hide MiniTV if Cover is shown"
-msgstr ""
+msgstr "Skryť MiniTV, ak je zobrazený obal"
 
-#, fuzzy
 msgid "Hide configured entries"
-msgstr "Skryť nakonfigurované položky"
+msgstr "Skryť nakonfigurované záznamy"
 
 msgid "Hide movies being deleted"
-msgstr "Ukryť zmazané filmy"
+msgstr "Skryť vymazané filmy"
 
 msgid "Hide movies being moved"
-msgstr "Ukryť presúvané filmy"
+msgstr "Skryť presúvané filmy"
 
 msgid "HomeEnd"
-msgstr ""
+msgstr "HomeEnd"
 
 msgid "Horizontal alignment for count / size"
-msgstr ""
+msgstr "Horizontálne zarovnanie počtu/veľkosti"
 
 msgid "Horizontal alignment for date"
-msgstr ""
+msgstr "Horizontálne zarovnanie dátumu"
 
 msgid "How many days files may remain in trashcan"
-msgstr "Koľko dní majú filmy zostať v koši?"
+msgstr "Koľko dní majú filmy zostať v koši"
 
-#, fuzzy
 msgid ""
 "How to copy files:\n"
-"Select some movies with the VIDEO-button, move the cursor on top of the destination directory and press yellow long."
+"Select some movies with the VIDEO-button, move the cursor on top of the "
+"destination directory and press yellow long."
 msgstr ""
 "Ako kopírovať súbory:\n"
-"Vyberte filmy s VIDEO-tlačidlom, premiesnite kurzor ponad priečinok, kam chcete filmy zkopírovať a dlhšie podržte žlté tlačidlo."
+"Vyberte filmy tlačidlom VIDEO, premiestnite kurzor nad cieľový priečinok a "
+"dlhšie podržte žlté tlačidlo."
 
-#, fuzzy
 msgid ""
 "How to move files:\n"
-"Select some movies with the VIDEO-button, move the cursor on top of the destination directory and press yellow."
+"Select some movies with the VIDEO-button, move the cursor on top of the "
+"destination directory and press yellow."
 msgstr ""
-"Ako presunúť súbory:\n"
-"Vyberte filmy s VIDEO-tlačidlom, premiesnite kurzor ponad priečinok, kam chcete filmy presunúť a stlačte žlté tlačidlo."
+"Ako presúvať súbory:\n"
+"Vyberte filmy tlačidlom VIDEO, premiestnite kurzor nad cieľový priečinok a "
+"stlačte žlté tlačidlo."
 
 msgid "IMDBSearch / EMC-TMDBInfo / TMDBInfo / TMBDInfo / CSFDInfo"
-msgstr ""
+msgstr "IMDBSearch / EMC-TMDBInfo / TMDBInfo / TMBDInfo / CSFDInfo"
 
 msgid "IMDb"
-msgstr ""
+msgstr "IMDb"
 
 msgid "IMDb Search"
-msgstr ""
+msgstr "Vyhľadávanie IMDb"
 
 msgid "Icon shown for initially unknown count / size"
-msgstr ""
+msgstr "Ikona zobrazovaná pre spočiatku neznámy počet/veľkosť položiek"
 
 msgid "Information"
-msgstr ""
+msgstr "Informácia"
 
 msgid "Italian"
-msgstr ""
+msgstr "Taliansky"
 
 msgid "Jump to first mark when playing movie"
 msgstr "Preskočiť na prvú značku pri prehrávaní filmu"
 
 msgid "KEYMAPPING"
-msgstr ""
+msgstr "MAPOVANIE TLAČIDIEL"
 
 msgid "Key period value (50-900)"
-msgstr "Opakovacia doba tlačítka (50-900)"
+msgstr "Interval opakovania príkazu tlačidla (50-900)"
 
 msgid "Key repeat value (250-900)"
-msgstr "Opakovacia frekvencia tlačítka (250-900)"
+msgstr "Hodnota opakovania príkazu tlačidla (250-900)"
 
 msgid "LANGUAGE"
-msgstr ""
+msgstr "JAZYK"
 
 msgid "Language:"
-msgstr ""
+msgstr "Jazyk:"
 
 msgid "Last played movie/playlist not available..."
-msgstr "Posledne hraný film/zoznam nedostupný"
+msgstr "Naposledy prehrávaný film/playlist nie je dostupný..."
 
-#, fuzzy
 msgid "Latest"
 msgstr "Najnovšie"
 
 msgid "Latest Recordings"
-msgstr "Najnovšie nahrávky"
+msgstr "Posledné nahrávky"
 
 msgid "Latest Recordings directory limit"
-msgstr ""
+msgstr "Obmedzenie priečinka s poslednými nahrávkami"
 
 msgid "Latest Recordings directory use emc-noscan.cfg"
-msgstr ""
+msgstr "Priečinok pre najnovšie nahrávky využíva súbor emc-noscan.cfg"
 
 msgid "Leave Movie with Exit"
-msgstr "Ukončiť film s tlačítkom EXIT"
+msgstr "Opustiť film tlačidlom Exit"
 
 msgid "Light green"
-msgstr ""
+msgstr "Bledá zelená"
 
 msgid "Light grey"
-msgstr ""
+msgstr "Bledá sivá"
 
 msgid "Light orange"
-msgstr ""
+msgstr "Bledá oranžová"
 
 msgid "Light red"
-msgstr ""
+msgstr "Bledá červená"
 
 msgid "Limit file operations in dirs from emc-noscan.cfg"
-msgstr ""
+msgstr "Obmedziť operácie so súbormi v priečinkoch z emc-noscan.cfg"
 
 msgid "Link"
 msgstr "Odkaz"
 
 msgid "List entries to skip"
-msgstr ""
+msgstr "Zoznam záznamov na preskočenie"
 
 msgid "Listbox is skin able"
-msgstr "Listbox je skinovateľný"
+msgstr "Oblasť zoznamu podporuje súbory so vzhľadom (skiny)"
 
 msgid "Load Genre:"
-msgstr ""
+msgstr "Načítať žáner:"
 
 msgid "Load Production Countries:"
-msgstr ""
+msgstr "Načítať krajiny produkcie:"
 
 msgid "Load Release Date:"
-msgstr ""
+msgstr "Načítať dátum vydania:"
 
 msgid "Load Runtime:"
-msgstr ""
+msgstr "Načítať čas behu:"
 
 msgid "Load Vote:"
-msgstr ""
+msgstr "Načítať hlasovanie:"
 
 msgid "Load default settings will overwrite all settings, really load them?"
 msgstr ""
+"Načítaním predvolených nastavení sa prepíšu všetky nastavenia, naozaj ich "
+"chcete načítať?"
 
-msgid "Locate rogue files and remove them? (permanently if no trashcan available, may take a minute or so)"
-msgstr "Lokalizovať osirelé súbory a odstániť ich? (natrvalo, ak nie je kôš k dispozícii, bude trvať okolo minúty)"
+msgid ""
+"Locate rogue files and remove them? (permanently if no trashcan available, "
+"may take a minute or so)"
+msgstr ""
+"Lokalizovať osamotené súbory a odstrániť ich? (natrvalo, ak nie je k "
+"dispozícii kôš, bude to trvať asi minútu)"
 
 msgid "Location:"
-msgstr ""
+msgstr "Umiestnenie:"
 
 msgid "Long Blue button function"
-msgstr ""
+msgstr "Funkcia dlhého stlačenia modrého tlačidla"
 
 msgid "Long Red button function"
-msgstr ""
+msgstr "Funkcia dlhého stlačenia červeného tlačidla"
 
 msgid "Long Yellow button function"
-msgstr ""
+msgstr "Funkcia dlhého stlačenia žltého tlačidla"
 
 msgid "LongInfo Button"
-msgstr ""
+msgstr "Dlhé stlačenie tlačidla Info"
 
 msgid "MM/DD HH:MM"
-msgstr ""
+msgstr "MM/DD HH:MM"
 
 msgid "Manage Cover"
-msgstr ""
+msgstr "Spravovať obal"
 
 msgid "Mark all movies"
 msgstr "Označiť všetky filmy"
 
 msgid "Mark new recordings with a star"
-msgstr ""
+msgstr "Označiť nové nahrávky hviezdičkou"
 
 msgid "Method of hiding MiniTV"
-msgstr ""
+msgstr "Metóda skrývania MiniTV"
 
 msgid "Minimum file cache limit (0=cache everything)"
-msgstr ""
+msgstr "Limit minimálnej vyrov. pamäte (0 = ukladať do nej všetko)"
 
 msgid "Minutes"
-msgstr ""
+msgstr "Minúty"
 
 msgid "Month"
-msgstr ""
+msgstr "Mesiac"
 
 msgid "Months"
-msgstr ""
+msgstr "Mesiace"
 
 msgid "Move Cover to:"
-msgstr ""
+msgstr "Presunúť obal do:"
 
 msgid "Move Directory:"
-msgstr ""
+msgstr "Presunúť priečinok:"
 
 msgid "Move File"
-msgstr ""
+msgstr "Presunúť súbor"
 
 msgid "Move Files"
-msgstr ""
+msgstr "Presunúť súbory"
 
 msgid "Move cursor down"
-msgstr "Presun kurzoru dolu"
+msgstr "Presunúť kurzor nadol"
 
 msgid "Move cursor page down"
-msgstr "Presun kurzoru o stranu nadol"
+msgstr "Presunúť kurzor o stranu nadol"
 
 msgid "Move cursor page up"
-msgstr "Presun kurzoru o stranu nahor"
+msgstr "Presunúť kurzor o stranu nahor"
 
-msgid "Move cursor to the end / Move cursor x entries down / Switch Folders in Movie Home (down)"
+msgid ""
+"Move cursor to the end / Move cursor x entries down / Switch Folders in "
+"Movie Home (down)"
 msgstr ""
+"Presunúť kurzor na koniec/presunúť kurzor o x záznamov nadol/prepnúť "
+"priečinky v domovskom priečinku filmov (nadol)"
 
-msgid "Move cursor to the top / Move cursor x entries up / Switch Folders in Movie Home (up)"
+msgid ""
+"Move cursor to the top / Move cursor x entries up / Switch Folders in Movie "
+"Home (up)"
 msgstr ""
+"Presunúť kurzor úplne nahor/presunúť kurzor o x záznamov nahor/prepnúť "
+"priečinky v domovskom priečinku filmov (nahor)"
 
 msgid "Move cursor up"
-msgstr "Presun kurzoru hore"
+msgstr "Presunúť kurzor nahor"
 
 msgid "Move file(s):"
-msgstr ""
+msgstr "Presunúť súbor(y):"
 
 msgid "Move finished movies in trashcan"
-msgstr "Premiesniť dopozerané filmy do koša"
+msgstr "Premiestniť dopozerané filmy do koša"
 
-#, fuzzy
 msgid "Movie Color"
-msgstr "Farebnosť Filmu"
+msgstr "Farby filmu"
 
 #, python-format
 msgid ""
@@ -1488,21 +1572,26 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Obal filmu bol úspešne stiahnutý“\n"
+"\n"
+"Nemožno zapísať súbor s informáciou o filme\n"
+"\n"
+"%s"
 
 msgid "Movie Information Download Setup"
-msgstr ""
+msgstr "Nastavenie sťahovania informácie o filme"
 
 msgid "Movie Information Preview for:"
-msgstr ""
+msgstr "Náhľad informácie o filme na:"
 
 msgid "Movie Information TMDb"
-msgstr ""
+msgstr "Informácia o filme TMDb"
 
 msgid "Movie Information and Cover downloaded successfully!"
-msgstr ""
+msgstr "Informácia o filme a obal boli úspešné stiahnuté!"
 
 msgid "Movie Information downloaded successfully!"
-msgstr ""
+msgstr "Informácia o filme bola úspešne stiahnutá!"
 
 #, python-format
 msgid ""
@@ -1512,103 +1601,103 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Informácia o filme bola úspešne stiahnutá!\n"
+"\n"
+"Nemožno zapísať súbor s obalom filmu\n"
+"\n"
+"%s"
 
 msgid "Movie Selection Menu"
-msgstr "Menu pre zoznam filmov"
+msgstr "Menu pre výber filmu"
 
 msgid "Movie home"
-msgstr "Domov filmovv"
+msgstr "Dom. priečinok filmov"
 
 msgid "Movie home at start"
-msgstr "Pri štarte začať v domove filmov"
+msgstr "Pri štarte začať v domovskom priečinku filmov"
 
 msgid "Movie home home path"
-msgstr "Umiestnenie adresára Domov filmov"
+msgstr "Cesta k domovskému priečinku filmov"
 
 msgid "Movie information"
-msgstr ""
+msgstr "Informácia o filme"
 
 msgid "Movie preview delay in ms"
-msgstr ""
+msgstr "Oneskorenie náhľadu filmu v ms"
 
 msgid "Movies"
-msgstr ""
+msgstr "Filmy"
 
 msgid "Movietitle:"
-msgstr ""
+msgstr "Názov filmu:"
 
 msgid "N/A"
-msgstr ""
+msgstr "Nedostupné"
 
 msgid "Next auto-start in "
-msgstr ""
+msgstr "Ďalšie automatické spustenie o "
 
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #, python-format
 msgid "No Cover: %s"
-msgstr ""
+msgstr "Žiadny obal: %s"
 
 msgid "No DVD-Player found!"
-msgstr "DVD prehrávač nenájdený"
+msgstr "Nenašiel sa žiadny DVD prehrávač!"
 
 msgid "No Movies found!"
-msgstr ""
+msgstr "Nenašli sa žiadne filmy!"
 
 msgid "No functionality set..."
-msgstr "Nenastavená funkcionalita..."
+msgstr "Nie je nastavená funkcia..."
 
 msgid "No limit"
-msgstr ""
+msgstr "Bez obmedzenia"
 
 msgid "No override"
-msgstr "Neprepísať"
+msgstr "Neprepisovať"
 
 msgid "No resume below 10 seconds"
 msgstr "Nepokračovať v prehrávaní pod 10 sekúnd"
 
 msgid "No rogue files found."
-msgstr "Osirelé súbory neboli nájdené"
+msgstr "Nenašli žiadne osamotené súbory."
 
 msgid "No script operation for VLC streams."
-msgstr "Žiaden skript pre VLC streamy."
+msgstr "Žiadna skriptová operácia pre VLC streamy."
 
-#, fuzzy
 msgid "Not all timers have been stopped. Modify them with the timer editor."
-msgstr "Nezastavujem opakujúce časovače. Editujte ich editorom časovača."
+msgstr "Nie sú zastavené všetky časovače. Upravte ich v editore časovačov."
 
 msgid "Nothing was found !"
-msgstr ""
+msgstr "Nič sa nenašlo!"
 
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 msgid "OSError - please reload list (EMC menu)"
-msgstr ""
+msgstr "Chyba OS - prosím načítajte zoznam ešte raz (menu EMC)"
 
 msgid "OTHER"
-msgstr ""
+msgstr "INÉ"
 
-#, fuzzy
 msgid "Off"
-msgstr "Vypnuté"
+msgstr "Vyp."
 
 msgid "Open"
-msgstr ""
+msgstr "Otvoriť"
 
-#, fuzzy
 msgid "Open E2 Bookmark path"
-msgstr "Otvoriť cestu k Open E2 záložkám"
+msgstr "Otvoriť cestu k záložke E2"
 
-#, fuzzy
 msgid "Open E2 bookmarks"
-msgstr "Otvoriť E2 záložky"
+msgstr "Otvoriť záložky E2"
 
 msgid "Open EMC Bookmark path"
-msgstr ""
+msgstr "Otvoriť cestu k záložke EMC"
 
-#, fuzzy
 msgid "Open Timer List"
 msgstr "Otvoriť zoznam časovačov"
 
@@ -1616,430 +1705,416 @@ msgid "Open menu"
 msgstr "Otvoriť menu"
 
 msgid "Orange"
-msgstr ""
+msgstr "Oranžová"
 
 msgid "Own Path to movie picons"
-msgstr ""
+msgstr "Vlastná cesta k ikonám pre film"
 
 msgid "Path to movie picons"
-msgstr ""
+msgstr "Cesta k ikonám pre film"
 
-#, fuzzy
 msgid "Percent (%)"
-msgstr "Percento (%)"
+msgstr "V percentách (%)"
 
 msgid "Performance"
-msgstr ""
+msgstr "Výkon"
 
 msgid "Permanently delete all files in trashcan?"
-msgstr "Zmazať všetky súbory v koši natrvalo?"
+msgstr "Chcete natrvalo vymazať všetky súbory v koši?"
 
 msgid "Play All"
-msgstr "Prehrať všetky"
+msgstr "Prehrať všetko"
 
-#, fuzzy
 msgid "Play All starting"
 msgstr "Prehrať všetky začínajúce"
 
 msgid "Play current Playlist"
-msgstr ""
+msgstr "Prehrať aktuálny playlist"
 
 msgid "Play last"
 msgstr "Prehrať posledné"
 
-#, fuzzy
 msgid "Play last movie starting"
-msgstr "Prehrať posledný film zašínajúci"
+msgstr "Prehrať posledný film začínajúci"
 
 msgid "Play random current Playlist"
-msgstr ""
+msgstr "Náhodne prehrávať aktuálny playlist"
 
 msgid "Play selected movie(s)"
-msgstr "Prehrať vybraný/é film(y)"
+msgstr "Prehrať vybrané filmy"
 
 msgid "Playlist Options"
-msgstr ""
+msgstr "Vlastnosti playlistu"
 
 msgid "Playlist Setup"
-msgstr ""
+msgstr "Nastavenia playlistu"
 
 msgid "Playlist open"
-msgstr ""
+msgstr "Otvoriť playlist"
 
 msgid ""
 "Playlist with same name exists!\n"
 "\n"
 "Try to save the Playlist with another name?"
 msgstr ""
+"Playlist s takýmto názvom už existuje!\n"
+"\n"
+"Chcete skúsiť uložiť playlist pod iným názvom?"
 
 msgid "Portuguese"
-msgstr ""
+msgstr "Portugalsky"
 
 msgid "Position movie picons"
-msgstr ""
+msgstr "Pozícia ikon pre film"
 
 msgid "Preferred EPG language"
 msgstr "Preferovaný jazyk EPG"
 
 msgid "Preferred cover resolution (if possible):"
-msgstr ""
+msgstr "Preferované rozlíšenie obalu (ak je možné):"
 
 msgid "Press green button to start search"
-msgstr ""
+msgstr "Stlačením zeleného tlačidla spustíte vyhľadávanie"
 
 msgid "Primary playback audio language"
-msgstr "Primárny jazyk zvuku pri prehrávaní"
+msgstr "Primárny jazyk zvukovej stopy pri prehrávaní"
 
 msgid "Primary playback subtitle language"
 msgstr "Primárny jazyk titulkov pri prehrávaní"
 
 msgid "Production Countries:"
-msgstr ""
+msgstr "Krajiny produkcie:"
 
 msgid "Progress sort"
-msgstr ""
+msgstr "Zoradiť podľa postupu"
 
 msgid "Progress sort ascending (P+)"
-msgstr ""
+msgstr "Zoradiť podľa postupu, vzostupne (P+)"
 
 msgid "Progress sort descending (P-)"
-msgstr ""
+msgstr "Zoradiť podľa postupu, zostupne (P-)"
 
 msgid "ProgressBar"
-msgstr ""
+msgstr "Panel s postupom"
 
 msgid "REC"
-msgstr ""
+msgstr "NAHRÁVANIE"
 
 msgid "Radio-button"
-msgstr "Tlačidlo rádií"
+msgstr "Tlačidlo pre rádio"
 
 msgid "Reading directory..."
-msgstr "Načítavam adresár..."
+msgstr "Načítava sa priečinok..."
 
 msgid "Really close without saving settings?"
-msgstr ""
+msgstr "Naozaj zavrieť bez uloženia nastavení?"
 
 msgid "Reboot"
-msgstr ""
+msgstr "Reboot"
 
 msgid "Red"
-msgstr ""
+msgstr "Červená"
 
 msgid "Red button function"
-msgstr ""
+msgstr "Funkcia červeného tlačidla"
 
 msgid "Release Date:"
-msgstr ""
+msgstr "Dátum vydania:"
 
 msgid "Reload current directory"
-msgstr ""
+msgstr "Znovu načítať aktuálny priečinok"
 
 msgid "Reload movie file list"
-msgstr "Znovunačítať zoznam súborov filmov"
+msgstr "Znovu načítať zoznam súborov filmov"
 
 msgid "Remove all cut file marker permanently?"
-msgstr "Odstrániť všetky značky zoznamov strihu navždy?"
+msgstr "Odstrániť natrvalo všetky značky pre strih súborov?"
 
 msgid "Remove all marker permanently?"
-msgstr ""
+msgstr "Odstrániť natrvalo všetky značky?"
 
 msgid "Remove cut list marker"
-msgstr "Odstrániť značku zoznamu strihu"
+msgstr "Odstrániť značku pre zoznam strihov"
 
 msgid "Remove directory from E2 Bookmarks"
-msgstr "Vymazať priečinok z E2 záložiek"
+msgstr "Odstrániť priečinok zo záložiek E2"
 
 msgid "Remove directory from EMC Bookmarks"
-msgstr ""
+msgstr "Odstrániť priečinok zo záložiek EMC"
 
-#, fuzzy
 msgid "Remove permanent sort"
-msgstr "Odstrániť trvalé triedenie"
+msgstr "Odstrániť trvalé zoradenie"
 
 msgid "Remove permanent sort from parent"
-msgstr "Odstraniť trvalé triedenie z rodiča"
+msgstr "Odstrániť trvalé zoradenie z rodičovského prvku"
 
 msgid "Remove rogue files"
-msgstr "Odstrániť osirelé súbory"
+msgstr "Odstrániť osamotené súbory"
 
-#, fuzzy
 msgid "Remove selected E2 Bookmark"
-msgstr "Vymazať vybrané E2 záložky"
+msgstr "Odstrániť vybranú záložku E2"
 
 msgid "Remove selected EMC Bookmark"
-msgstr ""
+msgstr "Odstrániť vybranú záložku EMC"
 
 msgid "Remove service selection"
-msgstr "Odstrániť výber služieb"
+msgstr "Odstrániť výber služby"
 
 msgid "Rename selected movie(s)"
-msgstr ""
+msgstr "Premenovať vybraný film/vybrané filmy"
 
 msgid "Replace special chars in title"
-msgstr "Zameniť špeciálne znaky názve filmu"
+msgstr "Nahradiť špeciálne znaky v názve"
 
 msgid "Reset marker from selected movie(s)"
-msgstr ""
+msgstr "Vykonať reset značky vo vybraných filmoch"
 
 msgid "Resolve links and show real path"
-msgstr ""
+msgstr "Rozlišovať odkazy a zobrazovať reálnu cestu"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Resume position at %s"
-msgstr "Pokračovať v pozícii na %s"
+msgstr "Pokračovať na pozícii %s"
 
-#, fuzzy
 msgid "Resuming playback"
 msgstr "Pokračovanie v prehrávaní"
 
 msgid "Rewind finished movies before playing"
-msgstr "Pred spustením pretočiť dopozerané filmy na začiatok"
+msgstr "Pred prehrávaním pretočiť dopozerané filmy na začiatok"
 
 msgid "Runtime:"
-msgstr ""
+msgstr "Doba behu:"
 
 msgid "SKIN-SETTINGS"
-msgstr ""
+msgstr "NASTAVENIA SÚBORU SO VZHĹADOM"
 
 msgid "Save"
 msgstr "Uložiť"
 
 msgid "Save Cover"
-msgstr ""
+msgstr "Uložiť obal"
 
 msgid "Save current Playlist"
-msgstr ""
+msgstr "Uložiť aktuálny playlist"
 
 msgid "Save description to movie.txt file:"
-msgstr ""
+msgstr "Uložiť opis do súboru movie.txt:"
 
 msgid "Scan for DVD structures"
-msgstr "Rozpoznať DVD súbory"
+msgstr "Skenovať štruktúry DVD"
 
 msgid "Scan for bluray structures"
-msgstr ""
+msgstr "Skenovať štruktúry bluray"
 
 msgid "Scan for bluray structures in .iso"
-msgstr ""
+msgstr "Skenovať štruktúry bluray v .iso"
 
 msgid "Scan for movie structures"
-msgstr ""
+msgstr "Skenovať štruktúry filmu"
 
 msgid "Scan linked folders"
-msgstr "Skenovať nalinkované priečinky"
+msgstr "Skenovať odkazované priečinky"
 
 msgid "Search"
-msgstr ""
+msgstr "Vyhľadávanie"
 
 #, python-format
 msgid "Search Results per Search Site%s:"
-msgstr ""
+msgstr "Výsledky vyhľadávania na strane vyhľadávania pre %s:"
 
 msgid "Search filter for matching existing terms in the title:"
-msgstr ""
+msgstr "Filter vyhľadávania pre zhodné existujúce výrazy v názve:"
 
 msgid "Search results for:"
-msgstr ""
+msgstr "Výsledky vyhľadávania pre:"
 
 #, python-format
 msgid "Searching for %s"
-msgstr ""
+msgstr "Vyhľadávanie %s"
 
 msgid "Searching..."
-msgstr ""
+msgstr "Vyhľadávanie..."
 
 msgid "Secondary playback audio language"
-msgstr "Sekundárny jazyk zvuku pri prehrávaní"
+msgstr "Druhý jazyk zvukovej stopy pri prehrávaní"
 
 msgid "Secondary playback subtitle language"
-msgstr "Sekundárny jazyk titulkov pri prehrávaní"
+msgstr "Druhý jazyk titulkov pri prehrávaní"
 
 msgid "Seek backward"
-msgstr ""
+msgstr "Prehľadávanie dozadu"
 
 msgid "Seek forward"
-msgstr ""
+msgstr "Prehľadávanie dopredu"
 
 msgid "Select Location"
-msgstr ""
+msgstr "Výber umiestnenia"
 
 msgid "Set path to save the folder Cover:"
-msgstr ""
+msgstr "Nastavte cestu pre uloženie priečinka pre obaly:"
 
-#, fuzzy
 msgid "Set permanent sort"
-msgstr "Nastaviť trvalé triedenie"
+msgstr "Nastaviť trvalé zoradenie"
 
 msgid "Settings have been Saved."
-msgstr ""
+msgstr "Nastavenia boli uložené."
 
 msgid "Setup"
-msgstr ""
+msgstr "Nastavenie"
 
 msgid "Setup open"
-msgstr ""
+msgstr "Otvoriť nastavenia"
 
 msgid "Short watching percent"
-msgstr "Krátko pozrené v percentách"
+msgstr "Percento pre krátke sledovanie"
 
 msgid "Show Bookmarks in movielist"
-msgstr ""
+msgstr "Zobraziť záložky v zozname filmov"
 
 msgid "Show Cover"
-msgstr ""
+msgstr "Zobraziť obal"
 
 msgid "Show Cut-Nr if exist"
-msgstr "Zobraziť čísla rozdelení, ak existujú"
+msgstr "Zobraziť čísla strihov, ak existujú"
 
 msgid "Show EMC in extensions menu"
-msgstr "Ukázať EMC v rozšírenom menu"
+msgstr "Zobraziť EMC v menu pre rozšírenia"
 
-#, fuzzy
 msgid "Show EMC in main menu"
-msgstr "Ukázať EMC v rozšírenom menu"
+msgstr "Zobraziť EMC v hlavnom menu"
 
-#, fuzzy
 msgid "Show Latest Recordings directory"
-msgstr "Zobraziť priečinok s Poslenými Nahrávkami"
+msgstr "Zobraziť priečinok s poslednými nahrávkami"
 
 msgid "Show Movie Format"
-msgstr "Ukázať formát filmu"
+msgstr "Zobraziť formát filmu"
 
 msgid "Show Path if no extended description available"
-msgstr ""
+msgstr "Zobraziť cestu, ak nie je dostupný rozšírený opis"
 
-#, fuzzy
 msgid "Show VLC directory"
 msgstr "Zobraziť priečinok VLC"
 
 msgid "Show audio metadata"
-msgstr ""
+msgstr "Zobraziť metadáta pre zvuk"
 
 msgid "Show current Playlist"
-msgstr ""
+msgstr "Zobraziť aktuálny playlist"
 
-#, fuzzy
 msgid "Show directories"
 msgstr "Zobraziť priečinky"
 
-#, fuzzy
 msgid "Show directories information"
-msgstr "Zobraziť informácie o priečinkoch"
+msgstr "Zobraziť informáciu o priečinkoch"
 
 msgid "Show directories within movielist"
-msgstr ""
+msgstr "Zobraziť priečinky v rámci zoznamu filmov"
 
 msgid "Show directory size in skin"
-msgstr ""
+msgstr "Zobrazovať veľkosť priečinka v skine"
 
 msgid "Show event info"
-msgstr "Ukázať info udalosti"
+msgstr "Zobraziť informácie o udalosti"
 
 msgid "Show experimental options"
-msgstr ""
+msgstr "Zobraziť experimentálne nastavenia"
 
 msgid "Show fallback cover"
-msgstr ""
+msgstr "Zobraziť pozadie pre obal aj keď nie je dostupný žiadny obal"
 
 msgid "Show info at the bottom"
-msgstr ""
+msgstr "Zobrazovať informáciu dole"
 
 msgid "Show info at the bottom (with MiniTV)"
-msgstr ""
+msgstr "Zobrazovať informáciu dole (s MiniTV)"
 
 msgid "Show info on the left"
-msgstr ""
+msgstr "Zobrazovať informáciu naľavo"
 
 msgid "Show info on the left (with MiniTV)"
-msgstr ""
+msgstr "Zobrazovať informáciu naľavo (s MiniTV)"
 
 msgid "Show link arrow"
-msgstr ""
+msgstr "Zobraziť šípku pri odkaze"
 
 msgid "Show message if file added to playlist"
-msgstr ""
+msgstr "Zobraziť správu pri pridaní súboru do playlistu"
 
 msgid "Show movie icons"
-msgstr "Vo filmovom zozname sa zobrazia ikony filmov"
+msgstr "Zobraziť ikony filmov"
 
 msgid "Show movie picons"
-msgstr ""
+msgstr "Zobraziť pikony filmu"
 
 msgid "Show movie preview"
-msgstr ""
+msgstr "Zobraziť náhľad filmu"
 
 msgid "Show movie progress"
-msgstr "Ukázať progres filmu"
+msgstr "Zobraziť postup vo filme"
 
 msgid "Show plugin config in extensions menu"
-msgstr "Ukázať nastavenie rozšírenia v rozšírenom menu"
+msgstr "Zobraziť konfiguráciu pluginu v menu pre rozšírenia"
 
 msgid "Show real length of running records"
-msgstr ""
+msgstr "Zobraziť reálnu dĺžku prebiehajúcich nahrávok"
 
 msgid "Show symlinks"
-msgstr ""
+msgstr "Zobraziť symbolické odkazy"
 
-#, fuzzy
 msgid "Show trashcan directory"
 msgstr "Zobraziť priečinok koša"
 
-#, fuzzy
 msgid "Show trashcan information"
-msgstr "Zobraziť informácie o koši"
+msgstr "Zobraziť informáciu o koši"
 
-#, fuzzy
 msgid "Shuffle All"
-msgstr "Premiešať všetko"
+msgstr "Náhodne premiešať všetko"
 
-#, fuzzy
 msgid "Shuffle All starting"
-msgstr "Zamiešať všetky začínajúce"
+msgstr "Náhodné premiešanie začínajúcich"
 
 msgid "Single Search:"
-msgstr ""
+msgstr "Jedno vyhľadanie:"
 
 msgid "Single search"
-msgstr ""
+msgstr "Jedno vyhľadanie"
 
 msgid "Skip"
-msgstr ""
+msgstr "Preskočiť"
 
-#, fuzzy
 msgid ""
 "Skipping movie, the file does not exist.\n"
 "\n"
 msgstr ""
-"Preskakujem film, súbor neexistuje.\n"
+"Preskakovanie filmu, súbor neexistuje.\n"
 "\n"
 
 msgid "Some settings changes require GUI restart to take effect."
-msgstr "Niektoré zmeny nastavenia vyžadujú reštart GUI, aby sa prejavili."
+msgstr "Niektoré zmeny nastavenia vyžadujú reštart GUI."
 
 msgid "Sort Mode"
-msgstr ""
+msgstr "Režim zoraďovania"
 
 msgid "Sort Options"
-msgstr ""
+msgstr "Vlastnosti zoraďovania"
 
 msgid "Sort Order"
-msgstr ""
+msgstr "Poradie zoraďovania"
 
 msgid "Spanish"
-msgstr ""
+msgstr "Španielsky"
 
 msgid "Standby"
-msgstr ""
+msgstr "Pohotovostný režim"
 
 msgid "Start / end multiselection"
-msgstr "Začiatok / koniec viacnasobného výberu"
+msgstr "Začiatok/koniec viacnasobného výberu"
 
 msgid "Start EMC with"
-msgstr "Ako spustiť EMC"
+msgstr "Spustiť EMC pomocou"
 
 msgid "Start movie preview before last position"
-msgstr ""
+msgstr "Spustiť náhľad filmu pred poslednou pozíciou"
 
 msgid "Stop ongoing recording?\n"
 msgstr "Zastaviť prebiehajúce nahrávanie?\n"
@@ -2048,47 +2123,51 @@ msgid "Stop playback"
 msgstr "Zastaviť prehrávanie"
 
 msgid "Style for original EMC-skin (needs reopen)"
-msgstr ""
+msgstr "Štýl pre originálny vzhľad EMC (vyžaduje opätovné otvorenie)"
 
 msgid "Suppress scan in selected folders"
-msgstr "Zakázať skenovanie vo vybraných priečinkoch"
+msgstr "Potlačiť skenovanie vo vybraných priečinkoch"
 
 msgid "TMBD Info"
-msgstr ""
+msgstr "TMBD Info"
 
 msgid "TMDB Info"
-msgstr ""
+msgstr "TMDB Info"
 
 msgid "TMDb"
-msgstr ""
+msgstr "TMDb"
 
 msgid "TRASHCAN"
-msgstr ""
+msgstr "KÔŠ"
 
 msgid "TV Shows"
-msgstr ""
+msgstr "TV show"
 
 msgid "TV-button"
-msgstr "Tlačidlo TV"
+msgstr "Tlačidlo pre TV"
 
 msgid "Tertiary playback audio language"
-msgstr "Tretí jazyk zvuku pri prehrávaní"
+msgstr "Tretí jazyk zvukovej stopy pri prehrávaní"
 
 msgid "Tertiary playback subtitle language"
 msgstr "Tretí jazyk titulkov pri prehrávaní"
 
 msgid "Text shown for initially unknown count and size"
-msgstr ""
+msgstr "Text zobrazovaný pre spočiatku neznámy počet a veľkosť"
 
 msgid "Text shown for initially unknown directory size"
-msgstr ""
+msgstr "Text zobrazovaný pre spočiatku neznámu veľkosť priečinka"
 
 msgid "Text shown for initially unknown file count"
-msgstr ""
+msgstr "Text zobrazovaný pre spočiatku neznámy počet súborov"
 
 #, python-format
-msgid "The directory %s is already locked. Do you want to unlock it and all its subfolders?"
+msgid ""
+"The directory %s is already locked. Do you want to unlock it and all its "
+"subfolders?"
 msgstr ""
+"Priečinok %s je už uzamknutý. Chcete ho odomknúť, spolu so všetkými "
+"podpriečinkami?"
 
 #, python-format
 msgid ""
@@ -2098,351 +2177,361 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Nasledujúce súbory sa používajú aj pre iné záznamy v zozname!\n"
+"\n"
+"Chcete vymazať aj tieto súbory?\n"
+"\n"
+"%s"
 
 msgid "This element belongs to a locked folder and cannot be deleted!"
-msgstr ""
+msgstr "Tento prvok patrí do uzamknutého priečinka a nemožno ho vymazať!"
 
 msgid "This folder is locked or contains a locked subfolder, unlock it first!"
 msgstr ""
+"Tento priečinok je uzamknutý alebo obsahuje uzamknutý podpriečinok. Najskôr "
+"vykonajte odomknutie!"
 
 msgid "Title"
-msgstr "Názov"
+msgstr "Titul"
 
 msgid "Toggle Cover Button"
-msgstr ""
+msgstr "Tlačidlo na prepnutie obalu"
 
 msgid "Toggle service selection"
-msgstr "Prepnúť výber služby"
+msgstr "Prepnúť výber služby/stanice"
 
 msgid "Toggle viewed / not viewed"
 msgstr "Prepnúť videné/nevidené"
 
 msgid "Total"
-msgstr ""
+msgstr "Celkom"
 
 msgid "Trashcan"
-msgstr ""
+msgstr "Kôš"
 
 msgid "Trashcan create failed. Check mounts and permissions."
-msgstr "Vytvorenie koša zlyhalo. Overte oprávnenia a pripojené body."
+msgstr ""
+"Vytvorenie koša zlyhalo. Skontrolujte oprávnenia a pripojené zariadenia."
 
-#, fuzzy
 msgid "Trashcan enable"
-msgstr "Použiť kôš"
+msgstr "Aktivovať kôš"
 
 msgid "Trashcan path"
-msgstr "Umiestnenie koša"
+msgstr "Cesta ku košu"
 
-#, fuzzy
 msgid "Try to load extra title and more from .meta files"
-msgstr "Pokúsiť sa načítať názvy z .meta súborov"
+msgstr "Skúsiť sa načítať extra názov a viac zo súborov .meta"
 
-#, fuzzy
 msgid "Try to load titles from .eit files"
-msgstr "Pokúsiť sa načítať titulky zo súborov .eit"
+msgstr "Pokúsiť sa načítať názvy zo súborov .eit"
 
 msgid "Try to load titles from .meta files"
-msgstr "Pokúsiť sa načítať názvy z .meta súborov"
+msgstr "Pokúsiť sa načítať názvy zo súborov .meta"
 
 msgid "UNKNOWN"
-msgstr "NEZNÁMY"
+msgstr "NEZNÁME"
 
-#, fuzzy
 msgid "Up"
 msgstr "Hore"
 
 msgid "Use cache for files and directories"
-msgstr ""
+msgstr "Používať vyrovnávaciu pamäť pre súbory a priečinky"
 
 msgid "Use original EMC-skin (needs reopen)"
-msgstr ""
+msgstr "Použiť originálny skin EMC (vyžaduje opätovné otvorenie)"
 
 msgid "VLC"
-msgstr ""
+msgstr "VLC"
 
 msgid "VLC Server not reachable"
-msgstr "VLC Server je nedostupný"
+msgstr "Server VLC nie je dostupný"
 
 msgid "VLC-Dir"
-msgstr ""
+msgstr "Priečinok VLC"
 
 msgid "VLC-Server"
-msgstr ""
+msgstr "Server VLC"
 
 msgid "Video-button"
-msgstr "Tlačidlo videa"
+msgstr "Tlačidlo pre video"
 
 msgid "Vote:"
-msgstr ""
+msgstr "Hlas:"
 
 msgid "WD DD.MM. HH:MM"
-msgstr ""
+msgstr "WD DD.MM. HH:MM"
 
 msgid "WD DD.MM.YYYY"
-msgstr ""
+msgstr "WD DD.MM.RRRR"
 
 msgid "WD DD.MM.YYYY HH:MM"
-msgstr ""
+msgstr "WD DD.MM.RRRR HH:MM"
 
 msgid "WD MM/DD HH:MM"
-msgstr ""
+msgstr "WD MM/DD HH:MM"
 
 msgid "WD YYYY/MM/DD"
-msgstr ""
+msgstr "WD RRRR/MM/DD"
 
 msgid "WD YYYY/MM/DD HH:MM"
-msgstr ""
+msgstr "WD RRRR/MM/DD HH:MM"
 
 msgid "Wake device when entering dir from emc-noscan.cfg"
-msgstr ""
+msgstr "Zobudiť zariadenie pri zadaní priečinka z emc-noscan.cfg"
 
 msgid "Week"
-msgstr ""
+msgstr "Týždeň"
 
 msgid "Weeks"
-msgstr ""
+msgstr "Týždne"
 
 msgid "White"
-msgstr ""
+msgstr "Biela"
 
 msgid "YYYY/MM/DD"
-msgstr ""
+msgstr "RRRR/MM/DD"
 
 msgid "YYYY/MM/DD HH:MM"
-msgstr ""
+msgstr "RRRR/MM/DD HH:MM"
 
 msgid "Yellow button function"
-msgstr ""
+msgstr "Funkcia žltého tlačidla"
 
 msgid "Yes"
-msgstr ""
+msgstr "Áno"
 
 msgid "Yes, everything"
-msgstr ""
+msgstr "Áno, všetko"
 
 msgid "Yes, only extra title"
-msgstr ""
+msgstr "Áno, len extra názov"
 
 msgid "Yes, with Message"
-msgstr ""
+msgstr "Áno, so správou"
 
 msgid "Yes, without Message"
-msgstr ""
+msgstr "Áno, bez správy"
 
 msgid ""
 "Your Box is about to go into DeepStandby, continue?\n"
 " Select no to delay one hour"
 msgstr ""
+"Vaše zariadenie má naplánované vypnutie. Chcete pokračovať?\n"
+" Ak chcete tento proces odložiť o hodinu, vyberte možnosť Nie"
 
 msgid ""
 "Your Box is about to go into E2 Restart, continue?\n"
 " Select no to delay one hour"
 msgstr ""
+"Vaše zariadenie má naplánovaný reštart E2. Chcete pokračovať?\n"
+" Ak chcete tento proces odložiť o hodinu, vyberte možnosť Nie"
 
 msgid ""
 "Your Box is about to go into Reboot, continue?\n"
 " Select no to delay one hour"
 msgstr ""
+"Vaše zariadenie má naplánované reštartovanie. Chcete pokračovať?\n"
+" Ak chcete tento proces odložiť o hodinu, vyberte možnosť Nie"
 
 msgid ""
 "Your Box is about to go into Standby, continue?\n"
 " Select no to delay one hour"
 msgstr ""
+"Vaše zariadenie má naplánovaný prechod do pohotovostného režimu. Chcete "
+"pokračovať?\n"
+" Ak chcete tento proces odložiť o hodinu, vyberte možnosť Nie"
 
 msgid "Zap to channel after record EOF"
-msgstr ""
+msgstr "Prepnúť na kanál po skončení nahrávky"
 
 msgid "after reload list"
-msgstr ""
+msgstr "po opätovnom načítaní zoznamu"
 
 msgid "after standby"
-msgstr ""
+msgstr "po pohotovostnom režime"
 
 msgid "all"
-msgstr ""
+msgstr "všetky"
 
 msgid "always"
-msgstr ""
+msgstr "vždy"
 
 msgid "always hide"
-msgstr ""
+msgstr "vždy skryť"
 
 msgid "auto-start is currently not active."
-msgstr ""
+msgstr "automatické spustenie nie je momentálne aktívne."
 
 msgid "auto-start window begin"
-msgstr ""
+msgstr "Začiatok okna pre automatické spustenie"
 
 msgid "auto-start window end"
-msgstr ""
+msgstr "Koniec okna pre automatické spustenie"
 
 msgid "center"
-msgstr ""
+msgstr "v strede"
 
 msgid "configuration"
-msgstr "nastavenie"
+msgstr "konfigurácia"
 
 msgid "covers in"
-msgstr ""
+msgstr "obalov v"
 
 msgid "daily auto-start"
-msgstr ""
+msgstr "Denné automatické spustenie"
 
 msgid "down"
-msgstr "dolu"
+msgstr "nadol"
 
 msgid "every single one"
-msgstr ""
+msgstr "každá jednotlivo"
 
 msgid "forward to the next chapter"
-msgstr "skočiť na ďalšiu kapitolu"
+msgstr "prejsť na ďalšiu kapitolu"
 
 msgid "found"
-msgstr ""
+msgstr "našlo sa"
 
 msgid "from"
-msgstr ""
+msgstr "od"
 
 msgid "hide live TV"
-msgstr ""
+msgstr "skryť live TV"
 
 msgid "hide live TV and timeshift"
-msgstr ""
+msgstr "skryť live TV a timeshift"
 
-#, fuzzy
 msgid "hide playback"
-msgstr "Zastaviť prehrávanie"
+msgstr "skryť prehrávanie"
 
 msgid "imdb.com"
-msgstr ""
+msgstr "imdb.com"
 
 msgid "jump back to the previous title"
-msgstr "skočiť na predošú položku"
+msgstr "preskočiť na predchádzajúci titul"
 
 msgid "jump forward to the next title"
-msgstr "skočiť na ďalšiu položku"
+msgstr "preskočiť dopredu na ďalší titul"
 
 msgid "jump to next marked position"
-msgstr "Preskočiť na nasledujúcu značku"
+msgstr "preskočiť na ďalšiu označenú pozíciu"
 
 msgid "jump to previous marked position"
-msgstr "Preskočiť na predchádzajúcu značku"
+msgstr "preskočiť na predchádzajúcu označenú pozíciu"
 
 msgid "left"
-msgstr ""
+msgstr "vľavo"
 
 msgid "left from Name"
-msgstr ""
+msgstr "naľavo od názvu"
 
 msgid "movie manipulation list"
-msgstr "zoznam manipulovaných filmov"
+msgstr "zoznam pre manipuláciu s filmami"
 
 msgid "movies in"
-msgstr ""
+msgstr "filmy v"
 
 msgid "never hide"
-msgstr ""
+msgstr "nikdy neskrývať"
 
 msgid "no limit"
-msgstr ""
+msgstr "bez obmedzenia"
 
 msgid "off"
-msgstr "vypnuté"
+msgstr "vyp."
 
 msgid "only initially"
-msgstr ""
+msgstr "len na začiatku"
 
 msgid "overall"
-msgstr ""
+msgstr "celkom"
 
 msgid "rewind to the previous chapter"
-msgstr "skočiť na predošlú kapitolu"
+msgstr "prejsť dozadu na predchádzajúcu kapitolu"
 
 msgid "right"
-msgstr ""
+msgstr "vpravo"
 
 msgid "right from Name"
-msgstr ""
+msgstr "napravo od názvu"
 
 msgid "sec"
-msgstr ""
+msgstr "sek."
 
 msgid "sec found. Avg. Speed:"
-msgstr ""
+msgstr "sek. Priemerná rýchlosť:"
 
 msgid "sec."
-msgstr ""
+msgstr "sek."
 
-#, fuzzy
 msgid "show DVD main menu"
 msgstr "zobraziť hlavné menu DVD"
 
 msgid "single pixel TV, muted"
-msgstr ""
+msgstr "1-pix. TV, stlmené"
 
 msgid "standard cover"
-msgstr ""
+msgstr "štandardný obal"
 
 msgid "stop service"
-msgstr ""
+msgstr "zastaviť stanicu/službu"
 
 msgid "switch to the next angle"
-msgstr "prepnúť další uhol"
+msgstr "prepnúť na ďalší uhol"
 
 msgid "switch to the next audio track"
-msgstr "prepnúť ďalšiu zvukovú stopu"
+msgstr "prepnúť na ďalšiu zvukovú stopu"
 
 msgid "switch to the next subtitle language"
-msgstr "prepnúť predošlú zvukovú stopu"
+msgstr "prepnúť na ďalší jazyk titulkov"
 
 msgid "themoviedb.org"
-msgstr ""
+msgstr "themoviedb.org"
 
 msgid "themoviedb.org + thetvdb.com"
-msgstr ""
+msgstr "themoviedb.org + thetvdb.com"
 
 msgid "thetvdb cover number (standard cover):"
-msgstr ""
+msgstr "Číslo obalu thetvdb (štandardný obal):"
 
 msgid "thetvdb cover range per title:"
-msgstr ""
+msgstr "rozsah obalov thetvdb na jeden titul:"
 
 msgid "thetvdb.com"
-msgstr ""
+msgstr "thetvdb.com"
 
 msgid "three contiguous"
-msgstr ""
+msgstr "tri súvisiace"
 
 msgid "toggle a cut mark at the current position"
-msgstr "prepnúť strihovú značku na aktuálnej pozícii"
+msgstr "prepnúť značku strihu na aktuálnej pozícii"
 
 msgid "trashcan"
-msgstr ""
+msgstr "kôš"
 
 msgid "two contiguous"
-msgstr ""
+msgstr "dve súvisiace"
 
 msgid "type 1 - OSD + black (#00000000)"
-msgstr ""
+msgstr "typ 1 - OSD + čierne (#00000000)"
 
 msgid "type 2 - transparent + white (#FFFFFFFF)"
-msgstr ""
+msgstr "typ 2 - priehľadné + biele (#FFFFFFFF)"
 
 msgid "type 3 - OSD + black (#00FFFFFF)"
-msgstr ""
+msgstr "typ 3 - OSD + čierne (#00FFFFFF)"
 
 msgid "type 4 - transparent + black (#FF000000)"
-msgstr ""
+msgstr "typ 4 - priehľadné + čierne (#FF000000)"
 
 msgid "unknown"
-msgstr ""
+msgstr "neznáme"
 
 msgid "up/down"
-msgstr "hore / dolu"
+msgstr "nahor/nadol"
 
-#, fuzzy
 msgid "view extensions..."
 msgstr "zobraziť rozšírenia..."
 
 msgid "x"
-msgstr ""
+msgstr "x"
